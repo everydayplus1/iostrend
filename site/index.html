@@ -386,6 +386,7 @@ function init(){
   document.getElementById("dateBadge").textContent = "榜单日期 "+(D.latest_date||"—");
   document.getElementById("genBadge").textContent = "生成 "+(D.generated||"—");
   fillSelect(market, D.markets, m=>m.cc, m=>m.name+" "+m.cc.toUpperCase());
+  document.getElementById("ageFilter").value = "12";  // 默认只看近1年上线（聚焦新机会）
   // 分品类默认：聚焦品类(解谜) + 第一个榜单类型(免费)
   catFeed = (D.cat_feeds&&D.cat_feeds[0]) || "topfree";
   const fg = (D.cat_genres||[]).find(g=>g.name===D.cat_focus);

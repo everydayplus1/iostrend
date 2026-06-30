@@ -34,7 +34,7 @@ focus_label: "解谜游戏"
 category_charts:
   enabled: true
   feeds: [topfree, toppaid, topgrossing]
-  limit: 50
+  limit: 100        # 旧版 genre RSS 的上限（再高会被截断到 100）
   genres:            # 显示名: App Store genreId
     解谜: "7012"
     游戏: "6014"
