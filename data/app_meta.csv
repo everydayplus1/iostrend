@@ -50,7 +50,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 1632713844,us,2026-06-30,Finance,6015|6004,Finance|Sports,0,0,4.8002,262178,0.0,Free,KALSHI INC.,2026-06-29
 1633243177,us,2026-06-30,Music,6011,Music,0,0,4.20424,661,6.99,$6.99,Ableton AG,2026-05-05
 1636235979,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.67521,426761,0.0,Free,"New Leaf Publishing, Inc.",2026-06-11
-1641486558,us,2026-06-30,Shopping,6024,Shopping,0,0,4.66598,2149547,0.0,Free,Whaleco Inc.,2026-06-28
+1641486558,us,2026-06-30,Shopping,6024,Shopping,0,0,4.66598,2149547,0.0,Free,Whaleco Inc.,2026-06-30
 1662217862,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.68734,1193,4.99,$4.99,Kaylee Calderolla,2026-06-28
 1666653815,us,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.86897,5349812,0.0,Free,"WarnerMedia Global Digital Services, LLC",2026-06-22
 1673567402,us,2026-06-30,Entertainment,6016|6015,Entertainment|Finance,0,0,4.76524,87978,0.0,Free,256 REWARDS LTD,2026-06-26
@@ -75,7 +75,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 330247123,us,2026-06-30,Navigation,6010|6008,Navigation|Photo & Video,0,0,4.83578,12757,11.99,$11.99,Ajnaware Pty Ltd,2026-06-13
 333903271,us,2026-06-30,News,6009|6005,News|Social Networking,0,0,4.58488,10822558,0.0,Free,X Corp.,2026-06-24
 335709058,us,2026-06-30,Lifestyle,6012|6007,Lifestyle|Productivity,0,0,4.6755,8678,4.99,$4.99,"left brain / right brain, LLC",2025-06-15
-338137227,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.81988,17662330,0.0,Free,Walmart,2026-06-26
+338137227,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.81988,17662330,0.0,Free,Walmart,2026-06-30
 338893931,us,2026-06-30,Education,6017|6006,Education|Reference,0,0,3.81564,358,9.99,$9.99,"Aviation Supplies and Academics, Inc.",2025-05-30
 347393479,us,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.65711,2406,3.99,$3.99,This Exit LLC,2026-06-05
 351727428,us,2026-06-30,Finance,6015|6002,Finance|Utilities,0,0,4.85015,15466837,0.0,Free,"The Delancey Corporation, LLC",2026-06-26
@@ -149,7 +149,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 6477489729,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.72237,1922338,0.0,Free,Google LLC,2026-06-24
 650684932,us,2026-06-30,Travel,6003|6002,Travel|Utilities,0,0,4.73165,19158,9.99,$9.99,OCTECH LLC,2026-05-30
 6532603739,us,2026-06-30,Sports,6004,Sports,0,0,1.84659,352,0.0,Free,Federation Internationale de Football Association,2026-05-18
-6648798962,us,2026-06-30,Finance,6015|6004,Finance|Sports,0,0,4.6372,41116,0.0,Free,Blockratize Inc,2026-06-28
+6648798962,us,2026-06-30,Finance,6015|6004,Finance|Sports,0,0,4.6372,41116,0.0,Free,Blockratize Inc,2026-06-30
 6670324846,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.88113,1268612,0.0,Free,X Corp.,2026-06-30
 6670430706,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.87466,115621,0.0,Free,SKYWORK AI PTE LTD,2026-06-28
 6736371607,us,2026-06-30,Sports,6004,Sports,0,0,4.532,250,9.95,$9.95,Sammy Azdoufal,2025-12-01
@@ -273,7 +273,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 1626245204,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,1.82609,667,0.0,無料,"playground Co., Ltd.",2025-11-09
 1630710367,jp,2026-06-30,Entertainment,6016|6008,エンターテインメント|写真／ビデオ,0,0,4.5697,25589,0.0,無料,"emole K,K",2026-06-22
 1633243177,jp,2026-06-30,Music,6011,ミュージック,0,0,4.40789,76,1100.0,"¥1,100",Ableton AG,2026-05-05
-1641486558,jp,2026-06-30,Shopping,6024,ショッピング,0,0,4.22897,185884,0.0,無料,Whaleco Inc.,2026-06-28
+1641486558,jp,2026-06-30,Shopping,6024,ショッピング,0,0,4.22897,185884,0.0,無料,Whaleco Inc.,2026-06-30
 1660712234,jp,2026-06-30,Education,6017|6007,教育|仕事効率化,0,0,4.6563,643,370.0,¥370,"SOCIAL NOTE CO., LTD.",2026-05-13
 1667214457,jp,2026-06-30,Food & Drink,6023,フード／ドリンク,0,0,4.54295,183999,0.0,無料,"KOMEDA CO.,LTD.",2026-02-09
 1668516167,jp,2026-06-30,Social Networking,6005,ソーシャルネットワーキング,0,0,4.3375,240,800.0,¥800,J BUCHANAN & L.J BUCHANAN,2026-05-09
@@ -300,7 +300,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 432850619,jp,2026-06-30,Music,6011,ミュージック,0,0,3.36538,52,2500.0,"¥2,500",image-line,2026-06-16
 441179131,jp,2026-06-30,Graphics & Design,6027|6016,グラフィック／デザイン|エンターテインメント,0,0,4.83286,9920,1500.0,"¥1,500",ibis inc.,2026-05-25
 443332137,jp,2026-06-30,Education,6017|6018,教育|ブック,0,0,3.08766,308,1300.0,"¥1,300",Beret Publishing Co. INC,2026-05-13
-446016180,jp,2026-06-30,Shopping,6024|6012,ショッピング|ライフスタイル,0,0,4.56726,2859259,0.0,無料,Yahoo Japan Corporation,2026-06-23
+446016180,jp,2026-06-30,Shopping,6024|6012,ショッピング|ライフスタイル,0,0,4.56726,2859259,0.0,無料,Yahoo Japan Corporation,2026-06-30
 465136874,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.7659,5015,800.0,¥800,yudai yoseda,2026-04-03
 468368751,jp,2026-06-30,Utilities,6002|6008,ユーティリティ|写真／ビデオ,0,0,5.0,5,300.0,¥300,Antonio Mauriello,2026-06-14
 468640323,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.78448,5285,800.0,¥800,yudai yoseda,2026-04-03
@@ -328,7 +328,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 6446901002,jp,2026-06-30,Social Networking,6005|6016,ソーシャルネットワーキング|エンターテインメント,0,0,4.35806,309297,0.0,無料,"Instagram, Inc.",2026-06-22
 6446937682,jp,2026-06-30,Medical,6020|6018,メディカル|ブック,0,0,1.33333,15,3800.0,"¥3,800","HERUSU SHUPPAN CO.,INC.",2024-09-03
 6447090616,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,3.82667,75,800.0,¥800,SmashMelon LLC,2026-06-09
-6447160980,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,4.80542,954122,0.0,無料,TIKTOK PTE. LTD.,2026-06-24
+6447160980,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,4.80542,954122,0.0,無料,TIKTOK PTE. LTD.,2026-06-30
 6448176203,jp,2026-06-30,Entertainment,6016|6008,エンターテインメント|写真／ビデオ,0,0,4.88804,139521,0.0,無料,SINGAPORE NEW READING TECHNOLOGY PTE. LTD.,2026-06-26
 6448311069,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,4.69747,1995625,0.0,無料,"OpenAI OpCo, LLC",2026-06-23
 6450435935,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,4.19714,133618,0.0,無料,"Japan Post Co., Ltd.",2026-05-28
@@ -464,7 +464,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 1628054048,kr,2026-06-30,Health & Fitness,6013|6020,건강 및 피트니스|의료,0,0,4.67974,153,7700.0,"￦7,700","Rich Soft Co., Ltd",2026-05-08
 1634146689,kr,2026-06-30,Productivity,6007|6012,생산성|라이프스타일,0,0,4.72499,40,4400.0,"￦4,400",seung won park,2026-01-02
 1636816705,kr,2026-06-30,Lifestyle,6012|6024,라이프스타일|쇼핑,0,0,3.9806,4846,0.0,무료,"emart24 Co.,Ltd",2026-06-10
-1641486558,kr,2026-06-30,Shopping,6024,쇼핑,0,0,3.98835,22926,0.0,무료,Whaleco Inc.,2026-06-28
+1641486558,kr,2026-06-30,Shopping,6024,쇼핑,0,0,3.98835,22926,0.0,무료,Whaleco Inc.,2026-06-30
 1641628055,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,2.96204,1607,0.0,무료,NongHyup Bank,2026-06-24
 1668516167,kr,2026-06-30,Social Networking,6005,소셜 네트워킹,0,0,5.0,4,7700.0,"￦7,700",J BUCHANAN & L.J BUCHANAN,2026-05-09
 298206806,kr,2026-06-30,Music,6011|6017,음악|교육,0,0,4.83711,792,33000.0,"￦33,000",Technimo LLC,2026-06-16
@@ -568,7 +568,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 6762279908,kr,2026-06-30,Lifestyle,6012|6007,라이프스타일|생산성,0,0,4.72021,193,1100.0,"￦1,100",ho young moon,2026-06-17
 6762625967,kr,2026-06-30,Productivity,6007|6000,생산성|비즈니스,0,0,5.0,5,1100.0,"￦1,100",DAL PARK,2026-06-22
 6763737180,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,5.0,12,3300.0,"￦3,300",Seungyun Kim,2026-06-26
-6768642302,kr,2026-06-30,Lifestyle,6012|6011,라이프스타일|음악,0,0,4.76923,13,1100.0,"￦1,100",Seongsup Lee,2026-06-29
+6768642302,kr,2026-06-30,Lifestyle,6012|6011,라이프스타일|음악,0,0,4.76923,13,1100.0,"￦1,100",Seongsup Lee,2026-06-30
 6770498663,kr,2026-06-30,Utilities,6002,유틸리티,0,0,5.0,1,500.0,￦500,Lim Sangjin,2026-05-19
 6770772768,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,5.0,8,2200.0,"￦2,200",NovaLink(KR),2026-06-29
 6780893161,kr,2026-06-30,Finance,6015|6007,금융|생산성,0,0,5.0,2,1100.0,"￦1,100",junghan cho,2026-06-27
@@ -658,7 +658,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 1622598042,gb,2026-06-30,Entertainment,6016|6002,Entertainment|Utilities,0,0,4.57977,702,5.99,£5.99,Adam Foot,2026-05-29
 1629050566,gb,2026-06-30,Utilities,6002,Utilities,0,0,4.6492,205771,0.0,Free,Government Digital Service,2026-06-25
 1633243177,gb,2026-06-30,Music,6011,Music,0,0,4.2,175,6.99,£6.99,Ableton AG,2026-05-05
-1641486558,gb,2026-06-30,Shopping,6024,Shopping,0,0,4.70509,381205,0.0,Free,Whaleco Inc.,2026-06-28
+1641486558,gb,2026-06-30,Shopping,6024,Shopping,0,0,4.70509,381205,0.0,Free,Whaleco Inc.,2026-06-30
 1662217862,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.75915,191,4.99,£4.99,Kaylee Calderolla,2026-06-28
 1666653815,gb,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.8128,30149,0.0,Free,"WarnerMedia Global Digital Services, LLC",2026-06-22
 1673567402,gb,2026-06-30,Entertainment,6016|6015,Entertainment|Finance,0,0,4.67136,11195,0.0,Free,256 REWARDS LTD,2026-06-26
@@ -704,7 +704,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 432850619,gb,2026-06-30,Music,6011,Music,0,0,3.53333,45,14.99,£14.99,image-line,2026-06-16
 435871950,gb,2026-06-30,Travel,6003|6023,Travel|Food & Drink,0,0,4.8409,7423,4.99,£4.99,"HappyCow, Inc",2026-02-18
 436672029,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.69744,148486,0.0,Free,Alibaba.com Singapore E-Commerce Private Limited,2026-06-30
-446079916,gb,2026-06-30,Entertainment,6016|6008,Entertainment|Photo & Video,0,0,4.61025,826098,0.0,Free,ITV PLC,2026-06-16
+446079916,gb,2026-06-30,Entertainment,6016|6008,Entertainment|Photo & Video,0,0,4.61025,826098,0.0,Free,ITV PLC,2026-06-30
 448474183,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.69939,621342,0.0,Free,PayByPhone Technologies Inc.,2026-06-17
 459313476,gb,2026-06-30,Music,6011|6017,Music|Education,0,0,4.6909,55,4.99,£4.99,"musictheory.net, LLC",2026-04-28
 463295925,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.50873,14656,5.49,£5.49,The Stationery Office Limited,2026-04-23
@@ -830,9 +830,9 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 1374554550,de,2026-06-30,Reference,6006|6010,Nachschlagewerke|Navigation,0,0,4.66929,1273,2.99,"2,99 €",Florian Chrometz,2023-10-18
 1395921017,de,2026-06-30,Travel,6003,Reisen,0,0,4.81365,121504,0.0,Gratis,VOI Technology AB,2026-06-30
 1406830270,de,2026-06-30,Health & Fitness,6013,Gesundheit und Fitness,0,0,4.54067,91132,0.0,Gratis,AOK Bundesverband,2026-06-15
-1410703839,de,2026-06-30,Finance,6015|6009,Finanzen|Nachrichten,0,0,4.5807,440335,0.0,Gratis,Trade Republic Bank GmbH,2026-06-22
+1410703839,de,2026-06-30,Finance,6015|6009,Finanzen|Nachrichten,0,0,4.5807,440335,0.0,Gratis,Trade Republic Bank GmbH,2026-06-30
 1423115391,de,2026-06-30,Education,6017|6002,Bildung|Dienst­programme,0,0,4.78371,3634,9.99,"9,99 €",theorie24 GmbH,2026-03-25
-1440301673,de,2026-06-30,Travel,6003,Reisen,0,0,4.73883,45357,0.0,Gratis,emTransit B.V,2026-06-24
+1440301673,de,2026-06-30,Travel,6003,Reisen,0,0,4.73883,45357,0.0,Gratis,emTransit B.V,2026-06-30
 1444681822,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.14173,127,3.99,"3,99 €",Tamas Szabo,2026-06-25
 1449893235,de,2026-06-30,Weather,6001|6002,Wetter|Dienst­programme,0,0,4.40909,66,1.99,"1,99 €",Futura Innovation SRL,2026-04-03
 1458368189,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.38384,693,11.99,"11,99 €",ABUS Security Center GmbH & Co. KG,2025-11-10
@@ -851,7 +851,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 1625657880,de,2026-06-30,Entertainment,6016|6008,Unterhaltung|Foto und Video,0,0,4.49972,56273,0.0,Gratis,Telekom Deutschland GmbH,2026-04-21
 1632634023,de,2026-06-30,Education,6017|6000,Bildung|Wirtschaft,0,0,4.0,7,1.99,"1,99 €",Druck und Verlag Ernst Voegel GmbH,2022-11-15
 1633243177,de,2026-06-30,Music,6011,Musik,0,0,4.43344,323,7.99,"7,99 €",Ableton AG,2026-05-05
-1641486558,de,2026-06-30,Shopping,6024,Shopping,0,0,4.66209,202584,0.0,Gratis,Whaleco Inc.,2026-06-28
+1641486558,de,2026-06-30,Shopping,6024,Shopping,0,0,4.66209,202584,0.0,Gratis,Whaleco Inc.,2026-06-30
 1662217862,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.77937,349,5.99,"5,99 €",Kaylee Calderolla,2026-06-28
 1672085276,de,2026-06-30,Productivity,6007|6000,Produktivität|Wirtschaft,0,0,4.82075,212,29.0,"29,00 €",Sindre Sorhus,2026-06-27
 282614216,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.70064,1090776,0.0,Gratis,eBay Inc.,2026-06-29
@@ -868,7 +868,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 327754661,de,2026-06-30,Weather,6001|6002,Wetter|Dienst­programme,0,0,4.78538,424,6.99,"6,99 €",Christian Huebner,2022-01-04
 329315203,de,2026-06-30,Productivity,6007,Produktivität,0,0,4.65693,724562,0.0,Gratis,Deutsche Post AG,2026-06-18
 333903271,de,2026-06-30,News,6009|6005,Nachrichten|Soziale Netze,0,0,4.42307,370532,0.0,Gratis,TWITTER INTERNATIONAL UNLIMITED COMPANY,2026-06-24
-343555245,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.34962,460844,0.0,Gratis,DB Fernverkehr AG,2026-06-23
+343555245,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.34962,460844,0.0,Gratis,DB Fernverkehr AG,2026-06-30
 344176018,de,2026-06-30,Navigation,6010|6012,Navigation|Lifestyle,0,0,4.59009,455874,0.0,Gratis,ImmobilienScout GmbH,2026-06-24
 348712880,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.70444,679868,0.0,Gratis,Amazon Europe Core SARL,2026-06-17
 357421934,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.74232,14006,5.99,"5,99 €",PeakFinder GmbH,2026-06-23
@@ -876,7 +876,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 368677368,de,2026-06-30,Travel,6003|6012,Reisen|Lifestyle,0,0,4.85538,709073,0.0,Gratis,"Uber Technologies, Inc.",2026-06-29
 373493387,de,2026-06-30,Education,6017|6007,Bildung|Produktivität,0,0,3.96771,1146,29.99,"29,99 €",Anki Software LLC,2025-09-08
 378503081,de,2026-06-30,Productivity,6007,Produktivität,0,0,4.17526,97,9.99,"9,99 €",Acrobits,2026-06-26
-379404334,de,2026-06-30,Lifestyle,6012|6024,Lifestyle|Shopping,0,0,4.54519,196073,0.0,Gratis,Netto Marken-Discount Stiftung & Co. KG,2026-06-20
+379404334,de,2026-06-30,Lifestyle,6012|6024,Lifestyle|Shopping,0,0,4.54519,196073,0.0,Gratis,Netto Marken-Discount Stiftung & Co. KG,2026-06-30
 382596778,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.74342,3890610,0.0,Gratis,Marktplaats BV,2026-06-29
 385255956,de,2026-06-30,Education,6017|6014|7018|7013,Bildung|Spiele|Quiz- und Denkspiele|Rennsport,1,0,4.65751,692,4.99,"4,99 €",Autotheorie24 e.k.,2026-06-29
 386304604,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.74841,187018,0.0,Gratis,MMS E-Commerce GmbH,2026-06-22
