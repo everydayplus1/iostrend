@@ -15,17 +15,22 @@ import math
 
 import pandas as pd
 
-from common import META_CSV, RANK_CSV, genre_cn, load_config
+from common import CATEGORY_CSV, META_CSV, RANK_CSV, genre_cn, load_config
 
 SPARK_WINDOW = 7  # 「最近趋势」回看天数
 
 _META_COLS = [
     "app_id", "country", "primary_genre", "genre_ids", "genres",
     "is_game", "is_puzzle", "avg_rating", "rating_count",
-    "price", "formatted_price", "seller_name", "version_date",
+    "price", "formatted_price", "seller_name", "version_date", "release_date",
 ]
 _RANK_COLS = ["rank", "app_id", "app_name", "artist_name", "url", "artwork",
               "release_date", "date", "country", "feed"]
+_CAT_COLS = ["date", "country", "feed", "genre_id", "genre_name", "rank",
+             "app_id", "app_name", "artist_name", "url", "artwork"]
+# 总榜 release_date 来自 apple_rank（marketing RSS）；meta 也有 release_date（lookup），
+# 合并总榜时排除 meta 的 release_date 以免列名冲突；分品类则用 meta 的 release_date。
+_META_MERGE_EXCLUDE = {"release_date"}
 
 
 def _read_csv_safe(path, cols):
@@ -47,22 +52,27 @@ def _clean(v):
     return v
 
 
+def _load_meta_latest():
+    """每个 (app_id,country) 的最新元数据；缺失/空时返回带列名空表。"""
+    meta = _read_csv_safe(META_CSV, _META_COLS)
+    if meta.empty:
+        return pd.DataFrame(columns=_META_COLS)
+    return (meta.sort_values("date")
+                .drop_duplicates(["app_id", "country"], keep="last"))
+
+
 def load_merged():
     """返回 (rank_df, merged_df)。merged 用每个 (app_id,country) 的最新元数据。
 
     对缺失/空 CSV 与缺失 meta 容错（不崩溃），让上层 build_all 优雅短路。
     """
     rank = _read_csv_safe(RANK_CSV, _RANK_COLS)
-    meta = _read_csv_safe(META_CSV, _META_COLS)
     if rank.empty:
         return rank, rank.copy()
 
-    if meta.empty:
-        meta_latest = pd.DataFrame(columns=_META_COLS)
-    else:
-        meta_latest = (meta.sort_values("date")
-                           .drop_duplicates(["app_id", "country"], keep="last"))
-    merge_cols = [c for c in _META_COLS if c in meta_latest.columns]
+    meta_latest = _load_meta_latest()
+    merge_cols = [c for c in _META_COLS if c in meta_latest.columns
+                  and c not in _META_MERGE_EXCLUDE]
     merged = rank.merge(meta_latest[merge_cols], on=["app_id", "country"], how="left")
     for col in ("is_game", "is_puzzle"):
         if col not in merged.columns:
@@ -99,13 +109,11 @@ def _row_dict(row, delta, status, spark=None):
     }
 
 
-def chart_changes(merged, country: str, feed: str) -> dict:
-    """单个 (国家,榜单) 的当日榜单 + 日环比变化。"""
-    sub = merged[(merged["country"] == country) & (merged["feed"] == feed)]
+def _compute_changes(sub) -> dict:
+    """对单个榜单的跨日子表算：当日行(含日环比/sparkline) + 掉出榜。通用于总榜与分品类。"""
     dates = sorted(sub["date"].unique().tolist())
     if not dates:
-        return {"country": country, "feed": feed, "date": None,
-                "prev_date": None, "rows": [], "droppers": []}
+        return {"date": None, "prev_date": None, "rows": [], "droppers": []}
     cur_date = dates[-1]
     prev_date = dates[-2] if len(dates) >= 2 else None
 
@@ -115,7 +123,6 @@ def chart_changes(merged, country: str, feed: str) -> dict:
         prev = sub[sub["date"] == prev_date]
         prev_rank = dict(zip(prev["app_id"].astype(str), prev["rank"]))
 
-    # 近 N 天每天的 {app_id: rank}，用于每个 app 的「最近趋势」sparkline
     recent_dates = dates[-SPARK_WINDOW:]
     rank_by_date = {
         d: dict(zip(sub[sub["date"] == d]["app_id"].astype(str),
@@ -148,8 +155,43 @@ def chart_changes(merged, country: str, feed: str) -> dict:
                                  "name": row["app_name"],
                                  "prev_rank": int(row["rank"])})
 
-    return {"country": country, "feed": feed, "date": cur_date,
-            "prev_date": prev_date, "rows": rows, "droppers": droppers}
+    return {"date": cur_date, "prev_date": prev_date, "rows": rows, "droppers": droppers}
+
+
+def chart_changes(merged, country: str, feed: str) -> dict:
+    """单个 (国家,总榜) 的当日榜单 + 日环比变化。"""
+    sub = merged[(merged["country"] == country) & (merged["feed"] == feed)]
+    out = _compute_changes(sub)
+    out.update(country=country, feed=feed)
+    return out
+
+
+def load_category_merged():
+    """分品类深榜 join 最新元数据（评分/上线日/品类）。空时返回带列名空表。"""
+    cat = _read_csv_safe(CATEGORY_CSV, _CAT_COLS)
+    if cat.empty:
+        return cat
+    cat["genre_id"] = cat["genre_id"].astype(str)
+    meta_latest = _load_meta_latest()
+    meta_cols = [c for c in ["app_id", "country", "avg_rating", "rating_count",
+                             "formatted_price", "release_date", "primary_genre",
+                             "is_game", "is_puzzle"] if c in meta_latest.columns]
+    merged = cat.merge(meta_latest[meta_cols], on=["app_id", "country"], how="left")
+    for col in ("is_game", "is_puzzle"):
+        if col not in merged.columns:
+            merged[col] = 0
+        merged[col] = merged[col].fillna(0).astype(int)
+    return merged
+
+
+def category_chart(cat_merged, country: str, feed: str, gid: str) -> dict:
+    """单个 (国家,榜单类型,品类) 的分品类深榜 + 日环比变化。"""
+    sub = cat_merged[(cat_merged["country"] == country)
+                     & (cat_merged["feed"] == feed)
+                     & (cat_merged["genre_id"].astype(str) == str(gid))]
+    out = _compute_changes(sub)
+    out.update(country=country, feed=feed, genre_id=str(gid))
+    return out
 
 
 def genre_history(merged) -> dict[str, list[dict]]:
@@ -199,12 +241,27 @@ def build_all() -> dict:
     if not dates:  # 无任何数据：优雅短路，由 report/build_site 的 latest_date 判空处理
         return {"config": cfg, "dates": [], "latest_date": None, "has_trend": False,
                 "changes": {}, "history": {}, "focus": [],
-                "focus_label": cfg.get("focus_label", "解谜游戏")}
+                "focus_label": cfg.get("focus_label", "解谜游戏"),
+                "category": {}, "cat_genres": [], "cat_feeds": [], "cat_focus": ""}
 
     changes_by_key: dict[str, dict] = {}
     for country in cfg["markets"]:
         for feed in cfg["feeds"]:
             changes_by_key[f"{country}|{feed}"] = chart_changes(merged, country, feed)
+
+    # 分品类深榜（M2）
+    category: dict[str, dict] = {}
+    cc = cfg.get("category_charts", {})
+    cat_genres = cc.get("genres", {}) if cc.get("enabled") else {}
+    cat_feeds = cc.get("feeds", []) if cc.get("enabled") else []
+    if cat_genres:
+        cat_merged = load_category_merged()
+        if not cat_merged.empty:
+            for country in cfg["markets"]:
+                for feed in cat_feeds:
+                    for gname, gid in cat_genres.items():
+                        category[f"{country}|{feed}|{gid}"] = category_chart(
+                            cat_merged, country, feed, str(gid))
 
     return {
         "config": cfg,
@@ -215,4 +272,8 @@ def build_all() -> dict:
         "history": genre_history(merged),
         "focus": focus_spotlight(changes_by_key, "is_puzzle"),
         "focus_label": cfg.get("focus_label", "解谜游戏"),
+        "category": category,
+        "cat_genres": [{"name": n, "gid": str(g)} for n, g in cat_genres.items()],
+        "cat_feeds": cat_feeds,
+        "cat_focus": cc.get("focus", ""),
     }

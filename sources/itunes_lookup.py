@@ -40,6 +40,7 @@ def enrich(session, app_ids: list[str], country: str = "us") -> dict[str, dict]:
                 "formatted_price": item.get("formattedPrice", ""),
                 "seller_name": item.get("sellerName", ""),
                 "version_date": (item.get("currentVersionReleaseDate") or "")[:10],
+                "release_date": (item.get("releaseDate") or "")[:10],  # 原始上线日（权威）
             }
         polite_sleep()
     return out

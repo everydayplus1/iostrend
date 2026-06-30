@@ -16,9 +16,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from common import (META_CSV, RANK_CSV, load_config, make_session,
+from common import (CATEGORY_CSV, META_CSV, RANK_CSV, load_config, make_session,
                     polite_sleep, today_iso, upsert_csv)
-from sources import apple_rss, itunes_lookup
+from sources import apple_genre_rss, apple_rss, itunes_lookup
 
 
 def run() -> None:
@@ -50,6 +50,34 @@ def run() -> None:
     if rank_rows:
         total = upsert_csv(RANK_CSV, rank_rows, key_cols=["date", "country", "feed", "rank"])
         print(f"[写入] {RANK_CSV.name}: 本次 {len(rank_rows)} 行，累计 {total} 行")
+
+    # ---- 1b. 抓分品类深榜（M2，旧版 genre RSS，可插拔补充源）----
+    cat_rows: list[dict] = []
+    cc = cfg.get("category_charts", {})
+    if cc.get("enabled"):
+        cat_feeds = cc.get("feeds", [])
+        cat_limit = int(cc.get("limit", 50))
+        genres = cc.get("genres", {})  # {显示名: genreId}
+        for country in markets:
+            for feed in cat_feeds:
+                for gname, gid in genres.items():
+                    try:
+                        cdate, rows = apple_genre_rss.fetch_genre_chart(
+                            session, country, feed, str(gid), cat_limit)
+                        for r in rows:
+                            r.update({"date": cdate, "country": country, "feed": feed,
+                                      "genre_id": str(gid), "genre_name": gname})
+                            market_ids[country].add(r["app_id"])  # 一并富化评分/上线日
+                        cat_rows.extend(rows)
+                        polite_sleep(0.6, 0.4)
+                    except Exception as e:  # noqa: BLE001
+                        print(f"[警告] 分品类抓取失败 {country}/{feed}/{gname}: {e}",
+                              file=sys.stderr)
+            print(f"[分品类] {country}: 累计 {sum(1 for r in cat_rows if r['country']==country)} 行")
+        if cat_rows:
+            total = upsert_csv(CATEGORY_CSV, cat_rows,
+                               key_cols=["date", "country", "feed", "genre_id", "rank"])
+            print(f"[写入] {CATEGORY_CSV.name}: 本次 {len(cat_rows)} 行，累计 {total} 行")
 
     # ---- 2. 富化元数据（按各 app 所在市场分别查，品类/评分/价格本地化准确）----
     meta_rows: list[dict] = []

@@ -42,6 +42,19 @@ def _rating(r):
     return f"{r:.2f}" if isinstance(r, (int, float)) else "—"
 
 
+def _age(rel, base):
+    """已上线时长（X年X个月）。"""
+    if not rel or len(rel) < 7 or not base:
+        return "—"
+    try:
+        months = (int(base[:4]) - int(rel[:4])) * 12 + (int(base[5:7]) - int(rel[5:7]))
+        months = max(0, months)
+        y, m = divmod(months, 12)
+        return f"{y}年{m}个月" if (y and m) else (f"{y}年" if y else (f"{m}个月" if m else "新上线"))
+    except (ValueError, TypeError):
+        return "—"
+
+
 def _md_table(headers, rows):
     out = ["| " + " | ".join(headers) + " |",
            "| " + " | ".join("---" for _ in headers) + " |"]
@@ -53,11 +66,10 @@ def _md_table(headers, rows):
 def _disclaimer() -> str:
     return (
         "> **诚实边界（数据口径，务必先读）**\n"
-        "> 1. 数据源 = Apple 官方 Marketing Tools 榜单（每日更新），仅**总榜** top-free / top-paid。\n"
-        "> 2. 免费官方源**没有畅销榜（grossing）、也没有细分品类深榜**——下载/收入需付费 API。\n"
-        "> 3. 「游戏 / 解谜」是从总榜里按 iTunes Lookup 品类**筛出**的，不是 App Store 品类榜，"
-        "小众品类（如解谜）在总榜里常常很少出现，覆盖深度有限。\n"
-        "> 4. 评分 / 价格按各市场本地化口径；趋势需连续多日累积才有意义。\n"
+        "> 1. 总榜 = Apple 官方 Marketing Tools（每日更新，top-free / top-paid）。\n"
+        "> 2. 分品类深榜 = 旧版 iTunes genre RSS（Apple 公开 **legacy** 接口，含**畅销榜**，仍可用但未来可能变动）。\n"
+        "> 3. 品类 / 评分 / 上线日由 iTunes Lookup 富化，按各市场本地化。\n"
+        "> 4. 趋势需连续多日累积才有意义。\n"
     )
 
 
@@ -114,20 +126,25 @@ def build_md(data: dict) -> str:
             L.append("\n_（暂无数据）_")
         L.append("")
 
-    # ---- 解谜游戏专题 ----
-    focus = data["focus"]
-    L.append(f"## 🧩 {data['focus_label']}专题（服务 arrowdoodle）")
-    if not focus:
-        L.append(f"\n_本期各总榜 Top 100 中未发现{data['focus_label']}。"
-                 f"这是免费官方源的固有局限——细分品类深榜需后续接入分品类数据源。_\n")
+    # ---- M2 分品类深榜：聚焦品类（解谜）各市场免费榜 Top 8 ----
+    cat = data.get("category", {})
+    gid = next((g["gid"] for g in data.get("cat_genres", []) if g["name"] == data.get("cat_focus")), None)
+    feed0 = (data.get("cat_feeds") or ["topfree"])[0]
+    base = data["latest_date"]
+    L.append(f"## 🧩 {data.get('cat_focus', '解谜')}深榜（各市场免费榜 Top 8 · 服务 arrowdoodle）")
+    L.append("> 旧版 genre RSS 细分品类；「已上线」短=新机会。")
+    if not cat or not gid:
+        L.append("\n_（分品类数据未启用或暂无）_")
     else:
-        rows = []
-        for a in focus:
-            spots = ", ".join(f"{ap['country'].upper()}/{FEED_CN.get(ap['feed'], ap['feed'])}#{ap['rank']}"
-                              for ap in a["appearances"])
-            rows.append([a["name"], a["artist"], _rating(a["rating"]),
-                         a["price"] or "—", spots])
-        L.append("\n" + _md_table(["App", "开发者", "评分", "价格", "上榜市场"], rows))
+        for country in cfg["markets"]:
+            ch = cat.get(f"{country}|{feed0}|{gid}")
+            if not ch or not ch["rows"]:
+                continue
+            L.append(f"\n### {_cc(country)}")
+            L.append(_md_table(
+                ["#", "App", "开发者", "已上线", "评分"],
+                [[r["rank"], r["name"], r["artist"], _age(r["release_date"], base), _rating(r["rating"])]
+                 for r in ch["rows"][:8]]))
     L.append("")
 
     # ---- 游戏品类总览 ----

@@ -27,3 +27,16 @@ watch_genres:
 # 报告/看板的「专题」聚焦品类，直接服务自家 app 开发
 focus_genre_id: "7012"
 focus_label: "解谜游戏"
+
+# === M2 分品类深榜 ===
+# 旧版 iTunes genre RSS（Apple 公开端点，legacy 但仍可用；可能变动，故作可插拔补充源）。
+# 补足总榜拿不到的细分品类榜，含畅销榜(topgrossing，新版免费源没有)。
+category_charts:
+  enabled: true
+  feeds: [topfree, toppaid, topgrossing]
+  limit: 50
+  genres:            # 显示名: App Store genreId
+    解谜: "7012"
+    游戏: "6014"
+    文字: "7019"
+  focus: "解谜"       # 看板默认展示的分品类

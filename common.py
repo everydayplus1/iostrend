@@ -25,8 +25,9 @@ REPORTS_DIR = ROOT / "reports"
 CONFIG_DIR = ROOT / "config"
 SITE_DIR = ROOT / "site"
 
-RANK_CSV = DATA_DIR / "apple_rank.csv"      # 榜单快照（每日累积）
-META_CSV = DATA_DIR / "app_meta.csv"        # app 元数据（品类/评分/价格）
+RANK_CSV = DATA_DIR / "apple_rank.csv"          # 总榜快照（每日累积）
+META_CSV = DATA_DIR / "app_meta.csv"            # app 元数据（品类/评分/价格/上线日）
+CATEGORY_CSV = DATA_DIR / "category_rank.csv"   # M2 分品类深榜快照（每日累积）
 
 # ---------------------------------------------------------------- 品类常量
 GAMES_GENRE_ID = "6014"

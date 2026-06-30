@@ -23,6 +23,7 @@ COUNTRY_CN = {
     "id": "印尼", "tw": "中国台湾", "hk": "中国香港", "cn": "中国大陆",
 }
 FEED_CN = {"top-free": "免费榜", "top-paid": "付费榜"}
+CAT_FEED_CN = {"topfree": "免费榜", "toppaid": "付费榜", "topgrossing": "畅销榜"}
 
 
 def _json_default(o):
@@ -53,6 +54,12 @@ def build_payload() -> dict:
         "charts": data["changes"],
         "history": data["history"],
         "focus": data["focus"],
+        # M2 分品类深榜
+        "category": data.get("category", {}),
+        "cat_genres": data.get("cat_genres", []),
+        "cat_feeds": data.get("cat_feeds", []),
+        "cat_feed_names": CAT_FEED_CN,
+        "cat_focus": data.get("cat_focus", ""),
     }
 
 

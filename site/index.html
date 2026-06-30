@@ -91,15 +91,9 @@
 
 <div class="wrap">
   <div class="note">
-    <b>诚实边界</b>：数据=Apple 官方 Marketing Tools 总榜（每日更新），仅 top-free/top-paid；
-    免费官方源无畅销榜、无细分品类深榜。「游戏/解谜」由 iTunes Lookup 品类筛出，小众品类在总榜中常很少出现。
-    评分/价格按各市场本地化；趋势需多日累积。
-  </div>
-
-  <!-- 解谜专题置顶：直接服务 arrowdoodle -->
-  <div class="card" style="margin-bottom:18px">
-    <h2 id="focusTitle">🧩 解谜游戏专题（服务自家 app）</h2>
-    <div id="focusBox"></div>
+    <b>诚实边界</b>：总榜=Apple 官方 Marketing Tools（top-free/top-paid，每日更新）；
+    <b>分品类深榜</b>=旧版 iTunes genre RSS（Apple 公开 legacy 接口，含畅销榜，仍可用但未来可能变动）。
+    评分/上线日由 iTunes Lookup 富化、按各市场本地化；趋势需多日累积。
   </div>
 
   <div class="controls">
@@ -119,7 +113,17 @@
     <button class="btn" data-filter="puzzle">🧩 解谜</button>
   </div>
 
-  <!-- 免费榜 / 付费榜 并排 -->
+  <!-- M2 分品类深榜：细分品类(解谜/游戏/文字) × 免费/付费/畅销 -->
+  <div class="card" style="margin-bottom:18px">
+    <h2>🧩 分品类深榜 <span class="cnt">细分品类 + 畅销榜（旧版 genre RSS）· 找新机会看这里</span></h2>
+    <div class="controls" style="padding:12px 16px 0;margin:0;gap:14px">
+      <span id="catGenreTabs"></span>
+      <span id="catFeedTabs"></span>
+    </div>
+    <div class="scroll" style="max-height:800px"><table id="catTable"></table></div>
+  </div>
+
+  <!-- 免费榜 / 付费榜 并排（总榜）-->
   <div class="grid2">
     <div class="card">
       <h2 id="freeTitle">🆓 免费榜</h2>
@@ -149,6 +153,7 @@
 <script>
 const D = window.IOSTREND_DATA;
 let curFilter = "all", chart = null;
+let catGenre = "", catFeed = "topfree";   // 分品类深榜：当前品类 genreId / 榜单类型
 
 // 转义外部数据（app 名/开发者等来自 Apple，可能含 & < > " '），防渲染错乱与 XSS
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,
@@ -283,6 +288,40 @@ function renderTables(){
   renderFeedTable("top-paid","paidTable","paidTitle");
 }
 
+// ---- M2 分品类深榜 ----
+function renderCatTabs(){
+  const gt=document.getElementById("catGenreTabs"), ft=document.getElementById("catFeedTabs");
+  if(!gt||!ft) return;
+  gt.innerHTML = (D.cat_genres||[]).map(g=>
+    `<button class="btn cat-g${g.gid===catGenre?' active':''}" data-gid="${esc(g.gid)}">${esc(g.name)}</button>`).join("");
+  ft.innerHTML = (D.cat_feeds||[]).map(f=>
+    `<button class="btn cat-f${f===catFeed?' active':''}" data-feed="${esc(f)}">${esc((D.cat_feed_names||{})[f]||f)}</button>`).join("");
+  gt.querySelectorAll(".cat-g").forEach(b=>b.onclick=()=>{catGenre=b.dataset.gid;renderCatTabs();renderCatTable();});
+  ft.querySelectorAll(".cat-f").forEach(b=>b.onclick=()=>{catFeed=b.dataset.feed;renderCatTabs();renderCatTable();});
+}
+function renderCatTable(){
+  const ch = (D.category||{})[market.value+"|"+catFeed+"|"+catGenre];
+  const all = ch ? ch.rows : [];
+  const rows = filterRows(all.slice());
+  const isPaid = catFeed!=="topfree";
+  const sw = D.spark_window||7;
+  const body = rows.map(r=>`<tr>
+    <td class="ico-td">${iconImg(r)}</td>
+    <td class="rank">${r.rank}</td>
+    <td class="app">${r.url
+        ?`<a class="nm" href="${encodeURI(r.url)}" target="_blank" title="${esc(r.name)}">${esc(r.name)}</a>`
+        :`<span class="nm" title="${esc(r.name)}">${esc(r.name)}</span>`}
+        <div class="sub">${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
+    <td class="age">${ageText(r)}</td>
+    <td class="delta">${fmtDelta(r)}</td>
+    <td class="spark">${sparkline(r.spark)}</td>
+    <td class="sub">${rating(r)}</td>
+  </tr>`).join("");
+  document.getElementById("catTable").innerHTML =
+    `<tr><th></th><th>#</th><th>App</th><th>已上线</th><th>变化</th><th>近${sw}天</th><th>评分</th></tr>`
+    + (body||`<tr><td colspan=7 class="focus-empty">${ch?'无匹配（试试清掉过滤）':'该组合暂无数据'}</td></tr>`);
+}
+
 function dropSection(feed){
   const ch = D.charts[ckey(feed)]; const d = ch?ch.droppers:[];
   const rows = (d||[]).map(x=>`<tr><td class="rank">${x.prev_rank}</td><td class="app">${esc(x.name)}</td></tr>`).join("");
@@ -340,19 +379,24 @@ function toggleTheme(){
   if(D) renderTrend();   // 重绘趋势图以套用新主题色
 }
 
-function renderAll(){ renderTables(); renderDroppers(); renderTrend(); }
+function renderAll(){ renderCatTable(); renderTables(); renderDroppers(); renderTrend(); }
 
 function init(){
   if(!D){document.body.innerHTML="<p style='padding:30px'>未找到数据，请先运行 build_site.py 生成 data.js</p>";return;}
   document.getElementById("dateBadge").textContent = "榜单日期 "+(D.latest_date||"—");
   document.getElementById("genBadge").textContent = "生成 "+(D.generated||"—");
   fillSelect(market, D.markets, m=>m.cc, m=>m.name+" "+m.cc.toUpperCase());
-  renderFocus(); renderAll();
+  // 分品类默认：聚焦品类(解谜) + 第一个榜单类型(免费)
+  catFeed = (D.cat_feeds&&D.cat_feeds[0]) || "topfree";
+  const fg = (D.cat_genres||[]).find(g=>g.name===D.cat_focus);
+  catGenre = fg ? fg.gid : ((D.cat_genres&&D.cat_genres[0]&&D.cat_genres[0].gid) || "");
+  renderCatTabs();
+  renderAll();
   market.onchange = renderAll;
-  document.getElementById("ageFilter").onchange = renderTables;
+  document.getElementById("ageFilter").onchange = ()=>{ renderTables(); renderCatTable(); };
   document.querySelectorAll(".btn[data-filter]").forEach(b=>b.onclick=()=>{
     document.querySelectorAll(".btn[data-filter]").forEach(x=>x.classList.remove("active"));
-    b.classList.add("active"); curFilter=b.dataset.filter; renderTables();
+    b.classList.add("active"); curFilter=b.dataset.filter; renderTables(); renderCatTable();
   });
 }
 const market=document.getElementById("market");
