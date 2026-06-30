@@ -30,7 +30,7 @@
   header h1{font-size:18px;margin:0;letter-spacing:.5px}
   .badge{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:3px 11px;font-size:12px;color:var(--muted)}
   #themeBtn{cursor:pointer;color:var(--text)}
-  .wrap{max-width:1180px;margin:0 auto;padding:18px 22px}
+  .wrap{max-width:1560px;margin:0 auto;padding:18px 26px}
   .note{background:var(--noteBg);border:1px solid var(--line);border-left:3px solid var(--accent);
         border-radius:10px;padding:11px 14px;color:var(--muted);font-size:12.5px;margin-bottom:18px}
   .note b{color:var(--text)}
@@ -59,6 +59,7 @@
   tr:hover td{background:var(--rowhover)}
   .rank{color:var(--muted);font-variant-numeric:tabular-nums;width:34px}
   td.spark{width:80px;text-align:center}
+  td.age{white-space:nowrap;font-size:12px;color:var(--text)}
   .delta{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
   .up{color:var(--up)} .down{color:var(--down)} .new{color:var(--new)} .same{color:var(--muted)}
   .tag{display:inline-block;border-radius:6px;padding:1px 7px;font-size:11px;border:1px solid var(--line);font-weight:600}
@@ -66,7 +67,7 @@
   .tag.puzzle{color:var(--puzzle);background:var(--tagPuzzleBg)}
   .tag.muted{color:var(--muted);font-weight:400}
   .app{font-weight:600}
-  td.app{max-width:230px}
+  td.app{max-width:300px}
   td.app .nm{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;color:var(--accent)}
   td.app .nm:not(a){color:var(--text)}
   .sub{color:var(--muted);font-size:11.5px}
@@ -179,13 +180,20 @@ function ageCutoff(months){
   d.setMonth(d.getMonth()-months);
   return d.toISOString().slice(0,10);
 }
-// 上线日期展示（YYYY-MM），≤1 年的新 app 标绿
-function relText(r){
+// 已上线时长（X年X个月），≤1 年的新 app 标绿
+function ageText(r){
   const rd = r.release_date;
-  if(!rd || rd.length<7) return "";
-  const cut1 = ageCutoff(12);
-  const cls = (cut1 && rd.slice(0,10)>=cut1) ? "age-new" : "sub";
-  return `<span class="${cls}" title="上线日期 ${esc(rd)}">📅${esc(rd.slice(0,7))}</span>`;
+  if(!rd || rd.length<7) return '<span class="sub">—</span>';
+  const base = new Date((D.latest_date||"")+"T00:00:00");
+  const rel = new Date(rd.slice(0,10)+"T00:00:00");
+  if(isNaN(base)||isNaN(rel)) return '<span class="sub">—</span>';
+  let months = (base.getFullYear()-rel.getFullYear())*12 + (base.getMonth()-rel.getMonth());
+  if(base.getDate()<rel.getDate()) months--;       // 不足整月
+  if(months<0) months=0;
+  const y=Math.floor(months/12), m=months%12;
+  const txt = y>0 ? (m>0?`${y}年${m}个月`:`${y}年`) : (m>0?`${m}个月`:'新上线');
+  const cls = months<=12 ? "age-new" : "";          // ≤1年标绿
+  return `<span class="${cls}" title="上线于 ${esc(rd.slice(0,10))}">${txt}</span>`;
 }
 
 // 最近趋势 sparkline：名次序列（缺席天为 null）→ 内联 SVG 迷你折线
@@ -258,15 +266,16 @@ function renderFeedTable(feed, tableId, titleId){
     <td class="app">${r.url
         ?`<a class="nm" href="${encodeURI(r.url)}" target="_blank" title="${esc(r.name)}">${esc(r.name)}</a>`
         :`<span class="nm" title="${esc(r.name)}">${esc(r.name)}</span>`}
-        <div class="sub">${r.release_date?(relText(r)+' · '):''}${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
+        <div class="sub">${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
+    <td class="age">${ageText(r)}</td>
     <td class="delta">${fmtDelta(r)}</td>
     <td class="spark">${sparkline(r.spark)}</td>
     <td>${genreTag(r)}</td>
     <td class="sub">${rating(r)}</td>
   </tr>`).join("");
   document.getElementById(tableId).innerHTML =
-    `<tr><th></th><th>#</th><th>App</th><th>变化</th><th>近${sw}天</th><th>品类</th><th>评分</th></tr>`
-    + (body||'<tr><td colspan=7 class="focus-empty">无匹配</td></tr>');
+    `<tr><th></th><th>#</th><th>App</th><th>已上线</th><th>变化</th><th>近${sw}天</th><th>品类</th><th>评分</th></tr>`
+    + (body||'<tr><td colspan=8 class="focus-empty">无匹配</td></tr>');
 }
 
 function renderTables(){
