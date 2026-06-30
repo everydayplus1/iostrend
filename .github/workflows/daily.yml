@@ -1,0 +1,71 @@
+name: 每日榜单采集与看板部署
+
+on:
+  schedule:
+    - cron: "0 9 * * *"   # 每天 UTC 09:00（约北京时间 17:00）跑；可自行调整
+  workflow_dispatch: {}    # 支持在 Actions 页手动触发
+
+permissions:
+  contents: write          # 提交回采集到的 CSV / 报告
+  pages: write             # 部署 GitHub Pages
+  id-token: write
+
+concurrency:
+  group: iostrend-daily
+  cancel-in-progress: false
+
+jobs:
+  collect-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0          # 完整历史，便于 push 前 rebase
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 采集 → 报告 → 看板
+        run: |
+          python collect.py
+          python report.py
+          python build_site.py
+
+      - name: 提交回累积数据与报告
+        run: |
+          git config user.name  "iostrend-bot"
+          git config user.email "actions@github.com"
+          git add data/ reports/ site/data.js site/data.json
+          if git diff --staged --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "data: $(date -u +%F) 榜单采集"
+            # 并发/排队运行可能落后远端，push 失败则 rebase 后重试
+            for i in 1 2 3; do
+              git push && break || {
+                echo "push 被拒，rebase 后重试 ($i/3)"
+                git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+                sleep 5
+              }
+            done
+          fi
+
+      - name: 上传 Pages 产物（看板）
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy-pages:
+    needs: collect-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

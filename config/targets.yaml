@@ -1,0 +1,29 @@
+# iostrend 抓取目标配置
+# 改这里即可增删市场 / 榜单 / 关注品类，无需改任何代码。
+
+# 市场：ISO 3166-1 alpha-2 国家码（Apple storefront）
+# 出海核心市场为主，可自由增删（如 fr ca au br id tw hk ...）
+markets:
+  - us   # 美国
+  - jp   # 日本
+  - kr   # 韩国
+  - gb   # 英国
+  - de   # 德国
+
+# 榜单类型：免费官方源仅支持这两类（没有畅销榜 top-grossing）
+feeds:
+  - top-free
+  - top-paid
+
+# 每榜抓取条数，Apple 官方上限为 100
+limit: 100
+
+# 重点关注品类（App Store genreId）——用于报告高亮与看板筛选
+watch_genres:
+  game: "6014"      # 游戏（大类）
+  puzzle: "7012"    # 解谜
+  word: "7019"      # 文字（与 arrowdoodle 相邻品类）
+
+# 报告/看板的「专题」聚焦品类，直接服务自家 app 开发
+focus_genre_id: "7012"
+focus_label: "解谜游戏"

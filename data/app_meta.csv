@@ -1,0 +1,992 @@
+app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,rating_count,price,formatted_price,seller_name,version_date
+1010311475,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.82392,3805,6.99,$6.99,Bret Hardman,2026-03-03
+1033342465,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.25362,1518,6.99,$6.99,Open Planet Software Limited,2026-05-05
+1054033219,us,2026-06-30,Entertainment,6016|6002,Entertainment|Utilities,0,0,4.54171,61498,0.0,Free,"VIZIO, Inc.",2026-06-18
+1058959277,us,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.7843,10497686,0.0,Free,"Uber Technologies, Inc.",2026-06-29
+1062022008,us,2026-06-30,Photo & Video,6008|6011,Photo & Video|Music,0,0,4.74948,24657,29.99,$29.99,Luma Touch LLC,2026-03-30
+1062745479,us,2026-06-30,Health & Fitness,6013|6020,Health & Fitness|Medical,0,0,4.68333,13601,8.99,$8.99,TANTSISSA HOLDINGS PTY LTD,2025-10-21
+1064216828,us,2026-06-30,News,6009|6005,News|Social Networking,0,0,4.75728,3445549,0.0,Free,"REDDIT, INC.",2026-06-24
+1096918571,us,2026-06-30,Social Networking,6005,Social Networking,0,0,4.76009,2332271,0.0,Free,Google LLC,2026-06-22
+1111876388,us,2026-06-30,Lifestyle,6012|6002,Lifestyle|Utilities,0,0,4.79375,1263941,0.0,Free,"T-Mobile USA, Inc.",2026-06-26
+1113153706,us,2026-06-30,Business,6000|6007,Business|Productivity,0,0,4.80082,3363433,0.0,Free,Microsoft Corporation,2026-06-29
+1140451547,us,2026-06-30,Sports,6004|6008,Sports|Photo & Video,0,0,3.5,6,5.99,$5.99,Visual Vertigo Software Technologies GmbH,2026-06-25
+1164801111,us,2026-06-30,Health & Fitness,6013|6020,Health & Fitness|Medical,0,0,4.70559,61351,8.99,$8.99,TANTSISSA HOLDINGS PTY LTD,2025-11-29
+1175031995,us,2026-06-30,Weather,6001|6003,Weather|Travel,0,0,4.80563,5865,4.99,$4.99,JRustonApps B.V.,2026-06-25
+1182474649,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.85149,7365179,0.0,Free,"Fetch Rewards, LLC",2026-06-29
+1193350206,us,2026-06-30,Entertainment,6016,Entertainment,0,0,3.64256,59241,0.0,Free,Google LLC,2026-06-24
+1202650514,us,2026-06-30,Health & Fitness,6013,Health & Fitness,0,0,4.63472,887,6.99,$6.99,Stephane Lizeray,2026-06-16
+1223471316,us,2026-06-30,Shopping,6024|6002,Shopping|Utilities,0,0,4.81295,7001267,0.0,Free,Shopify Inc.,2026-06-23
+1234266367,us,2026-06-30,Music,6011|6017,Music|Education,0,0,4.58692,2278,12.99,$12.99,RT Sixty Ltd,2025-12-16
+1241909999,us,2026-06-30,Health & Fitness,6013|6010,Health & Fitness|Navigation,0,0,4.69208,1666,8.99,$8.99,Ian Muriss,2026-06-26
+1303222868,us,2026-06-30,Food & Drink,6023,Food & Drink,0,0,4.89933,53019,4.99,$4.99,Hindsight Labs LLC,2025-12-18
+1356726417,us,2026-06-30,Utilities,6002|6006,Utilities|Reference,0,0,4.44628,363,5.99,$5.99,"Crosswise Ventures, LLC",2026-06-27
+1371288324,us,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.91622,2459,3.99,$3.99,HamStudy Org LLC,2026-06-10
+1375031369,us,2026-06-30,Sports,6004|6014|7006,Sports|Games|Casino,1,0,4.8178,1077211,0.0,Free,DRAFTKINGS LLC.,2026-06-26
+1396698319,us,2026-06-30,Utilities,6002|6016,Utilities|Entertainment,0,0,3.7656,529,9.99,$9.99,BitPlague LLC,2022-06-19
+1400579543,us,2026-06-30,Social Networking,6005|6002,Social Networking|Utilities,0,0,3.35268,75067,6.99,$6.99,"Baby Penguin, LLC",2026-01-28
+1446075923,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.59227,1972858,0.0,Free,"Disney Electronic Content, Inc.",2026-06-22
+1449584007,us,2026-06-30,Music,6011|6016,Music|Entertainment,0,0,4.766,1359,4.99,$4.99,Mazbox Limited,2026-05-19
+1449893235,us,2026-06-30,Weather,6001|6002,Weather|Utilities,0,0,4.55572,2046,1.99,$1.99,Futura Innovation SRL,2026-04-03
+1451754591,us,2026-06-30,Business,6000,Business,0,0,4.67907,2461349,0.0,Free,"DoorDash, Inc.",2026-06-26
+1453647914,us,2026-06-30,Photo & Video,6008|6016,Photo & Video|Entertainment,0,0,4.72035,4005,6.99,$6.99,Swishly inc,2026-05-25
+1454836235,us,2026-06-30,Finance,6015|6006,Finance|Reference,0,0,4.80372,5859,0.99,$0.99,"Deeline Productions, LLC",2026-04-13
+1462584573,us,2026-06-30,Health & Fitness,6013|6006,Health & Fitness|Reference,0,0,4.3822,191,1.99,$1.99,Alexander Frascona,2026-06-17
+1465944282,us,2026-06-30,Entertainment,6016,Entertainment,0,0,1.93245,6010,0.0,Free,ITV America Inc.,2026-05-29
+1488269261,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.74948,890262,0.0,Free,Whatnot Inc.,2026-06-27
+1494523953,us,2026-06-30,Finance,6015,Finance,0,0,4.8608,359397,0.0,Free,"One Finance, Inc.",2026-06-25
+1498550832,us,2026-06-30,Medical,6020,Medical,0,0,4.77119,8470,14.99,$14.99,American Society for Colposcopy and Cervical Pathology,2026-06-25
+1499236474,us,2026-06-30,Education,6017|6006,Education|Reference,0,0,3.61084,203,9.99,$9.99,"Sirius Technology Advanced Research, LLC",2026-06-04
+1500855883,us,2026-06-30,Photo & Video,6008,Photo & Video,0,0,4.61829,1113330,0.0,Free,BYTEDANCE PTE. LTD.,2026-06-30
+1505636751,us,2026-06-30,Social Networking,6005,Social Networking,0,0,3.06356,236,2.99,$2.99,Swisscows AG,2026-04-17
+1508186374,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.66106,3475053,0.0,Free,Peacock TV LLC,2026-06-26
+1536762482,us,2026-06-30,Lifestyle,6012,Lifestyle,0,0,2.79765,682,4.99,$4.99,Spotted Ghosts Ltd,2025-02-26
+1558240027,us,2026-06-30,Productivity,6007|6008,Productivity|Photo & Video,0,0,4.65804,145539,0.0,Free,"Meta Platforms, Inc.",2026-06-28
+1564403188,us,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,2.39352,216,8.99,$8.99,Junaid Muhammad,2022-09-18
+1569922923,us,2026-06-30,Health & Fitness,6013|6002,Health & Fitness|Utilities,0,0,4.67826,115,0.99,$0.99,Patrick Smith,2026-06-16
+1574452924,us,2026-06-30,News,6009|6001,News|Weather,0,0,4.92788,40948,0.0,Free,"Sherwood Forestry Service, Inc.",2026-06-23
+1581140954,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.55729,1335,2.99,$2.99,Jeffrey Kuiken,2026-06-29
+1583878194,us,2026-06-30,Education,6017|6016,Education|Entertainment,0,0,4.13281,128,12.99,$12.99,Digital Apprentice LLC,2025-02-10
+1596063349,us,2026-06-30,Utilities,6002|6026,Utilities|Developer Tools,0,0,4.35731,1181,5.99,$5.99,Stash Networks Limited,2026-04-01
+1632713844,us,2026-06-30,Finance,6015|6004,Finance|Sports,0,0,4.8002,262178,0.0,Free,KALSHI INC.,2026-06-29
+1633243177,us,2026-06-30,Music,6011,Music,0,0,4.20424,661,6.99,$6.99,Ableton AG,2026-05-05
+1636235979,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.67521,426761,0.0,Free,"New Leaf Publishing, Inc.",2026-06-11
+1641486558,us,2026-06-30,Shopping,6024,Shopping,0,0,4.66598,2149547,0.0,Free,Whaleco Inc.,2026-06-28
+1662217862,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.68734,1193,4.99,$4.99,Kaylee Calderolla,2026-06-28
+1666653815,us,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.86897,5349812,0.0,Free,"WarnerMedia Global Digital Services, LLC",2026-06-22
+1673567402,us,2026-06-30,Entertainment,6016|6015,Entertainment|Finance,0,0,4.76524,87978,0.0,Free,256 REWARDS LTD,2026-06-26
+282614216,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.81748,4969118,0.0,Free,eBay Inc.,2026-06-29
+283646709,us,2026-06-30,Finance,6015|6002,Finance|Utilities,0,0,4.78206,6298902,0.0,Free,"PayPal, Inc.",2026-06-11
+284815942,us,2026-06-30,Utilities,6002|6006,Utilities|Reference,0,0,4.64975,4749244,0.0,Free,Google LLC,2026-06-26
+284882215,us,2026-06-30,Social Networking,6005,Social Networking,0,0,4.52308,27009410,0.0,Free,"Meta Platforms, Inc.",2026-06-25
+288419283,us,2026-06-30,Weather,6001|6002,Weather|Utilities,0,0,4.17651,2691,9.99,$9.99,"Base Velocity, LLC",2026-03-17
+289894882,us,2026-06-30,Health & Fitness,6013|6012,Health & Fitness|Lifestyle,0,0,4.84145,45403,0.99,$0.99,TMSOFT,2026-06-17
+294934058,us,2026-06-30,Business,6000,Business,0,0,4.6024,67211,2.99,$2.99,HotSchedules,2026-06-22
+297606951,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.82861,8402427,0.0,Free,AMZN Mobile LLC,2026-06-12
+298206806,us,2026-06-30,Music,6011|6017,Music|Education,0,0,4.86384,11119,21.99,$21.99,Technimo LLC,2026-06-16
+298867247,us,2026-06-30,Finance,6015|6007,Finance|Productivity,0,0,4.83676,9259215,0.0,Free,"JPMorgan Chase Bank, NA",2026-06-29
+301387274,us,2026-06-30,Entertainment,6016|6014,Entertainment|Games,1,0,4.29555,2744,0.99,$0.99,Bolt Creative,2015-08-20
+309735670,us,2026-06-30,Business,6000|6002,Business|Utilities,0,0,4.78597,3959857,0.0,Free,Indeed Inc.,2026-06-29
+310633997,us,2026-06-30,Social Networking,6005|6002,Social Networking|Utilities,0,0,4.68663,18165780,0.0,Free,WhatsApp Inc.,2026-06-29
+317809458,us,2026-06-30,Travel,6003|6016,Travel|Entertainment,0,0,3.59779,634,4.99,$4.99,Dave Pascoe,2026-01-26
+323229106,us,2026-06-30,Navigation,6010|6003,Navigation|Travel,0,0,4.8445,3173974,0.0,Free,waze,2026-06-24
+324684580,us,2026-06-30,Music,6011|6016,Music|Entertainment,0,0,4.78005,40687986,0.0,Free,Spotify,2026-06-26
+325683306,us,2026-06-30,Weather,6001|6010,Weather|Navigation,0,0,4.83545,42601,5.99,$5.99,"Aviation Data Systems, Inc",2026-06-18
+327963391,us,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.49231,65,7.99,$7.99,James M Kempema MD PA,2026-05-28
+330247123,us,2026-06-30,Navigation,6010|6008,Navigation|Photo & Video,0,0,4.83578,12757,11.99,$11.99,Ajnaware Pty Ltd,2026-06-13
+333903271,us,2026-06-30,News,6009|6005,News|Social Networking,0,0,4.58488,10822558,0.0,Free,X Corp.,2026-06-24
+335709058,us,2026-06-30,Lifestyle,6012|6007,Lifestyle|Productivity,0,0,4.6755,8678,4.99,$4.99,"left brain / right brain, LLC",2025-06-15
+338137227,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.81988,17662330,0.0,Free,Walmart,2026-06-26
+338893931,us,2026-06-30,Education,6017|6006,Education|Reference,0,0,3.81564,358,9.99,$9.99,"Aviation Supplies and Academics, Inc.",2025-05-30
+347393479,us,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.65711,2406,3.99,$3.99,This Exit LLC,2026-06-05
+351727428,us,2026-06-30,Finance,6015|6002,Finance|Utilities,0,0,4.85015,15466837,0.0,Free,"The Delancey Corporation, LLC",2026-06-26
+357404131,us,2026-06-30,Photo & Video,6008|6002,Photo & Video|Utilities,0,0,4.61876,2770,2.99,$2.99,Cogitap Software,2026-04-07
+357421934,us,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.70674,11529,4.99,$4.99,PeakFinder GmbH,2026-06-23
+363590051,us,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.74848,6782211,0.0,Free,"Netflix, Inc.",2026-06-29
+363738376,us,2026-06-30,Music,6011|6018,Music|Books,0,0,4.80782,42013,24.99,$24.99,"forScore, LLC",2026-04-23
+363978811,us,2026-06-30,Health & Fitness,6013|6002,Health & Fitness|Utilities,0,0,4.76259,11857,7.99,$7.99,Runloop Ltd,2025-11-30
+364876095,us,2026-06-30,Business,6000|6002,Business|Utilities,0,0,4.50304,1646,14.99,$14.99,PhaseFive Systems,2023-10-30
+367003839,us,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.84402,2018376,0.0,Free,Booking.com B.V.,2026-06-29
+368677368,us,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.89598,16259313,0.0,Free,"Uber Technologies, Inc.",2026-06-29
+371817955,us,2026-06-30,Navigation,6010|6002,Navigation|Utilities,0,0,4.89985,5272,9.99,$9.99,Sporty's Pilot Shop,2024-02-17
+373493387,us,2026-06-30,Education,6017|6007,Education|Productivity,0,0,4.04361,2293,24.99,$24.99,Anki Software LLC,2025-09-08
+381342267,us,2026-06-30,Education,6017|6014|7009,Education|Games|Family,1,0,4.44143,2177,2.99,$2.99,"Freecloud Design, Inc.",2024-09-25
+382497397,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.89601,5179570,0.0,Free,Walmart Stores Inc.,2026-06-26
+382698565,us,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.77392,1239623,0.0,Free,"American Airlines, Inc.",2026-06-29
+382952264,us,2026-06-30,Medical,6020,Medical,0,0,4.60283,674210,0.0,Free,Epic Systems Corporation,2026-06-15
+384830320,us,2026-06-30,Social Networking,6005|6012,Social Networking|Lifestyle,0,0,4.78906,2913629,0.0,Free,Life360,2026-06-23
+389801252,us,2026-06-30,Photo & Video,6008|6005,Photo & Video|Social Networking,0,0,4.6906,29212296,0.0,Free,"Instagram, Inc.",2026-06-29
+399857015,us,2026-06-30,Health & Fitness,6013|6012,Health & Fitness|Lifestyle,0,0,4.8733,735051,0.0,Free,"Planet Fitness Holdings, LLC",2026-06-29
+401626263,us,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.7603,702203,0.0,Free,"Airbnb, Inc.",2026-06-24
+404990064,us,2026-06-30,Education,6017|6016,Education|Entertainment,0,0,4.5805,7652,2.99,$2.99,Terminal Eleven LLC,2025-05-02
+405835358,us,2026-06-30,Navigation,6010|6002,Navigation|Utilities,0,0,4.83497,5502,12.99,$12.99,Cascode Labs Pty Ltd,2026-06-20
+407558537,us,2026-06-30,Finance,6015,Finance,0,0,4.84804,10782259,0.0,Free,"Capital One Services, LLC",2026-06-17
+422689480,us,2026-06-30,Productivity,6007|6005,Productivity|Social Networking,0,0,4.71502,2419534,0.0,Free,Google LLC,2026-06-22
+426826309,us,2026-06-30,Health & Fitness,6013|6004,Health & Fitness|Sports,0,0,4.81184,362270,0.0,Free,Strava Inc.,2026-06-26
+429047995,us,2026-06-30,Lifestyle,6012|6008,Lifestyle|Photo & Video,0,0,4.77914,5695529,0.0,Free,"Pinterest, Inc.",2026-06-24
+430234732,us,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.83263,10594,12.9,$12.90,Veam Studios Ltd,2026-06-17
+432791399,us,2026-06-30,Lifestyle,6012|6003,Lifestyle|Travel,0,0,4.77979,17892,6.99,$6.99,VIGI Limited,2026-06-29
+432850619,us,2026-06-30,Music,6011,Music,0,0,3.76374,546,14.99,$14.99,image-line,2026-06-16
+435871950,us,2026-06-30,Travel,6003|6023,Travel|Food & Drink,0,0,4.87626,32245,4.99,$4.99,"HappyCow, Inc",2026-02-18
+436672029,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.68946,632656,0.0,Free,Alibaba.com Singapore E-Commerce Private Limited,2026-06-30
+447188370,us,2026-06-30,Photo & Video,6008|6005,Photo & Video|Social Networking,0,0,4.50518,5851030,0.0,Free,"Snap, Inc.",2026-06-24
+448474423,us,2026-06-30,Health & Fitness,6013,Health & Fitness,0,0,4.6212,4699,4.99,$4.99,"Active Network, LLC",2025-12-24
+453571750,us,2026-06-30,Reference,6006|6017,Reference|Education,0,0,4.90273,12244,5.99,$5.99,David Boren,2026-06-21
+459313476,us,2026-06-30,Music,6011|6017,Music|Education,0,0,4.74807,647,4.99,$4.99,"musictheory.net, LLC",2026-04-28
+482066631,us,2026-06-30,Entertainment,6016|6002,Entertainment|Utilities,0,0,4.74144,5759328,0.0,Free,ROKU INC,2026-06-10
+493157418,us,2026-06-30,Music,6011|6017,Music|Education,0,0,4.42856,126,2.99,$2.99,"musictheory.net, LLC",2026-04-21
+497387361,us,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.66736,1135626,0.0,Free,Taco Bell,2026-06-29
+497716362,us,2026-06-30,Music,6011|6017,Music|Education,0,0,4.84815,56866,5.99,$5.99,"TonalEnergy, Inc",2026-03-27
+498732510,us,2026-06-30,Navigation,6010|6003,Navigation|Travel,0,0,4.33333,21,0.49,$0.49,Eifrig Media,2026-02-04
+500003565,us,2026-06-30,Entertainment,6016|6011,Entertainment|Music,0,0,4.79242,4066242,0.0,Free,Ticketmaster L.L.C,2026-05-19
+518684914,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.81582,882042,0.0,Free,Depop Limited,2026-06-29
+529379082,us,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.91797,17333598,0.0,Free,"Lyft, Inc.",2026-06-29
+530168168,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.6272,884101,0.0,Free,CBS Mobile,2026-06-29
+535509415,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.86128,1250044,0.0,Free,Costco Wholesale Corporation,2026-06-24
+535886823,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.68768,3617681,0.0,Free,Google LLC,2026-06-24
+544007664,us,2026-06-30,Photo & Video,6008|6016,Photo & Video|Entertainment,0,0,4.67082,47875612,0.0,Free,Google LLC,2026-06-28
+545519333,us,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.76635,3004302,0.0,Free,AMZN Mobile LLC,2026-06-26
+561311442,us,2026-06-30,Shopping,6024,Shopping,0,0,4.83686,1038830,0.0,Free,"Dolgencorp, LLC",2026-06-04
+570060128,us,2026-06-30,Education,6017|6005,Education|Social Networking,0,0,4.72619,5282078,0.0,Free,"Duolingo, Inc",2026-06-29
+578665578,us,2026-06-30,Social Networking,6005|6002,Social Networking|Utilities,0,0,4.26901,684,6.99,$6.99,Threema GmbH,2026-06-22
+582584117,us,2026-06-30,Navigation,6010|6008,Navigation|Photo & Video,0,0,4.26699,412,0.99,$0.99,Civi Corp Pty Ltd,2026-04-04
+585027354,us,2026-06-30,Navigation,6010|6023,Navigation|Food & Drink,0,0,4.67832,7253795,0.0,Free,Google LLC,2026-06-29
+586149216,us,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.23029,2549,7.99,$7.99,Monash University,2026-03-12
+596026805,us,2026-06-30,Photo & Video,6008|6017,Photo & Video|Education,0,0,4.70522,1513,10.99,$10.99,PhotoPills S.L.,2026-04-16
+596684220,us,2026-06-30,Medical,6020|6017,Medical|Education,0,0,4.83819,20277,19.99,$19.99,3D4Medical.com,2022-01-22
+601159497,us,2026-06-30,Business,6000|6007,Business|Productivity,0,0,2.11374,211,9.99,$9.99,"e-Courier, Inc.",2026-05-19
+632064380,us,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.76048,99987,0.0,Free,Vinted Limited,2026-06-29
+634158738,us,2026-06-30,Reference,6006|6017,Reference|Education,0,0,4.83615,7031,3.99,$3.99,Richard Meyers,2025-07-25
+640564761,us,2026-06-30,Photo & Video,6008|6017,Photo & Video|Education,0,0,4.73968,13372,5.99,$5.99,"CATEATER, LLC",2025-12-10
+6445905219,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.76314,769097,0.0,Free,STORYMATRIX PTE. LTD,2026-06-27
+6446901002,us,2026-06-30,Social Networking,6005|6016,Social Networking|Entertainment,0,0,4.63625,2050394,0.0,Free,"Instagram, Inc.",2026-06-22
+6447582581,us,2026-06-30,Entertainment,6016|6014,Entertainment|Games,1,0,4.64128,88496,0.0,Free,"Netflix, Inc.",2026-06-24
+6448311069,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.83319,8273871,0.0,Free,"OpenAI OpCo, LLC",2026-06-23
+6449003064,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.77823,2940,2.99,$2.99,Skyhook,2023-06-23
+6461348120,us,2026-06-30,Utilities,6002|6003,Utilities|Travel,0,0,4.81944,1368,9.99,$9.99,Angela Mcarthur,2026-06-17
+6473753684,us,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.71694,186833,0.0,Free,Anthropic PBC,2026-06-29
+6474207287,us,2026-06-30,Education,6017|7014|6014|7003,Education|Roleplaying|Games|Casual,1,0,4.93274,1353,4.99,$4.99,WAGOTABI LIMITED,2026-06-19
+6476561442,us,2026-06-30,Sports,6004|6016,Sports|Entertainment,0,0,0.0,0,0.0,Free,Federation Internationale de Football Association,2026-06-29
+6477489729,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.72237,1922338,0.0,Free,Google LLC,2026-06-24
+650684932,us,2026-06-30,Travel,6003|6002,Travel|Utilities,0,0,4.73165,19158,9.99,$9.99,OCTECH LLC,2026-05-30
+6532603739,us,2026-06-30,Sports,6004,Sports,0,0,1.84659,352,0.0,Free,Federation Internationale de Football Association,2026-05-18
+6648798962,us,2026-06-30,Finance,6015|6004,Finance|Sports,0,0,4.6372,41116,0.0,Free,Blockratize Inc,2026-06-28
+6670324846,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.88113,1268612,0.0,Free,X Corp.,2026-06-30
+6670430706,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.87466,115621,0.0,Free,SKYWORK AI PTE LTD,2026-06-28
+6736371607,us,2026-06-30,Sports,6004,Sports,0,0,4.532,250,9.95,$9.95,Sammy Azdoufal,2025-12-01
+6737280679,us,2026-06-30,Shopping,6024,Shopping,0,0,4.31579,57,9.99,$9.99,David Hugenberg,2026-06-27
+6738967378,us,2026-06-30,Photo & Video,6008|6007,Photo & Video|Productivity,0,0,4.77435,64703,0.0,Free,"Instagram, Inc.",2026-06-29
+6741796873,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.87535,4276,0.0,Free,TIKTOK PTE. LTD.,2026-06-29
+6745274862,us,2026-06-30,Shopping,6024,Shopping,0,0,4.86887,42226,0.0,Free,DealSeek LLC,2026-06-22
+6746049430,us,2026-06-30,Entertainment,6016|6009,Entertainment|News,0,0,4.70542,67500,0.0,Free,Fox Digital Services LLC,2026-06-24
+6746705608,us,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.25771,1102,4.99,$4.99,TANTSISSA HOLDINGS PTY LTD,2026-02-16
+6748243845,us,2026-06-30,Entertainment,6016|6017,Entertainment|Education,0,0,3.51136,88,2.99,$2.99,Digital Dream Labs LLC,2025-07-17
+6748837351,us,2026-06-30,Photo & Video,6008,Photo & Video,0,0,4.32075,318,5.99,$5.99,Moment Inc.,2026-06-30
+6749187530,us,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.96429,28,1.99,$1.99,Michael Sturgis,2026-06-04
+6751921248,us,2026-06-30,Shopping,6024,Shopping,0,0,4.67704,113740,0.0,Free,"Triumph Arcade, LLC",2026-06-24
+6754467968,us,2026-06-30,Weather,6001|6003,Weather|Travel,0,0,5.0,6,5.99,$5.99,"Nyfik, Inc.",2026-06-26
+6756966178,us,2026-06-30,Utilities,6002,Utilities,0,0,3.90476,42,2.99,$2.99,HEXA SOFTWARE YAZILIM LIMITED SIRKETI,2026-06-29
+6759248276,us,2026-06-30,Utilities,6002,Utilities,0,0,4.96552,29,0.99,$0.99,文杰 茅,2026-06-23
+6761538521,us,2026-06-30,Entertainment,6016,Entertainment,0,0,4.66655,6220,0.0,Free,Equinox Enterprises Technology Limited,2026-06-16
+6763737180,us,2026-06-30,Photo & Video,6008,Photo & Video,0,0,0.0,0,1.99,$1.99,Seungyun Kim,2026-06-26
+6767085653,us,2026-06-30,Developer Tools,6026|6007,Developer Tools|Productivity,0,0,0.0,0,0.0,Free,Anysphere Incorporated,2026-06-29
+6767364919,us,2026-06-30,Finance,6015,Finance,0,0,3.82517,286,0.0,Free,U.S. Department of the Treasury,2026-06-23
+6777733622,us,2026-06-30,Health & Fitness,6013|6012,Health & Fitness|Lifestyle,0,0,5.0,4,3.99,$3.99,JORIS LEMMENS,2026-06-18
+6778760884,us,2026-06-30,Health & Fitness,6013,Health & Fitness,0,0,4.41392,273,0.0,Free,TOSIN GmbH & Co KG,2026-06-29
+6781714126,us,2026-06-30,Sports,6004|6007,Sports|Productivity,0,0,5.0,1,4.99,$4.99,Anthony  TILLER,2026-06-27
+679454835,us,2026-06-30,Photo & Video,6008|6005,Photo & Video|Social Networking,0,0,4.66414,6717,5.99,$5.99,Rarevision LLC,2025-11-07
+686449807,us,2026-06-30,Social Networking,6005|6007,Social Networking|Productivity,0,0,4.01156,272941,0.0,Free,Telegram FZ-LLC,2026-06-22
+711923939,us,2026-06-30,Finance,6015|6000,Finance|Business,0,0,4.79272,8488616,0.0,Free,"Block, Inc.",2026-06-22
+719972451,us,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.77339,22520545,0.0,Free,"DoorDash, Inc.",2026-06-29
+754105884,us,2026-06-30,Photo & Video,6008|6002,Photo & Video|Utilities,0,0,4.36003,2922,2.99,$2.99,RTD,2022-10-06
+794841332,us,2026-06-30,Sports,6004|6003,Sports|Travel,0,0,3.82845,239,27.99,$27.99,"Dmac Mobile Developments, LLC",2026-01-08
+828392046,us,2026-06-30,Education,6017|7002|6014|7009,Education|Adventure|Games|Family,1,0,4.50692,27434,8.99,$8.99,Teach Your Monster Ltd.,2025-09-03
+835599320,us,2026-06-30,Entertainment,6016|6008,Entertainment|Photo & Video,0,0,4.7274,18311095,0.0,Free,TIKTOK PTE. LTD.,2026-06-29
+878577184,us,2026-06-30,Shopping,6024,Shopping,0,0,4.70668,2820101,0.0,Free,ROADGET BUSINESS PTE. LTD.,2026-06-24
+886445756,us,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.77996,1161078,0.0,Free,"Tubi, Inc",2026-06-23
+892347083,us,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,3.01563,192,6.99,$6.99,Aleksei Savin,2026-05-09
+897446215,us,2026-06-30,Photo & Video,6008|6007,Photo & Video|Productivity,0,0,4.87601,3425174,0.0,Free,Canva Pty Ltd,2026-06-25
+904237743,us,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.81649,27690,9.99,$9.99,Cultured Code GmbH & Co. KG,2026-03-25
+916366645,us,2026-06-30,Graphics & Design,6027|6007,Graphics & Design|Productivity,0,0,3.84606,12602,5.99,$5.99,Savage Interactive Pty Ltd,2026-03-29
+922103212,us,2026-06-30,Food & Drink,6023|6024,Food & Drink|Shopping,0,0,4.8422,7729205,0.0,Free,McDonalds USA LLC,2026-06-25
+926252661,us,2026-06-30,Lifestyle,6012,Lifestyle,0,0,4.72313,1761824,0.0,Free,"Bot Home Automation, INC",2026-06-26
+932747118,us,2026-06-30,Utilities,6002,Utilities,0,0,4.48255,11974,2.99,$2.99,Shadow Launch Technology Limited,2026-06-10
+949490225,us,2026-06-30,Photo & Video,6008|6027,Photo & Video|Graphics & Design,0,0,4.85648,19279,2.99,$2.99,Clafou Ltd,2026-03-13
+951937596,us,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.79532,9025472,0.0,Free,Microsoft Corporation,2026-06-29
+962194608,us,2026-06-30,Photo & Video,6008,Photo & Video,0,0,4.82577,1402957,0.0,Free,Google LLC,2026-06-26
+963034692,us,2026-06-30,Health & Fitness,6013|6002,Health & Fitness|Utilities,0,0,4.81478,27340,5.99,$5.99,Crunchy Bagel Pty Ltd,2026-06-02
+972387337,us,2026-06-30,Productivity,6007|6018,Productivity|Books,0,0,4.18255,2580,23.99,$23.99,Literature & Latte Ltd,2023-09-29
+975770717,us,2026-06-30,Weather,6001|6003,Weather|Travel,0,0,4.76868,5689,2.99,$2.99,JRustonApps B.V.,2026-06-25
+983156458,us,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.71756,662810,0.0,Free,Microsoft Corporation,2026-06-11
+985746746,us,2026-06-30,Social Networking,6005|6014,Social Networking|Games,1,0,4.70031,3473001,0.0,Free,Discord Inc.,2026-06-29
+1001883210,jp,2026-06-30,Lifestyle,6012|6015,ライフスタイル|ファイナンス,0,0,4.1018,43152,0.0,無料,PAN PACIFIC INTERNATIONAL HOLDINGS CORPORATION,2026-06-07
+1028791881,jp,2026-06-30,Photo & Video,6008,写真／ビデオ,0,0,4.5007,8556,300.0,¥300,Naoya Maeda,2026-06-18
+1033342465,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,3.53695,203,1100.0,"¥1,100",Open Planet Software Limited,2026-05-05
+1058959277,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.50891,1760936,0.0,無料,"Uber Technologies, Inc.",2026-06-29
+1062745479,jp,2026-06-30,Health & Fitness,6013|6020,ヘルスケア／フィットネス|メディカル,0,0,4.16578,941,1000.0,"¥1,000",TANTSISSA HOLDINGS PTY LTD,2025-10-21
+1071235820,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,4.71401,28774,800.0,¥800,Tobila Systems Inc.,2026-03-31
+1077134281,jp,2026-06-30,Music,6011,ミュージック,0,0,4.7202,2198,600.0,¥600,"Ihara Products Co., Ltd.",2026-06-09
+1088184021,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.62023,1732261,0.0,無料,The Coca-Cola Company,2026-05-29
+1096918571,jp,2026-06-30,Social Networking,6005,ソーシャルネットワーキング,0,0,4.42892,10214,0.0,無料,Google LLC,2026-06-22
+1100564842,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.19081,340326,0.0,無料,"AEON Financial Service Co., Ltd.",2026-06-18
+1113037275,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.74655,687462,0.0,無料,Starbucks Coffee Company,2026-06-23
+1113153706,jp,2026-06-30,Business,6000|6007,ビジネス|仕事効率化,0,0,4.46369,404801,0.0,無料,Microsoft Corporation,2026-06-29
+1117312593,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,4.10154,374221,0.0,無料,KDDI CORPORATION,2026-06-25
+1117998129,jp,2026-06-30,Medical,6020|6017,メディカル|教育,0,0,4.78662,43616,3000.0,"¥3,000",Visible Body Apps LLC,2025-11-02
+1126386264,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,4.37367,2917,1500.0,"¥1,500",Adguard Software Limited,2026-05-06
+1129429340,jp,2026-06-30,Sports,6004|6008,スポーツ|写真／ビデオ,0,0,4.42478,113,3000.0,"¥3,000",RaceChrono Oy,2026-06-24
+1129523589,jp,2026-06-30,Sports,6004|6016,スポーツ|エンターテインメント,0,0,4.31942,713130,0.0,無料,DAZN Limited,2026-06-26
+1139755229,jp,2026-06-30,Finance,6015|6012,ファイナンス|ライフスタイル,0,0,4.51667,495107,0.0,無料,"Rakuten Group, Inc.",2026-06-22
+1153448703,jp,2026-06-30,Travel,6003,旅行,0,0,2.23647,7963,0.0,無料,Central Japan Railway Company,2026-05-25
+1156875272,jp,2026-06-30,Finance,6015|6003,ファイナンス|旅行,0,0,2.15191,31386,0.0,無料,East Japan Railway Company,2026-03-13
+1164801111,jp,2026-06-30,Health & Fitness,6013|6020,ヘルスケア／フィットネス|メディカル,0,0,4.39339,15730,1000.0,"¥1,000",TANTSISSA HOLDINGS PTY LTD,2025-11-29
+1179959829,jp,2026-06-30,Navigation,6010|6003,ナビゲーション|旅行,0,0,3.57673,593,680.0,¥680,"Pasoya Co.,Ltd.",2026-06-03
+1220373112,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.45001,160263,0.0,無料,Paidy Inc.,2026-06-29
+1235601864,jp,2026-06-30,Entertainment,6016|6008,エンターテインメント|写真／ビデオ,0,0,4.63178,1697073,0.0,無料,TIKTOK PTE. LTD.,2026-06-29
+1254341709,jp,2026-06-30,Travel,6003|6010,旅行|ナビゲーション,0,0,4.65791,858291,0.0,無料,GO Inc.,2026-06-24
+1272481966,jp,2026-06-30,Lifestyle,6012|6002,ライフスタイル|ユーティリティ,0,0,4.59407,84029,0.0,無料,INFORICH ASIA HONG KONG LIMITED,2026-06-17
+1313164055,jp,2026-06-30,Photo & Video,6008|6002,写真／ビデオ|ユーティリティ,0,0,3.84444,990,300.0,¥300,"EIGHTIVE DESIGN, Inc.",2019-10-14
+1317601872,jp,2026-06-30,Education,6017|7019|6014|7018,教育|単語|ゲーム|トリビア,1,0,4.9244,582,1000.0,"¥1,000",Hideki Touhara,2026-06-26
+1328132872,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.48292,628097,0.0,無料,"NTT DOCOMO, INC.",2026-06-18
+1344681035,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,4.35053,368,300.0,¥300,杨 李,2024-12-10
+1400019566,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,4.09604,1010,2500.0,"¥2,500",Takayuki Okura,2025-09-09
+1406157182,jp,2026-06-30,Education,6017|6014|7019,教育|ゲーム|単語,1,0,4.74932,1464,1000.0,"¥1,000",Namiko Takahashi,2026-06-29
+1409383333,jp,2026-06-30,Lifestyle,6012|6002,ライフスタイル|ユーティリティ,0,0,4.67797,372979,0.0,無料,"Timee, inc.",2026-06-29
+1416481094,jp,2026-06-30,Utilities,6002|6012,ユーティリティ|ライフスタイル,0,0,3.89056,52962,0.0,無料,SoftBank Corp.,2026-06-29
+1432582444,jp,2026-06-30,Travel,6003|6017,旅行|教育,0,0,4.79553,10329,1500.0,"¥1,500","UNICORN CREATIONS CO., LTD.",2024-11-07
+1435689225,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,4.59109,494,500.0,¥500,Yuma Ikeda,2018-11-03
+1435783608,jp,2026-06-30,Finance,6015|6012,ファイナンス|ライフスタイル,0,0,4.64196,2364140,0.0,無料,PAYPAY CORPORATION,2026-06-24
+1437885179,jp,2026-06-30,Photo & Video,6008|6002,写真／ビデオ|ユーティリティ,0,0,4.57252,1703,850.0,¥850,sky-nexus Inc.,2026-04-06
+1449584007,jp,2026-06-30,Music,6011|6016,ミュージック|エンターテインメント,0,0,4.51293,232,800.0,¥800,Mazbox Limited,2026-05-19
+1456118550,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,3.38245,7031,0.0,無料,"BK JAPAN HOLDINGS, K.K.",2026-04-16
+1472338480,jp,2026-06-30,Weather,6001|6009,天気|ニュース,0,0,4.62716,8508,0.0,無料,Gehirn Inc.,2026-05-28
+1473535769,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,2.40167,8798,0.0,無料,"Rakuten Mobile, INC.",2026-06-17
+1476359069,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,1.65172,33430,0.0,無料,Digital Agency of Japan,2026-01-20
+1489470545,jp,2026-06-30,Productivity,6007|6016,仕事効率化|エンターテインメント,0,0,4.08,50,900.0,¥900,DevelopW LLC,2026-04-17
+1495930546,jp,2026-06-30,Shopping,6024,ショッピング,0,0,4.31761,14228,0.0,無料,"Rakuten Group, Inc.",2026-06-29
+1496925861,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.48541,196194,0.0,無料,"Japan Post Bank Co.,Ltd",2026-05-18
+1498877539,jp,2026-06-30,Social Networking,6005|6002,ソーシャルネットワーキング|ユーティリティ,0,0,3.9455,248405,0.0,無料,"Rakuten Group, Inc.",2026-05-17
+1500855883,jp,2026-06-30,Photo & Video,6008,写真／ビデオ,0,0,4.35925,129406,0.0,無料,BYTEDANCE PTE. LTD.,2026-06-30
+1505268848,jp,2026-06-30,Education,6017|6006,教育|辞書／辞典／その他,0,0,4.43729,295,800.0,¥800,Takahide Kambe,2023-04-03
+1507281523,jp,2026-06-30,Education,6017|6006,教育|辞書／辞典／その他,0,0,4.5072,903,800.0,¥800,Takahide Kambe,2023-03-20
+1516365841,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,4.69745,314,300.0,¥300,Shuhei Sakai,2026-06-29
+1519508653,jp,2026-06-30,Graphics & Design,6027,グラフィック／デザイン,0,0,4.79669,3807,3000.0,"¥3,000",Hexanomad,2025-12-23
+1523274037,jp,2026-06-30,Entertainment,6016|6024,エンターテインメント|ショッピング,0,0,2.41201,1466,0.0,無料,PIA corporation,2026-06-08
+1542920778,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,4.32531,135266,0.0,無料,"NTT DOCOMO, INC.",2026-06-11
+1552990335,jp,2026-06-30,Utilities,6002|6008,ユーティリティ|写真／ビデオ,0,0,4.6654,132028,0.0,無料,FUJIFILM Business Innovation Corp.,2025-11-25
+1558406142,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.60759,79,800.0,¥800,Shuto Goto,2026-06-29
+1562641276,jp,2026-06-30,Utilities,6002|6008,ユーティリティ|写真／ビデオ,0,0,4.4639,53947,0.0,無料,FUJIFILM Business Innovation Corp.,2026-05-29
+1563102530,jp,2026-06-30,Medical,6020|6013,メディカル|ヘルスケア／フィットネス,0,0,4.59178,106471,0.0,無料,"DigiKar, Inc",2026-06-23
+1565489157,jp,2026-06-30,Finance,6015|6012,ファイナンス|ライフスタイル,0,0,4.19782,178346,0.0,無料,"AEON SMART TECHNOLOGY CO., LTD.",2026-06-16
+1566817391,jp,2026-06-30,Photo & Video,6008|6004,写真／ビデオ|スポーツ,0,0,4.65306,49,500.0,¥500,Ryu Wakimoto,2025-11-24
+1569771968,jp,2026-06-30,Education,6017,教育,0,0,3.21053,38,1200.0,"¥1,200","SKILLUP NeXt, Ltd.",2024-12-23
+1576517852,jp,2026-06-30,Finance,6015|6024,ファイナンス|ショッピング,0,0,2.06388,2160,0.0,無料,"GIFT PAD CO.,LTD.",2026-06-22
+1580179964,jp,2026-06-30,Utilities,6002|6013,ユーティリティ|ヘルスケア／フィットネス,0,0,3.91304,46,100.0,¥100,kohei yamane,2025-12-02
+1581140954,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,4.53397,103,400.0,¥400,Jeffrey Kuiken,2026-06-29
+1583472073,jp,2026-06-30,Education,6017|6007,教育|仕事効率化,0,0,4.72191,3970,370.0,¥370,"SOCIAL NOTE CO., LTD.",2026-05-04
+1583706435,jp,2026-06-30,Education,6017|6007,教育|仕事効率化,0,0,4.74648,2560,370.0,¥370,"SOCIAL NOTE CO., LTD.",2026-05-04
+1583706593,jp,2026-06-30,Education,6017|6007,教育|仕事効率化,0,0,4.68022,2336,370.0,¥370,"SOCIAL NOTE CO., LTD.",2026-05-04
+1612229796,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,3.70031,11482,0.0,無料,ENEOS Corporation,2026-06-29
+1613327007,jp,2026-06-30,Photo & Video,6008|6002,写真／ビデオ|ユーティリティ,0,0,4.10417,144,1000.0,"¥1,000",TotalContent,2026-05-10
+1619030760,jp,2026-06-30,Entertainment,6016|6005,エンターテインメント|ソーシャルネットワーキング,0,0,4.63894,115936,0.0,無料,"Scatter Lab, Inc.",2026-06-25
+1623037993,jp,2026-06-30,Education,6017,教育,0,0,4.09353,139,3000.0,"¥3,000",Shuichi Muronaga,2026-02-17
+1623283803,jp,2026-06-30,Music,6011|6016,ミュージック|エンターテインメント,0,0,1.73077,26,150.0,¥150,ZOOM CORPORATION,2022-12-15
+1626245204,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,1.82609,667,0.0,無料,"playground Co., Ltd.",2025-11-09
+1630710367,jp,2026-06-30,Entertainment,6016|6008,エンターテインメント|写真／ビデオ,0,0,4.5697,25589,0.0,無料,"emole K,K",2026-06-22
+1633243177,jp,2026-06-30,Music,6011,ミュージック,0,0,4.40789,76,1100.0,"¥1,100",Ableton AG,2026-05-05
+1641486558,jp,2026-06-30,Shopping,6024,ショッピング,0,0,4.22897,185884,0.0,無料,Whaleco Inc.,2026-06-28
+1660712234,jp,2026-06-30,Education,6017|6007,教育|仕事効率化,0,0,4.6563,643,370.0,¥370,"SOCIAL NOTE CO., LTD.",2026-05-13
+1667214457,jp,2026-06-30,Food & Drink,6023,フード／ドリンク,0,0,4.54295,183999,0.0,無料,"KOMEDA CO.,LTD.",2026-02-09
+1668516167,jp,2026-06-30,Social Networking,6005,ソーシャルネットワーキング,0,0,4.3375,240,800.0,¥800,J BUCHANAN & L.J BUCHANAN,2026-05-09
+284815942,jp,2026-06-30,Utilities,6002|6006,ユーティリティ|辞書／辞典／その他,0,0,4.33879,1035934,0.0,無料,Google LLC,2026-06-26
+298206806,jp,2026-06-30,Music,6011|6017,ミュージック|教育,0,0,4.74232,4494,3500.0,"¥3,500",Technimo LLC,2026-06-16
+309735670,jp,2026-06-30,Business,6000|6002,ビジネス|ユーティリティ,0,0,4.43701,146215,0.0,無料,Indeed Inc.,2026-06-29
+324684580,jp,2026-06-30,Music,6011|6016,ミュージック|エンターテインメント,0,0,4.591,4886891,0.0,無料,Spotify,2026-06-26
+329174056,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.18571,70,600.0,¥600,NATSUKO NISHIKATA,2026-02-06
+333903271,jp,2026-06-30,News,6009|6005,ニュース|ソーシャルネットワーキング,0,0,4.33822,4515690,0.0,無料,X Corp.,2026-06-24
+349079731,jp,2026-06-30,Lifestyle,6012|6016,ライフスタイル|エンターテインメント,0,0,3.6,30,150.0,¥150,"Noracom Tokyo Co., Ltd.",2020-03-30
+363590051,jp,2026-06-30,Entertainment,6016|6012,エンターテインメント|ライフスタイル,0,0,4.6818,1195435,0.0,無料,"Netflix, Inc.",2026-06-29
+363992049,jp,2026-06-30,Book,6018|6002,ブック|ユーティリティ,0,0,3.56232,706,500.0,¥500,Ryusuke Hotta,2026-04-01
+364504659,jp,2026-06-30,Shopping,6024,ショッピング,0,0,2.01959,6330,0.0,無料,BIPROGY Inc.,2026-06-24
+373493387,jp,2026-06-30,Education,6017|6007,教育|仕事効率化,0,0,3.93697,476,4000.0,"¥4,000",Anki Software LLC,2025-09-08
+373563219,jp,2026-06-30,Education,6017|6006,教育|辞書／辞典／その他,0,0,4.6693,12295,1300.0,"¥1,300","LT Box Co., Ltd.",2022-04-10
+374254473,jp,2026-06-30,Shopping,6024|6012,ショッピング|ライフスタイル,0,0,4.56636,714262,0.0,無料,AMZN Mobile LLC,2026-06-11
+378503081,jp,2026-06-30,Productivity,6007,仕事効率化,0,0,2.45614,114,1500.0,"¥1,500",Acrobits,2026-06-26
+385724144,jp,2026-06-30,Lifestyle,6012|6010,ライフスタイル|ナビゲーション,0,0,4.67429,795718,0.0,無料,"Recruit Co.,Ltd.",2026-06-24
+388624839,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,4.63319,2947,150.0,¥150,"Shanghai Linguan Data Co.,Ltd",2025-10-22
+389801252,jp,2026-06-30,Photo & Video,6008|6005,写真／ビデオ|ソーシャルネットワーキング,0,0,4.54849,4144952,0.0,無料,"Instagram, Inc.",2026-06-29
+413618155,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.47933,177945,0.0,無料,McDonald's JAPAN,2026-06-22
+419267350,jp,2026-06-30,Shopping,6024|6012,ショッピング|ライフスタイル,0,0,4.60161,5071401,0.0,無料,"Rakuten Group, Inc.",2026-06-15
+422689480,jp,2026-06-30,Productivity,6007|6005,仕事効率化|ソーシャルネットワーキング,0,0,4.42513,318315,0.0,無料,Google LLC,2026-06-22
+432850619,jp,2026-06-30,Music,6011,ミュージック,0,0,3.36538,52,2500.0,"¥2,500",image-line,2026-06-16
+441179131,jp,2026-06-30,Graphics & Design,6027|6016,グラフィック／デザイン|エンターテインメント,0,0,4.83286,9920,1500.0,"¥1,500",ibis inc.,2026-05-25
+443332137,jp,2026-06-30,Education,6017|6018,教育|ブック,0,0,3.08766,308,1300.0,"¥1,300",Beret Publishing Co. INC,2026-05-13
+446016180,jp,2026-06-30,Shopping,6024|6012,ショッピング|ライフスタイル,0,0,4.56726,2859259,0.0,無料,Yahoo Japan Corporation,2026-06-23
+465136874,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.7659,5015,800.0,¥800,yudai yoseda,2026-04-03
+468368751,jp,2026-06-30,Utilities,6002|6008,ユーティリティ|写真／ビデオ,0,0,5.0,5,300.0,¥300,Antonio Mauriello,2026-06-14
+468640323,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.78448,5285,800.0,¥800,yudai yoseda,2026-04-03
+494502212,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.65081,1224037,0.0,無料,"MUFG Bank, Ltd.",2026-06-22
+497716362,jp,2026-06-30,Music,6011|6017,ミュージック|教育,0,0,4.80851,1551,1000.0,"¥1,000","TonalEnergy, Inc",2026-03-27
+500676238,jp,2026-06-30,Photo & Video,6008|6002,写真／ビデオ|ユーティリティ,0,0,4.3525,5827,300.0,¥300,AppMadang,2024-11-30
+504102949,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.69543,1924,800.0,¥800,ATSUKO YOSEDA,2026-04-03
+505367096,jp,2026-06-30,Travel,6003|6012,旅行|ライフスタイル,0,0,4.71464,2008,3000.0,"¥3,000",Ollix,2026-05-23
+507874739,jp,2026-06-30,Productivity,6007,仕事効率化,0,0,4.59285,1120066,0.0,無料,Google LLC,2026-06-26
+515191813,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,4.28013,272289,0.0,無料,"LAWSON,INC.",2026-06-18
+525176875,jp,2026-06-30,Photo & Video,6008|6002,写真／ビデオ|ユーティリティ,0,0,4.15333,150,1500.0,"¥1,500",Adam Ratana,2025-11-07
+535886823,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,4.44693,500648,0.0,無料,Google LLC,2026-06-24
+537961396,jp,2026-06-30,Education,6017,教育,0,0,4.76463,13451,800.0,¥800,CoCO SWING,2026-05-27
+546505307,jp,2026-06-30,Business,6000|6007,ビジネス|仕事効率化,0,0,4.53561,458044,0.0,無料,"Zoom Communications, Inc.",2026-06-23
+551682016,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.54012,201445,0.0,無料,"AKINDO SUSHIRO CO.,LTD.",2026-06-09
+551942662,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,2.47075,5625,0.0,無料,Sharp Corporation,2026-06-23
+570105907,jp,2026-06-30,Finance,6015|6012,ファイナンス|ライフスタイル,0,0,4.58472,1399269,0.0,無料,"RAKUTEN CARD,INC.",2026-06-30
+571863178,jp,2026-06-30,Music,6011|6017,ミュージック|教育,0,0,4.34286,35,1500.0,"¥1,500",Cognosonic Pte Ltd,2024-10-03
+585027354,jp,2026-06-30,Navigation,6010|6023,ナビゲーション|フード／ドリンク,0,0,4.52447,1756735,0.0,無料,Google LLC,2026-06-29
+586447913,jp,2026-06-30,Productivity,6007,仕事効率化,0,0,4.5117,512948,0.0,無料,Microsoft Corporation,2026-06-29
+594457652,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.62062,1139398,0.0,無料,Sumitomo Mitsui Banking Corporation,2026-06-09
+599456126,jp,2026-06-30,Health & Fitness,6013|6012,ヘルスケア／フィットネス|ライフスタイル,0,0,4.61313,3469,300.0,¥300,Naoya Araki,2026-03-30
+6443723657,jp,2026-06-30,Photo & Video,6008|6016,写真／ビデオ|エンターテインメント,0,0,4.75993,1183,500.0,¥500,"ARTTIC CO., LTD.",2026-06-29
+6446826848,jp,2026-06-30,Finance,6015,ファイナンス,0,0,4.66829,53556,0.0,無料,"Japan Post Bank Co.,Ltd",2026-06-25
+6446901002,jp,2026-06-30,Social Networking,6005|6016,ソーシャルネットワーキング|エンターテインメント,0,0,4.35806,309297,0.0,無料,"Instagram, Inc.",2026-06-22
+6446937682,jp,2026-06-30,Medical,6020|6018,メディカル|ブック,0,0,1.33333,15,3800.0,"¥3,800","HERUSU SHUPPAN CO.,INC.",2024-09-03
+6447090616,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,3.82667,75,800.0,¥800,SmashMelon LLC,2026-06-09
+6447160980,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,4.80542,954122,0.0,無料,TIKTOK PTE. LTD.,2026-06-24
+6448176203,jp,2026-06-30,Entertainment,6016|6008,エンターテインメント|写真／ビデオ,0,0,4.88804,139521,0.0,無料,SINGAPORE NEW READING TECHNOLOGY PTE. LTD.,2026-06-26
+6448311069,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,4.69747,1995625,0.0,無料,"OpenAI OpCo, LLC",2026-06-23
+6450435935,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,4.19714,133618,0.0,無料,"Japan Post Co., Ltd.",2026-05-28
+6451037644,jp,2026-06-30,Shopping,6024,ショッピング,0,0,4.15395,20765,0.0,無料,MATSUKIYOCOCOKARA & CO.,2026-06-26
+6454900894,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,2.81551,374,0.0,無料,Digital Agency of Japan,2026-06-25
+6461722709,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,4.44144,111,120.0,¥120,NOZE INC.,2023-08-21
+6466987025,jp,2026-06-30,Shopping,6024,ショッピング,0,0,1.85429,4749,0.0,無料,"DAISO INDUSTRIES CO.,LTD.",2026-01-14
+6467176169,jp,2026-06-30,Education,6017|6006,教育|辞書／辞典／その他,0,0,4.82114,1107,800.0,¥800,FALE INC.,2025-12-31
+6469587141,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,4.1131,672,0.0,無料,MicroShowtime Limited,2026-06-29
+6473753684,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,4.55232,28717,0.0,無料,Anthropic PBC,2026-06-29
+6477489729,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,4.57977,770228,0.0,無料,Google LLC,2026-06-24
+6478066297,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,4.36301,292,500.0,¥500,"KIIRONOKAMO, K.K.",2026-06-11
+6499201223,jp,2026-06-30,Utilities,6002|6012,ユーティリティ|ライフスタイル,0,0,3.54785,303,100.0,¥100,Akihiro Usui,2026-06-29
+6504628174,jp,2026-06-30,Entertainment,6016,エンターテインメント,0,0,5.0,6,300.0,¥300,Whatever Co.,2026-06-24
+6517357575,jp,2026-06-30,Education,6017|6014|7012|7003,教育|ゲーム|パズル|カジュアル,1,1,0.0,0,400.0,¥400,Catacorp,2024-11-07
+6587576438,jp,2026-06-30,Social Networking,6005|6008,ソーシャルネットワーキング|写真／ビデオ,0,0,3.75601,873,0.0,無料,New Chat Inc.,2026-06-27
+6667104573,jp,2026-06-30,Food & Drink,6023,フード／ドリンク,0,0,4.81642,246162,0.0,無料,SUNTORY BEVERAGE SOLUTION LIMITED,2026-06-29
+669931877,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,4.58083,223628,0.0,無料,Yahoo Japan Corporation,2026-06-18
+672649451,jp,2026-06-30,Utilities,6002|6000,ユーティリティ|ビジネス,0,0,4.70005,1597,480.0,¥480,Noriyasu Kutsuzawa,2026-05-21
+6738342400,jp,2026-06-30,Productivity,6007|6026,仕事効率化|開発ツール,0,0,4.6875,16,500.0,¥500,Jan Biniok,2025-07-09
+6739188587,jp,2026-06-30,Food & Drink,6023,フード／ドリンク,0,0,4.59452,47936,0.0,無料,CP One Japan G.K.,2026-06-26
+6741474933,jp,2026-06-30,Photo & Video,6008,写真／ビデオ,0,0,4.84615,65,300.0,¥300,Seungyun Kim,2026-06-29
+6741915546,jp,2026-06-30,Education,6017,教育,0,0,3.88462,26,800.0,¥800,YUICHI HIROSE,2026-06-24
+6742407977,jp,2026-06-30,Education,6017,教育,0,0,4.68182,22,800.0,¥800,YUICHI HIROSE,2026-02-08
+6744971014,jp,2026-06-30,Education,6017,教育,0,0,4.69564,23,1200.0,"¥1,200",YUICHI HIROSE,2026-01-31
+6746149916,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,2.50442,226,0.0,無料,TRIAL COMPANY Inc.,2026-06-17
+6746705608,jp,2026-06-30,Medical,6020|6013,メディカル|ヘルスケア／フィットネス,0,0,4.02941,510,800.0,¥800,TANTSISSA HOLDINGS PTY LTD,2026-02-16
+6747368440,jp,2026-06-30,Entertainment,6016|6009,エンターテインメント|ニュース,0,0,2.58666,3917,0.0,無料,NHK (Japan Broadcasting Corp.),2026-05-11
+6752821433,jp,2026-06-30,Education,6017,教育,0,0,4.4634,82,800.0,¥800,RUMAHSAKU CORP.,2026-06-29
+6755903573,jp,2026-06-30,Education,6017,教育,0,0,4.47761,67,800.0,¥800,RUMAHSAKU CORP.,2026-06-26
+6756647308,jp,2026-06-30,Utilities,6002|6007,ユーティリティ|仕事効率化,0,0,3.78238,193,0.0,無料,NTT DIRECTORY SERVICES Co.,2026-06-30
+6756841326,jp,2026-06-30,Education,6017,教育,0,0,4.52778,36,800.0,¥800,RUMAHSAKU CORP.,2026-06-25
+6758579274,jp,2026-06-30,Entertainment,6016|7004|6014|7019,エンターテインメント|ボード|ゲーム|単語,1,0,4.87234,47,330.0,¥330,Qdan Inc.,2026-04-11
+6758662999,jp,2026-06-30,Entertainment,6016|7004|7019|6014,エンターテインメント|ボード|単語|ゲーム,1,0,5.0,28,330.0,¥330,Qdan Inc.,2026-04-11
+6759703483,jp,2026-06-30,Music,6011,ミュージック,0,0,4.93902,82,400.0,¥400,"S.T.L, K.K.",2026-06-11
+6759912958,jp,2026-06-30,Lifestyle,6012|6007,ライフスタイル|仕事効率化,0,0,4.2439,82,500.0,¥500,TAKASA WORKS,2026-06-29
+6761148587,jp,2026-06-30,Education,6017,教育,0,0,5.0,1,800.0,¥800,RUMAHSAKU CORP.,2026-03-26
+6763737180,jp,2026-06-30,Photo & Video,6008,写真／ビデオ,0,0,0.0,0,300.0,¥300,Seungyun Kim,2026-06-26
+6769995930,jp,2026-06-30,Education,6017|6000,教育|ビジネス,0,0,1.0,1,1000.0,"¥1,000",Tomoaki Taki,2026-06-28
+6771264775,jp,2026-06-30,Lifestyle,6012|6013,ライフスタイル|ヘルスケア／フィットネス,0,0,4.0,73,0.0,無料,Shunya Yamashita,2026-06-26
+6772144925,jp,2026-06-30,Lifestyle,6012,ライフスタイル,0,0,2.45237,42,0.0,無料,HOKKAIDO GOVERNMENT,2026-06-24
+681752345,jp,2026-06-30,Travel,6003|6012,旅行|ライフスタイル,0,0,4.47408,47536,0.0,無料,Trip.com Travel Singapore Pte. Ltd.,2026-06-26
+730712409,jp,2026-06-30,Photo & Video,6008|6012,写真／ビデオ|ライフスタイル,0,0,4.53697,13200,1500.0,"¥1,500",Tinkerworks Apps,2026-05-18
+732775964,jp,2026-06-30,Shopping,6024,ショッピング,0,0,2.51681,476,0.0,無料,"SHIMAMURA CO., LTD.",2026-04-20
+763377066,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.54387,637831,0.0,無料,"Kakaku.com, Inc.",2026-06-29
+793232740,jp,2026-06-30,Photo & Video,6008|6007,写真／ビデオ|仕事効率化,0,0,4.57376,61,3000.0,"¥3,000",Cadrage GmbH,2026-06-02
+821434357,jp,2026-06-30,Shopping,6024|6012,ショッピング|ライフスタイル,0,0,4.28927,1215614,0.0,無料,"NTT DOCOMO, INC.",2026-06-18
+830340223,jp,2026-06-30,Entertainment,6016|6009,エンターテインメント|ニュース,0,0,4.21026,399691,0.0,無料,TVer INC.,2026-06-24
+838138452,jp,2026-06-30,Finance,6015|6000,ファイナンス|ビジネス,0,0,4.4656,331842,0.0,無料,"SUMITOMO MITSUI CARD COMPANY,LIMITED",2026-06-01
+842842640,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,4.60473,163752,0.0,無料,Google LLC,2026-06-29
+842849113,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,4.56292,345881,0.0,無料,Google LLC,2026-06-29
+862469459,jp,2026-06-30,Navigation,6010|6003,ナビゲーション|旅行,0,0,4.0187,481,300.0,¥300,WAC.com,2026-04-28
+882477693,jp,2026-06-30,Entertainment,6016|6012,エンターテインメント|ライフスタイル,0,0,4.64397,1422207,0.0,無料,"U-NEXT Co.,Ltd.",2026-06-29
+897446215,jp,2026-06-30,Photo & Video,6008|6007,写真／ビデオ|仕事効率化,0,0,4.72951,532970,0.0,無料,Canva Pty Ltd,2026-06-25
+904237743,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,4.64811,3109,1500.0,"¥1,500",Cultured Code GmbH & Co. KG,2026-03-25
+906388170,jp,2026-06-30,Photo & Video,6008,写真／ビデオ,0,0,4.63579,6694,550.0,¥550,sky-nexus Inc.,2026-02-06
+910133705,jp,2026-06-30,Food & Drink,6023|6012,フード／ドリンク|ライフスタイル,0,0,4.67997,226098,0.0,無料,"B-R 31 ICE CREAM CO., LTD.",2026-05-25
+916366645,jp,2026-06-30,Graphics & Design,6027|6007,グラフィック／デザイン|仕事効率化,0,0,4.01799,389,1000.0,"¥1,000",Savage Interactive Pty Ltd,2026-03-29
+932747118,jp,2026-06-30,Utilities,6002,ユーティリティ,0,0,4.38821,747,500.0,¥500,Shadow Launch Technology Limited,2026-06-10
+942015274,jp,2026-06-30,Education,6017|6002,教育|ユーティリティ,0,0,4.68226,513,3000.0,"¥3,000",Takatoshi Fukino,2026-05-11
+952578473,jp,2026-06-30,Productivity,6007|6005,仕事効率化|ソーシャルネットワーキング,0,0,4.61662,1018294,0.0,無料,"TimeTree, Inc.",2026-06-30
+955641819,jp,2026-06-30,Food & Drink,6023,フード／ドリンク,0,0,1.96415,1897,0.0,無料,"DUSKIN CO., LTD.",2026-04-15
+963034692,jp,2026-06-30,Health & Fitness,6013|6002,ヘルスケア／フィットネス|ユーティリティ,0,0,4.68742,3791,1000.0,"¥1,000",Crunchy Bagel Pty Ltd,2026-06-02
+963570332,jp,2026-06-30,Business,6000|6007,ビジネス|仕事効率化,0,0,3.06667,15,2500.0,"¥2,500",Sugimoto Kazunari,2026-01-30
+970389374,jp,2026-06-30,Music,6011|6016,ミュージック|エンターテインメント,0,0,3.86157,1452,2500.0,"¥2,500","radius co., ltd.",2026-06-10
+983156458,jp,2026-06-30,Productivity,6007|6002,仕事効率化|ユーティリティ,0,0,4.43329,36869,0.0,無料,Microsoft Corporation,2026-06-11
+989856065,jp,2026-06-30,Productivity,6007|6000,仕事効率化|ビジネス,0,0,3.53125,64,300.0,¥300,youji okamura,2023-02-28
+1000558562,kr,2026-06-30,Travel,6003|6010,여행|내비게이션,0,0,1.72291,3414,0.0,무료,Korea Railroad Corporation,2026-06-10
+1017225151,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,3.04152,843,1100.0,"￦1,100",ordinaryfactory Inc.,2019-10-12
+1018769995,kr,2026-06-30,Social Networking,6005,소셜 네트워킹,0,0,3.92568,39546,0.0,무료,Danggeun Market Inc.,2026-06-25
+1024369566,kr,2026-06-30,Business,6000|6007,비즈니스|생산성,0,0,4.32667,2152,0.0,무료,Needer Inc,2026-06-16
+1035219562,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,2.54102,14116,1100.0,"￦1,100",ordinaryfactory Inc.,2019-10-12
+1046714401,kr,2026-06-30,Utilities,6002|6007,유틸리티|생산성,0,0,4.76979,46814,3300.0,"￦3,300",OH NAM KWON,2026-05-08
+1059599823,kr,2026-06-30,Business,6000,비즈니스,0,0,4.18182,11,6600.0,"￦6,600",KICC,2026-05-14
+1062022008,kr,2026-06-30,Photo & Video,6008|6011,사진 및 비디오|음악,0,0,4.76868,11028,44000.0,"￦44,000",Luma Touch LLC,2026-03-30
+1070715498,kr,2026-06-30,Lifestyle,6012|6024,라이프스타일|쇼핑,0,0,4.67648,3227,0.0,무료,"ASUNGDAISO, Co.,Ltd.",2026-06-23
+1080244833,kr,2026-06-30,Shopping,6024|6023,쇼핑|음식 및 음료,0,0,4.81032,349196,0.0,무료,Kurly Corp.,2026-06-30
+1116905928,kr,2026-06-30,Entertainment,6016,엔터테인먼트,0,0,4.73173,18086,7700.0,"￦7,700",Newin Inc.,2025-02-12
+1117998129,kr,2026-06-30,Medical,6020|6017,의료|교육,0,0,4.84807,5463,33000.0,"￦33,000",Visible Body Apps LLC,2025-11-02
+1131147442,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,2.82325,8860,0.0,무료,National Agricultural Cooperative Federation,2026-06-16
+1133880811,kr,2026-06-30,Lifestyle,6012|6005,라이프스타일|소셜 네트워킹,0,0,4.78838,4031,7700.0,"￦7,700",Yunseok Kim,2026-06-29
+1152234483,kr,2026-06-30,Lifestyle,6012|6007,라이프스타일|생산성,0,0,4.42804,1348,3300.0,"￦3,300",MYSLAB Corp.,2024-05-04
+1163786766,kr,2026-06-30,Lifestyle,6012|6002,라이프스타일|유틸리티,0,0,4.70822,101752,0.0,무료,"Delight Room Co., Ltd.",2026-06-26
+1198499960,kr,2026-06-30,Travel,6003|6002,여행|유틸리티,0,0,4.20313,64,4400.0,"￦4,400",MobiWIA Korlatolt Felelossegu Tarsasag,2020-07-28
+1202650514,kr,2026-06-30,Health & Fitness,6013,건강 및 피트니스,0,0,4.84999,20,11000.0,"￦11,000",Stephane Lizeray,2026-06-16
+1210251567,kr,2026-06-30,Health & Fitness,6013|6012,건강 및 피트니스|라이프스타일,0,0,4.63943,1187,3300.0,"￦3,300","SEEKRTECH CO., LTD.",2023-11-23
+1222822904,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,4.68495,164315,0.0,무료,"Samsung Electronics Co., Ltd.",2026-04-30
+1225957208,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,1.84489,1341,0.0,무료,"A TWOSOME PLACE CO., LTD",2026-06-23
+1234443708,kr,2026-06-30,Lifestyle,6012|6000,라이프스타일|비즈니스,0,0,3.03529,170,1100.0,"￦1,100",remain.corp,2022-03-21
+1235601864,kr,2026-06-30,Entertainment,6016|6008,엔터테인먼트|사진 및 비디오,0,0,4.5316,239569,0.0,무료,TIKTOK PTE. LTD.,2026-06-29
+1237692856,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,2.94721,682,1100.0,"￦1,100",Screw Bar Inc.,2021-08-18
+1241909999,kr,2026-06-30,Health & Fitness,6013|6010,건강 및 피트니스|내비게이션,0,0,4.69697,33,15000.0,"￦15,000",Ian Muriss,2026-06-26
+1248716281,kr,2026-06-30,Finance,6015|6000,금융|비즈니스,0,0,3.86326,7079,0.0,무료,"Mirae Asset Securities Co., Ltd.",2026-06-30
+1250771188,kr,2026-06-30,Lifestyle,6012|6000,라이프스타일|비즈니스,0,0,4.71853,127180,0.0,무료,Brave Mobile Inc,2026-06-05
+1253773772,kr,2026-06-30,Lifestyle,6012|6024,라이프스타일|쇼핑,0,0,3.41997,581,0.0,무료,"Korea Seven Co., Ltd.",2026-06-22
+1302909664,kr,2026-06-30,Utilities,6002|6007,유틸리티|생산성,0,0,0.0,0,1100.0,"￦1,100",Jon Giambattista,2020-10-09
+1321282064,kr,2026-06-30,Finance,6015,금융,0,0,1.88283,623,0.0,무료,National Pension Service,2026-06-11
+1351831223,kr,2026-06-30,Book,6018|6012,도서|라이프스타일,0,0,4.81369,5813,6600.0,"￦6,600",kim juyoung,2026-06-25
+1445502301,kr,2026-06-30,Education,6017,교육,0,0,4.57222,720,6600.0,"￦6,600",Bongcheol Jin,2026-06-22
+1445504255,kr,2026-06-30,Food & Drink,6023|6012,음식 및 음료|라이프스타일,0,0,4.84909,647344,0.0,무료,Coupang Corp.,2026-06-26
+1449232260,kr,2026-06-30,Utilities,6002|6007,유틸리티|생산성,0,0,3.92669,341,1100.0,"￦1,100",YOUNG SUN ROH,2024-09-30
+1452035712,kr,2026-06-30,Productivity,6007|6012,생산성|라이프스타일,0,0,4.6321,5197,4400.0,"￦4,400",JiHoon Lee,2025-05-17
+1455054515,kr,2026-06-30,Education,6017|6018,교육|도서,0,0,4.6335,824,22000.0,"￦22,000",LEE YONGHEE,2026-06-29
+1457413104,kr,2026-06-30,Lifestyle,6012|6005,라이프스타일|소셜 네트워킹,0,0,2.71896,1192,0.0,무료,"APT.i Co.,Ltd.",2026-06-24
+1459671308,kr,2026-06-30,Education,6017|6018,교육|도서,0,0,4.625,40,19000.0,"￦19,000",LEE YONGHEE,2026-05-24
+1460543865,kr,2026-06-30,Finance,6015,금융,0,0,4.77353,217530,0.0,무료,INDUSTRIAL BANK OF KOREA,2026-06-23
+1461710896,kr,2026-06-30,Lifestyle,6012|6008,라이프스타일|사진 및 비디오,0,0,4.34284,1893,3300.0,"￦3,300",Marc Hofmann,2025-12-16
+1464496236,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,4.56712,30210,0.0,무료,"Kakao Pay Co., Ltd.",2026-06-19
+1470181651,kr,2026-06-30,Finance,6015,금융,0,0,4.46131,18584,0.0,무료,WOORI BANK,2026-06-26
+1470361790,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,4.25376,14427,0.0,무료,"Tmoney Co., Ltd",2026-04-28
+1473428031,kr,2026-06-30,Food & Drink,6023,음식 및 음료,0,0,1.87773,1513,0.0,무료,"Annhouse Co., Ltd",2026-06-29
+1483433931,kr,2026-06-30,Travel,6003|6010,여행|내비게이션,0,0,4.52932,54802,0.0,무료,"Tmoney Co., Ltd",2026-06-10
+1485193566,kr,2026-06-30,Food & Drink,6023|6003,음식 및 음료|여행,0,0,4.89709,124922,0.0,무료,WAD corp,2026-06-16
+1485356492,kr,2026-06-30,Business,6000,비즈니스,0,0,1.24862,11954,0.0,무료,Ministry of National Defense - Republic of Korea,2026-06-18
+1489115591,kr,2026-06-30,Business,6000,비즈니스,0,0,1.20905,818,0.0,무료,Ministry of National Defense - Republic of Korea,2026-06-18
+1489470545,kr,2026-06-30,Productivity,6007|6016,생산성|엔터테인먼트,0,0,2.65,40,12000.0,"￦12,000",DevelopW LLC,2026-04-17
+1500098830,kr,2026-06-30,Photo & Video,6008|6011,사진 및 비디오|음악,0,0,3.89686,892,6600.0,"￦6,600",Haruki Daunrodo,2024-11-25
+1500855883,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.06593,29592,0.0,무료,BYTEDANCE PTE. LTD.,2026-06-30
+1501873314,kr,2026-06-30,Health & Fitness,6013|6002,건강 및 피트니스|유틸리티,0,0,4.24272,103,7700.0,"￦7,700",Bickster LLC,2021-01-28
+1506524199,kr,2026-06-30,Lifestyle,6012|6007,라이프스타일|생산성,0,0,4.59129,482,14000.0,"￦14,000","PULA.,Co.",2026-05-31
+1513718380,kr,2026-06-30,Medical,6020|6013,의료|건강 및 피트니스,0,0,4.80173,29026,0.0,무료,"Doctornow Co.,Ltd",2026-06-05
+1525664178,kr,2026-06-30,Travel,6003|6012,여행|라이프스타일,0,0,4.81867,5901,0.0,무료,Uangel Corporation,2026-06-24
+1529046013,kr,2026-06-30,Education,6017|6007,교육|생산성,0,0,4.65921,8806,0.0,무료,Sling Inc,2026-06-30
+1533191520,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,1.23157,2008,0.0,무료,Korea National Police Agency,2025-12-24
+1538531939,kr,2026-06-30,Productivity,6007,생산성,0,0,1.46835,553,0.0,무료,korea transportation safety authority,2024-07-09
+1554606485,kr,2026-06-30,Photo & Video,6008|6027,사진 및 비디오|그래픽 및 디자인,0,0,4.85329,1261,6600.0,"￦6,600",Hongmin Park,2026-01-30
+1554807824,kr,2026-06-30,Finance,6015,금융,0,0,4.78648,35261,0.0,무료,NAVER Financial Corporation,2026-06-05
+1584940053,kr,2026-06-30,Medical,6020|6013,의료|건강 및 피트니스,0,0,4.70315,6741,0.0,무료,merakiplace Inc.,2026-06-20
+1585297308,kr,2026-06-30,Entertainment,6016|6005,엔터테인먼트|소셜 네트워킹,0,0,1.83352,11731,0.0,무료,NAVER Corp.,2026-06-29
+1598850912,kr,2026-06-30,Food & Drink,6023|6012,음식 및 음료|라이프스타일,0,0,4.75931,35178,0.0,무료,SHINHAN BANK CO. LTD,2026-06-24
+1599450372,kr,2026-06-30,Utilities,6002,유틸리티,0,0,2.6052,2733,0.0,무료,Ministry of the Interior and Safety,2026-05-26
+1621986905,kr,2026-06-30,Finance,6015,금융,0,0,2.93621,4201,0.0,무료,"Korea Investment & Securities Co., Ltd",2026-06-27
+1628054048,kr,2026-06-30,Health & Fitness,6013|6020,건강 및 피트니스|의료,0,0,4.67974,153,7700.0,"￦7,700","Rich Soft Co., Ltd",2026-05-08
+1634146689,kr,2026-06-30,Productivity,6007|6012,생산성|라이프스타일,0,0,4.72499,40,4400.0,"￦4,400",seung won park,2026-01-02
+1636816705,kr,2026-06-30,Lifestyle,6012|6024,라이프스타일|쇼핑,0,0,3.9806,4846,0.0,무료,"emart24 Co.,Ltd",2026-06-10
+1641486558,kr,2026-06-30,Shopping,6024,쇼핑,0,0,3.98835,22926,0.0,무료,Whaleco Inc.,2026-06-28
+1641628055,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,2.96204,1607,0.0,무료,NongHyup Bank,2026-06-24
+1668516167,kr,2026-06-30,Social Networking,6005,소셜 네트워킹,0,0,5.0,4,7700.0,"￦7,700",J BUCHANAN & L.J BUCHANAN,2026-05-09
+298206806,kr,2026-06-30,Music,6011|6017,음악|교육,0,0,4.83711,792,33000.0,"￦33,000",Technimo LLC,2026-06-16
+304608425,kr,2026-06-30,Navigation,6010,내비게이션,0,0,4.67286,180357,0.0,무료,Kakao Corp.,2026-06-30
+304731501,kr,2026-06-30,Music,6011,음악,0,0,4.77201,829,4400.0,"￦4,400",Frozen Ape Pte. Ltd.,2026-06-05
+308998718,kr,2026-06-30,Music,6011|6017,음악|교육,0,0,3.5,30,25000.0,"￦25,000",Roni Music,2025-11-24
+310633997,kr,2026-06-30,Social Networking,6005|6002,소셜 네트워킹|유틸리티,0,0,4.67769,126772,0.0,무료,WhatsApp Inc.,2026-06-29
+324684580,kr,2026-06-30,Music,6011|6016,음악|엔터테인먼트,0,0,4.7759,429889,0.0,무료,Spotify,2026-06-26
+357484932,kr,2026-06-30,Finance,6015,금융,0,0,4.74838,88770,0.0,무료,SHINHAN BANK CO. LTD,2026-06-22
+364876095,kr,2026-06-30,Business,6000|6002,비즈니스|유틸리티,0,0,3.43626,353,25000.0,"￦25,000",PhaseFive Systems,2023-10-30
+373493387,kr,2026-06-30,Education,6017|6007,교육|생산성,0,0,3.9381,210,44000.0,"￦44,000",Anki Software LLC,2025-09-08
+373742138,kr,2026-06-30,Finance,6015,금융,0,0,4.59603,127295,0.0,무료,"Kookmin Bank Co., Ltd.",2026-06-22
+375279377,kr,2026-06-30,Medical,6020|6000,의료|비즈니스,0,0,2.09139,3414,0.0,무료,National Health Insurance  Corporation,2026-06-23
+379577046,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,4.51849,66783,0.0,무료,"Samsungcard Co., Ltd.",2026-06-25
+387682726,kr,2026-06-30,Shopping,6024|6012,쇼핑|라이프스타일,0,0,4.4653,1614,0.0,무료,"Zhejiang Taobao Network Co.,Ltd",2026-06-10
+387771637,kr,2026-06-30,Health & Fitness,6013|6004,건강 및 피트니스|스포츠,0,0,4.76467,58390,0.0,무료,"Nike, Inc",2026-05-26
+388497605,kr,2026-06-30,Utilities,6002,유틸리티,0,0,4.86958,63545,0.0,무료,Google LLC,2026-06-25
+388624839,kr,2026-06-30,Productivity,6007|6000,생산성|비즈니스,0,0,4.78965,1217,1100.0,"￦1,100","Shanghai Linguan Data Co.,Ltd",2025-10-22
+390413333,kr,2026-06-30,Finance,6015|6000,금융|비즈니스,0,0,2.16732,1775,0.0,무료,"SAMSUNG FIRE & MARINE INSURANCE Co.,Ltd",2026-05-26
+400666114,kr,2026-06-30,Music,6011|6002,음악|유틸리티,0,0,4.30619,258,11000.0,"￦11,000",Arobas Music,2026-03-31
+401626263,kr,2026-06-30,Travel,6003|6012,여행|라이프스타일,0,0,4.62832,46298,0.0,무료,"Airbnb, Inc.",2026-06-24
+422689480,kr,2026-06-30,Productivity,6007|6005,생산성|소셜 네트워킹,0,0,4.69097,35593,0.0,무료,Google LLC,2026-06-22
+426644449,kr,2026-06-30,Lifestyle,6012|6016,라이프스타일|엔터테인먼트,0,0,4.08772,5642,0.0,무료,"GS Retail Co., Ltd.",2026-06-22
+430297602,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,1.45273,1301,0.0,무료,"DB Insurance Co., Ltd.",2026-03-11
+432850619,kr,2026-06-30,Music,6011,음악,0,0,2.33333,3,25000.0,"￦25,000",image-line,2026-06-16
+433363390,kr,2026-06-30,Lifestyle,6012|6013,라이프스타일|건강 및 피트니스,0,0,4.28571,42,1100.0,"￦1,100",Jeonghwan Kim,2026-06-27
+436731843,kr,2026-06-30,Travel,6003|6012,여행|라이프스타일,0,0,4.80215,962904,0.0,무료,"YANOLJA CO.,LTD",2026-06-23
+440487844,kr,2026-06-30,Entertainment,6016|6012,엔터테인먼트|라이프스타일,0,0,1.81589,2102,0.0,무료,Interpark Mobile corporation,2026-06-24
+440676901,kr,2026-06-30,Travel,6003,여행,0,0,4.80198,243587,0.0,무료,Agoda Company Pte. Ltd.,2026-06-29
+441683476,kr,2026-06-30,Finance,6015|6000,금융|비즈니스,0,0,4.78831,8565,19000.0,"￦19,000",Park Hankyu,2026-06-15
+453126527,kr,2026-06-30,Education,6017|6011,교육|음악,0,0,2.0,3,7700.0,"￦7,700",Luke Bartolomeo,2026-06-07
+502491350,kr,2026-06-30,Music,6011|6017,음악|교육,0,0,2.0,1,3300.0,"￦3,300",Justin Guitar Ltd,2018-01-12
+504201783,kr,2026-06-30,Education,6017|6018,교육|도서,0,0,4.95,120,4400.0,"￦4,400",Lunar Skydiving LLC,2023-10-17
+537961396,kr,2026-06-30,Education,6017,교육,0,0,4.85357,5443,7700.0,"￦7,700",CoCO SWING,2026-05-27
+539397400,kr,2026-06-30,Entertainment,6016|6002,엔터테인먼트|유틸리티,0,0,4.79452,15544,15000.0,"￦15,000",Newin Inc.,2025-02-12
+550419159,kr,2026-06-30,Productivity,6007|6017,생산성|교육,0,0,4.65556,90,49000.0,"￦49,000",Valletta Ventures UK Ltd,2026-01-23
+554920991,kr,2026-06-30,Finance,6015,금융,0,0,1.64719,2636,0.0,무료,ePost,2026-06-26
+564730202,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,4.84486,17275,9900.0,"￦9,900",Realbyte Inc.,2026-05-31
+570060128,kr,2026-06-30,Education,6017|6005,교육|소셜 네트워킹,0,0,4.72469,207186,0.0,무료,"Duolingo, Inc",2026-06-29
+572462317,kr,2026-06-30,Finance,6015,금융,0,0,4.23489,46018,0.0,무료,"Shinhan Card Co., Ltd.",2026-06-29
+585027354,kr,2026-06-30,Navigation,6010|6023,내비게이션|음식 및 음료,0,0,4.82888,348905,0.0,무료,Google LLC,2026-06-29
+586454505,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,4.34722,48903,0.0,무료,Ministry of the Interior and Safety,2026-04-07
+598542901,kr,2026-06-30,Photo & Video,6008|6002,사진 및 비디오|유틸리티,0,0,4.53397,103,7700.0,"￦7,700","Beijing Perfect Frame Technology Co., Ltd",2023-03-18
+640564761,kr,2026-06-30,Photo & Video,6008|6017,사진 및 비디오|교육,0,0,4.30274,109,9900.0,"￦9,900","CATEATER, LLC",2025-12-10
+6443723657,kr,2026-06-30,Photo & Video,6008|6016,사진 및 비디오|엔터테인먼트,0,0,4.76006,10690,4400.0,"￦4,400","ARTTIC CO., LTD.",2026-06-29
+6443837919,kr,2026-06-30,Utilities,6002|6012,유틸리티|라이프스타일,0,0,1.77221,698,0.0,무료,Incheon International Airport Corporation,2026-03-24
+6444282377,kr,2026-06-30,Reference,6006|6017,참고|교육,0,0,0.0,0,1100.0,"￦1,100",学鹏 张,2022-11-10
+6444602589,kr,2026-06-30,Medical,6020,의료,0,0,1.61189,858,0.0,무료,National Health Insurance  Corporation,2026-04-29
+6445905219,kr,2026-06-30,Entertainment,6016,엔터테인먼트,0,0,4.63882,17961,0.0,무료,STORYMATRIX PTE. LTD,2026-06-27
+6446901002,kr,2026-06-30,Social Networking,6005|6016,소셜 네트워킹|엔터테인먼트,0,0,4.68196,71696,0.0,무료,"Instagram, Inc.",2026-06-22
+6447090616,kr,2026-06-30,Productivity,6007|6002,생산성|유틸리티,0,0,4.03846,52,6000.0,"￦6,000",SmashMelon LLC,2026-06-09
+6448239731,kr,2026-06-30,Travel,6003|6010,여행|내비게이션,0,0,0.0,0,7700.0,"￦7,700",Travel Maps,2026-06-22
+6448311069,kr,2026-06-30,Productivity,6007|6002,생산성|유틸리티,0,0,4.7904,659182,0.0,무료,"OpenAI OpCo, LLC",2026-06-23
+6448703854,kr,2026-06-30,Lifestyle,6012|6006,라이프스타일|참고,0,0,4.94264,1883,0.0,무료,"PeulDa Co.,Ltd",2026-04-02
+6453697787,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.59403,872,1900.0,"￦1,900",Small Camera,2026-03-03
+6458534300,kr,2026-06-30,Music,6011,음악,0,0,3.75,20,17000.0,"￦17,000",JaeMyoung Lee,2025-12-21
+6462396737,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,2.92225,373,0.0,무료,KOREA LAND & HOUSING CORPORATION,2025-02-03
+6472380172,kr,2026-06-30,Photo & Video,6008|6027,사진 및 비디오|그래픽 및 디자인,0,0,4.78632,117,7700.0,"￦7,700",Lux Optics Incorporated,2026-06-10
+6472879198,kr,2026-06-30,Shopping,6024,쇼핑,0,0,2.38095,105,0.0,무료,"Samsung Electronics Co., Ltd.",2026-06-30
+6473753684,kr,2026-06-30,Productivity,6007|6000,생산성|비즈니스,0,0,4.62758,13141,0.0,무료,Anthropic PBC,2026-06-29
+6474207287,kr,2026-06-30,Education,6017|7014|6014|7003,교육|롤플레잉|게임|캐주얼,1,0,4.94444,36,7700.0,"￦7,700",WAGOTABI LIMITED,2026-06-19
+6477489729,kr,2026-06-30,Productivity,6007|6002,생산성|유틸리티,0,0,4.76295,356743,0.0,무료,Google LLC,2026-06-24
+6478366140,kr,2026-06-30,Business,6000,비즈니스,0,0,3.7941,1423,0.0,무료,Korea Employment Information Service,2026-06-01
+6479183207,kr,2026-06-30,Medical,6020|6006,의료|참고,0,0,0.0,0,12000.0,"￦12,000","Changchun Smart ITS Technology Co., Ltd.",2024-05-09
+6479500222,kr,2026-06-30,Photo & Video,6008|6002,사진 및 비디오|유틸리티,0,0,4.91667,12,2200.0,"￦2,200",HouseOfFX,2025-09-21
+6479704195,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,3.3157,586,0.0,무료,"Bigpicture Interactive Co.,Ltd.",2026-06-24
+6498623389,kr,2026-06-30,Entertainment,6016,엔터테인먼트,0,0,2.05051,99,4400.0,"￦4,400",Jarrod Norwell,2026-03-18
+6504192378,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,4.76647,334,4400.0,"￦4,400","FRONIS CO., LTD.",2026-06-24
+6504206143,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,2.25925,135,1100.0,"￦1,100",北北 宋,2026-06-15
+6504849169,kr,2026-06-30,Entertainment,6016,엔터테인먼트,0,0,4.53253,11004,0.0,무료,NETSTORY PTE. LTD.,2026-06-08
+6553966660,kr,2026-06-30,Finance,6015,금융,0,0,2.13005,346,0.0,무료,Korean Insurance Development Institute Inc.,2026-06-30
+6587576438,kr,2026-06-30,Social Networking,6005|6008,소셜 네트워킹|사진 및 비디오,0,0,3.58145,1854,0.0,무료,New Chat Inc.,2026-06-27
+6596740131,kr,2026-06-30,Photo & Video,6008|6002,사진 및 비디오|유틸리티,0,0,5.0,3,2200.0,"￦2,200",HouseOfFX,2025-09-21
+6670430706,kr,2026-06-30,Entertainment,6016,엔터테인먼트,0,0,4.5682,5000,0.0,무료,SKYWORK AI PTE LTD,2026-06-28
+6736601069,kr,2026-06-30,Photo & Video,6008|6007,사진 및 비디오|생산성,0,0,4.73684,152,3500.0,"￦3,500",Junmo Lee,2024-10-18
+6738063154,kr,2026-06-30,Shopping,6024,쇼핑,0,0,4.85673,186828,0.0,무료,NAVER Corp.,2026-06-24
+6738372450,kr,2026-06-30,Finance,6015,금융,0,0,1.72521,837,0.0,무료,KOMSCO,2026-06-26
+6738896323,kr,2026-06-30,Entertainment,6016|6012,엔터테인먼트|라이프스타일,0,0,1.24523,3458,0.0,무료,CJ CGV Co.ltd,2026-06-09
+6740224842,kr,2026-06-30,Lifestyle,6012|6007,라이프스타일|생산성,0,0,4.59999,10,1100.0,"￦1,100",Paran,2026-06-25
+6741474933,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.78132,471,3300.0,"￦3,300",Seungyun Kim,2026-06-29
+6742086811,kr,2026-06-30,Food & Drink,6023,음식 및 음료,0,0,1.32282,1236,0.0,무료,"COMPOSE COFFEE CO., LTD.",2026-04-09
+6742218180,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.61333,75,4400.0,"￦4,400",Seongmin Lee,2026-06-05
+6743190232,kr,2026-06-30,Finance,6015|6012,금융|라이프스타일,0,0,4.59708,8684,0.0,무료,HANA BANK,2026-06-25
+6743342476,kr,2026-06-30,Medical,6020,의료,0,0,0.0,0,6600.0,"￦6,600",娴 李,2025-03-28
+6743631737,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,3.90476,21,0.0,무료,FOURPLEX SIA,2026-06-11
+6744043800,kr,2026-06-30,Entertainment,6016|6012,엔터테인먼트|라이프스타일,0,0,1.48239,284,0.0,무료,"Hotel Lotte Co., Ltd",2026-04-29
+6744992032,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,1.139,259,0.0,무료,Ministry of National Defense - Republic of Korea,2026-04-15
+6746450747,kr,2026-06-30,Lifestyle,6012|6002,라이프스타일|유틸리티,0,0,4.92391,92,1100.0,"￦1,100",Agyeong An,2026-03-09
+6746705608,kr,2026-06-30,Medical,6020|6013,의료|건강 및 피트니스,0,0,4.31343,67,7700.0,"￦7,700",TANTSISSA HOLDINGS PTY LTD,2026-02-16
+6747059622,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.78107,1585,0.0,무료,"Seobuk Co., Ltd.",2026-06-25
+6747307749,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,4.68308,325,3300.0,"￦3,300",Gaeun Lee,2026-06-17
+6752803014,kr,2026-06-30,Lifestyle,6012|6007,라이프스타일|생산성,0,0,3.67857,28,2600.0,"￦2,600","Joguman, Inc.",2026-04-30
+6754986970,kr,2026-06-30,Utilities,6002,유틸리티,0,0,3.8125,16,11000.0,"￦11,000",Emir Han Temur,2026-02-12
+6755822636,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.30795,591,2200.0,"￦2,200",NoahProject Inc.,2026-06-27
+6760223038,kr,2026-06-30,Utilities,6002|6007,유틸리티|생산성,0,0,5.0,1,2000.0,"￦2,000","CH&Media Group Co.,Ltd.",2026-04-18
+6760682696,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,4.59999,10,3300.0,"￦3,300",Dongwoo Ha,2026-03-25
+6760764479,kr,2026-06-30,Navigation,6010|6003,내비게이션|여행,0,0,5.0,1,17000.0,"￦17,000",mustafa pistofoglu,2026-06-29
+6760838876,kr,2026-06-30,Photo & Video,6008|6002,사진 및 비디오|유틸리티,0,0,4.66153,130,1100.0,"￦1,100",Sean Cho,2026-06-20
+6761600536,kr,2026-06-30,Entertainment,6016|6027,엔터테인먼트|그래픽 및 디자인,0,0,0.0,0,7700.0,"￦7,700",Apposite LLC,2026-04-06
+6762035374,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,4.76,25,3300.0,"￦3,300",DooHyun Jang,2026-06-29
+6762279908,kr,2026-06-30,Lifestyle,6012|6007,라이프스타일|생산성,0,0,4.72021,193,1100.0,"￦1,100",ho young moon,2026-06-17
+6762625967,kr,2026-06-30,Productivity,6007|6000,생산성|비즈니스,0,0,5.0,5,1100.0,"￦1,100",DAL PARK,2026-06-22
+6763737180,kr,2026-06-30,Photo & Video,6008,사진 및 비디오,0,0,5.0,12,3300.0,"￦3,300",Seungyun Kim,2026-06-26
+6768642302,kr,2026-06-30,Lifestyle,6012|6011,라이프스타일|음악,0,0,4.76923,13,1100.0,"￦1,100",Seongsup Lee,2026-06-29
+6770498663,kr,2026-06-30,Utilities,6002,유틸리티,0,0,5.0,1,500.0,￦500,Lim Sangjin,2026-05-19
+6770772768,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,5.0,8,2200.0,"￦2,200",NovaLink(KR),2026-06-29
+6780893161,kr,2026-06-30,Finance,6015|6007,금융|생산성,0,0,5.0,2,1100.0,"￦1,100",junghan cho,2026-06-27
+6781601630,kr,2026-06-30,Productivity,6007|6017,생산성|교육,0,0,4.66667,6,6600.0,"￦6,600",Cheol Kim,2026-06-22
+6782047379,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,4.4375,16,1100.0,"￦1,100",yedam lim,2026-06-26
+681752345,kr,2026-06-30,Travel,6003|6012,여행|라이프스타일,0,0,4.6635,45294,0.0,무료,Trip.com Travel Singapore Pte. Ltd.,2026-06-26
+686449807,kr,2026-06-30,Social Networking,6005|6007,소셜 네트워킹|생산성,0,0,2.63842,12758,0.0,무료,Telegram FZ-LLC,2026-06-22
+695436326,kr,2026-06-30,Finance,6015|6000,금융|비즈니스,0,0,3.66363,20772,0.0,무료,KB Kookmin Card,2026-06-04
+730712409,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,4.66866,6655,17000.0,"￦17,000",Tinkerworks Apps,2026-05-18
+730814188,kr,2026-06-30,Shopping,6024|6012,쇼핑|라이프스타일,0,0,4.58423,69700,0.0,무료,"UNIQLO CO., LTD.",2026-06-09
+842849113,kr,2026-06-30,Productivity,6007|6000,생산성|비즈니스,0,0,4.82001,135547,0.0,무료,Google LLC,2026-06-29
+847268987,kr,2026-06-30,Finance,6015|6000,금융|비즈니스,0,0,4.61979,72574,0.0,무료,"Hana Card Co., Ltd.",2026-06-01
+878577184,kr,2026-06-30,Shopping,6024,쇼핑,0,0,4.48412,10675,0.0,무료,ROADGET BUSINESS PTE. LTD.,2026-06-24
+884923678,kr,2026-06-30,Health & Fitness,6013,건강 및 피트니스,0,0,4.15055,4264,0.0,무료,"InBody Co., Ltd.",2026-06-23
+888585740,kr,2026-06-30,Business,6000|6002,비즈니스|유틸리티,0,0,1.67879,990,0.0,무료,Ministry of the Interior and Safety,2026-04-24
+892393815,kr,2026-06-30,Business,6000|6007,비즈니스|생산성,0,0,4.61475,1220,4400.0,"￦4,400","Newkline Co., Ltd.",2026-05-29
+892542000,kr,2026-06-30,Lifestyle,6012|6002,라이프스타일|유틸리티,0,0,4.4,10,7700.0,"￦7,700",Eerko Vissering,2026-06-29
+898876435,kr,2026-06-30,Photo & Video,6008|6002,사진 및 비디오|유틸리티,0,0,4.63042,46,17000.0,"￦17,000","JIDE Software, Inc.",2026-06-09
+916366645,kr,2026-06-30,Graphics & Design,6027|6007,그래픽 및 디자인|생산성,0,0,3.74419,430,9900.0,"￦9,900",Savage Interactive Pty Ltd,2026-03-29
+932747118,kr,2026-06-30,Utilities,6002,유틸리티,0,0,3.73529,102,4400.0,"￦4,400",Shadow Launch Technology Limited,2026-06-10
+961932335,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,2.81246,4287,1100.0,"￦1,100",ordinaryfactory Inc.,2019-10-12
+963034692,kr,2026-06-30,Health & Fitness,6013|6002,건강 및 피트니스|유틸리티,0,0,4.76065,2649,9900.0,"￦9,900",Crunchy Bagel Pty Ltd,2026-06-02
+980166975,kr,2026-06-30,Lifestyle,6012|6000,라이프스타일|비즈니스,0,0,4.85289,32247,0.0,무료,PRND Corp.,2026-06-29
+985746746,kr,2026-06-30,Social Networking,6005|6014,소셜 네트워킹|게임,1,0,4.7561,175544,0.0,무료,Discord Inc.,2026-06-29
+992047786,kr,2026-06-30,Photo & Video,6008|6012,사진 및 비디오|라이프스타일,0,0,1.99598,7210,1100.0,"￦1,100",ordinaryfactory Inc.,2019-10-12
+993504342,kr,2026-06-30,Lifestyle,6012,라이프스타일,0,0,4.69255,79330,0.0,무료,LG Electronics,2026-06-01
+1001501844,gb,2026-06-30,Food & Drink,6023|6024,Food & Drink|Shopping,0,0,4.63483,2515482,0.0,Free,ROOFOODS LTD,2026-06-22
+1001613037,gb,2026-06-30,Education,6017|6011,Education|Music,0,0,3.43284,67,7.99,£7.99,The Associated Board of the Royal Schools of Music (Publishing) Limited,2024-01-10
+1001893116,gb,2026-06-30,Education,6017,Education,0,0,4.03175,252,3.49,£3.49,Topmarks Online Ltd,2024-06-13
+1019610471,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,3.33696,184,2.99,£2.99,The Stationery Office Limited,2025-09-05
+1033342465,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.06015,266,6.99,£6.99,Open Planet Software Limited,2026-05-05
+1049797239,gb,2026-06-30,Finance,6015,Finance,0,0,4.7511,76632,0.0,Free,Digital Moneybox Limited,2026-06-29
+1052238659,gb,2026-06-30,Finance,6015,Finance,0,0,4.85845,334351,0.0,Free,Monzo Bank Limited,2026-06-26
+1052718459,gb,2026-06-30,Music,6011|6016,Music|Entertainment,0,0,4.78852,205619,9.99,£9.99,APPMIND - SOFTWARE TECHNOLOGIES LDA,2026-05-26
+1058959277,gb,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.69434,2086746,0.0,Free,"Uber Technologies, Inc.",2026-06-29
+1062022008,gb,2026-06-30,Photo & Video,6008|6011,Photo & Video|Music,0,0,4.76211,4788,29.99,£29.99,Luma Touch LLC,2026-03-30
+1062745479,gb,2026-06-30,Health & Fitness,6013|6020,Health & Fitness|Medical,0,0,4.6456,1456,7.99,£7.99,TANTSISSA HOLDINGS PTY LTD,2025-10-21
+1064216828,gb,2026-06-30,News,6009|6005,News|Social Networking,0,0,4.71454,379383,0.0,Free,"REDDIT, INC.",2026-06-24
+1082476620,gb,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.80056,881278,0.0,Free,McDonald's Restaurants Ltd,2026-06-11
+1111420122,gb,2026-06-30,Medical,6020|6012,Medical|Lifestyle,0,0,3.54206,1070,6.99,£6.99,Fat Cigar Productions Ltd,2025-10-07
+1113153706,gb,2026-06-30,Business,6000|6007,Business|Productivity,0,0,4.66192,752638,0.0,Free,Microsoft Corporation,2026-06-29
+1113930361,gb,2026-06-30,Education,6017,Education,0,0,4.75755,5931,4.99,£4.99,Spurry Inc.,2025-10-27
+1114320457,gb,2026-06-30,Lifestyle,6012,Lifestyle,0,0,4.63001,1673,5.99,£5.99,Natalie Peall,2026-01-25
+1115120118,gb,2026-06-30,Finance,6015|6024,Finance|Shopping,0,0,4.85693,498101,0.0,Free,Klarna Bank AB,2026-06-29
+1140451547,gb,2026-06-30,Sports,6004|6008,Sports|Photo & Video,0,0,5.0,1,5.99,£5.99,Visual Vertigo Software Technologies GmbH,2026-06-25
+1164801111,gb,2026-06-30,Health & Fitness,6013|6020,Health & Fitness|Medical,0,0,4.63636,5764,7.99,£7.99,TANTSISSA HOLDINGS PTY LTD,2025-11-29
+1175031995,gb,2026-06-30,Weather,6001|6003,Weather|Travel,0,0,4.78242,1581,4.99,£4.99,JRustonApps B.V.,2026-06-25
+1181449615,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.37645,518,14.99,£14.99,Imagitech LTD,2026-06-25
+1199780189,gb,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.90221,261542,0.0,Free,Neutron Holdings. Inc.,2026-06-29
+1202650514,gb,2026-06-30,Health & Fitness,6013,Health & Fitness,0,0,4.75821,426,6.99,£6.99,Stephane Lizeray,2026-06-16
+1203306285,gb,2026-06-30,Education,6017|6011,Education|Music,0,0,2.38596,57,4.99,£4.99,The Associated Board of the Royal Schools of Music (Publishing) Limited,2026-04-09
+1223471316,gb,2026-06-30,Shopping,6024|6002,Shopping|Utilities,0,0,4.73184,714614,0.0,Free,Shopify Inc.,2026-06-23
+1238611143,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.7585,1459022,0.0,Free,Lidl Digital International GmbH & Co. KG,2026-06-28
+1241383990,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.14634,41,3.99,£3.99,Kwebl BV,2026-06-16
+1241909999,gb,2026-06-30,Health & Fitness,6013|6010,Health & Fitness|Navigation,0,0,4.7965,629,8.99,£8.99,Ian Muriss,2026-06-26
+1241984225,gb,2026-06-30,Finance,6015|6012,Finance|Lifestyle,0,0,4.29124,59381,0.0,Free,aestimium GmbH,2026-06-12
+1252497129,gb,2026-06-30,Education,6017|6012,Education|Lifestyle,0,0,4.74547,164735,0.0,Free,Glority Global Group Ltd.,2026-06-25
+1264568098,gb,2026-06-30,Education,6017|7009|6014|7019,Education|Family|Games|Word,1,0,4.38849,27133,2.99,£2.99,Education Shed Ltd,2026-06-08
+1278887323,gb,2026-06-30,Utilities,6002,Utilities,0,0,4.51828,1094,0.99,£0.99,Anthony McBride,2022-05-01
+1295066030,gb,2026-06-30,Finance,6015,Finance,0,0,4.66905,238314,0.0,Free,Hastings Direct Limited,2026-06-18
+1303222868,gb,2026-06-30,Food & Drink,6023,Food & Drink,0,0,4.8533,2754,4.99,£4.99,Hindsight Labs LLC,2025-12-18
+1309752471,gb,2026-06-30,Business,6000|6006,Business|Reference,0,0,5.0,3,3.99,£3.99,SYPartners LLC,2026-03-11
+1370293473,gb,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.62335,130605,0.0,Free,Mobile Jump Pte Ltd,2026-06-25
+1388411277,gb,2026-06-30,Medical,6020,Medical,0,0,3.07433,16952,0.0,Free,NHS Digital,2026-06-24
+1411737922,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.69583,27160,0.0,Free,Trainpal B.V.,2026-06-29
+1415709055,gb,2026-06-30,Education,6017|6011,Education|Music,0,0,3.59524,84,4.99,£4.99,The Associated Board of the Royal Schools of Music (Publishing) Limited,2026-04-02
+1435168829,gb,2026-06-30,Lifestyle,6012|6000,Lifestyle|Business,0,0,4.58979,413677,0.0,Free,Royal Mail Group,2026-06-18
+1437005085,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.57057,18846,0.0,Free,Proton AG,2026-06-08
+1447509164,gb,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.88769,1202,4.99,£4.99,The Positive Birth Company Ltd.,2025-07-18
+1449584007,gb,2026-06-30,Music,6011|6016,Music|Entertainment,0,0,4.75241,311,4.99,£4.99,Mazbox Limited,2026-05-19
+1456274821,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.85297,5530,7.29,£7.29,CITB-ConstructionSkills,2026-01-08
+1457581918,gb,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.91781,73,1.99,£1.99,Natalie Peall,2026-01-26
+1463210190,gb,2026-06-30,Medical,6020,Medical,0,0,4.88909,559,2.99,£2.99,DOCTORS HANDBOOKS LTD,2025-08-29
+1468877344,gb,2026-06-30,Education,6017,Education,0,0,3.41176,34,2.99,£2.99,C Webster,2019-07-02
+1470389616,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,3.08696,23,17.99,£17.99,Abel Learning Limited,2025-12-01
+1470407583,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,2.84211,19,17.99,£17.99,Abel Learning Limited,2025-12-01
+1488269261,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.66586,55627,0.0,Free,Whatnot Inc.,2026-06-27
+1499048052,gb,2026-06-30,Entertainment,6016,Entertainment,0,0,4.31409,5075,0.0,Free,BANGLALINK DIGITAL COMMUNICATIONS LIMITED,2026-06-27
+1500855883,gb,2026-06-30,Photo & Video,6008,Photo & Video,0,0,4.58249,176914,0.0,Free,BYTEDANCE PTE. LTD.,2026-06-30
+1505636751,gb,2026-06-30,Social Networking,6005,Social Networking,0,0,2.79245,53,2.99,£2.99,Swisscows AG,2026-04-17
+1517914828,gb,2026-06-30,Health & Fitness,6013|6004,Health & Fitness|Sports,0,0,4.76572,811,3.99,£3.99,Spaceman Digital Ltd,2026-04-27
+1522259939,gb,2026-06-30,Navigation,6010|6003,Navigation|Travel,0,0,4.78796,349,1.99,£1.99,Snowdonia National Park Authority,2025-05-07
+1536762482,gb,2026-06-30,Lifestyle,6012,Lifestyle,0,0,2.75481,208,4.99,£4.99,Spotted Ghosts Ltd,2025-02-26
+1558240027,gb,2026-06-30,Productivity,6007|6008,Productivity|Photo & Video,0,0,4.5088,8640,0.0,Free,"Meta Platforms, Inc.",2026-06-28
+1563561126,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.73684,152,6.59,£6.59,Thomas Wilson,2026-02-23
+1591214233,gb,2026-06-30,Lifestyle,6012|6024,Lifestyle|Shopping,0,0,4.86536,46621,0.0,Free,Inpost UK Limited,2026-06-15
+1622598042,gb,2026-06-30,Entertainment,6016|6002,Entertainment|Utilities,0,0,4.57977,702,5.99,£5.99,Adam Foot,2026-05-29
+1629050566,gb,2026-06-30,Utilities,6002,Utilities,0,0,4.6492,205771,0.0,Free,Government Digital Service,2026-06-25
+1633243177,gb,2026-06-30,Music,6011,Music,0,0,4.2,175,6.99,£6.99,Ableton AG,2026-05-05
+1641486558,gb,2026-06-30,Shopping,6024,Shopping,0,0,4.70509,381205,0.0,Free,Whaleco Inc.,2026-06-28
+1662217862,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.75915,191,4.99,£4.99,Kaylee Calderolla,2026-06-28
+1666653815,gb,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.8128,30149,0.0,Free,"WarnerMedia Global Digital Services, LLC",2026-06-22
+1673567402,gb,2026-06-30,Entertainment,6016|6015,Entertainment|Finance,0,0,4.67136,11195,0.0,Free,256 REWARDS LTD,2026-06-26
+282614216,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.75465,2260562,0.0,Free,eBay Inc.,2026-06-29
+283646709,gb,2026-06-30,Finance,6015|6002,Finance|Utilities,0,0,4.79843,1077661,0.0,Free,"PayPal, Inc.",2026-06-11
+284815942,gb,2026-06-30,Utilities,6002|6006,Utilities|Reference,0,0,4.60462,574723,0.0,Free,Google LLC,2026-06-26
+284882215,gb,2026-06-30,Social Networking,6005,Social Networking,0,0,4.52238,3065602,0.0,Free,"Meta Platforms, Inc.",2026-06-25
+284942719,gb,2026-06-30,Lifestyle,6012|6006,Lifestyle|Reference,0,0,4.87459,7248,9.99,£9.99,Universalis Publishing Limited,2026-06-09
+288429040,gb,2026-06-30,Business,6000,Business,0,0,4.72837,133986,0.0,Free,LinkedIn Corporation,2026-06-29
+294631159,gb,2026-06-30,Weather,6001|6003,Weather|Travel,0,0,4.5884,31115,0.99,£0.99,DTN Germany GmbH.,2026-02-23
+298206806,gb,2026-06-30,Music,6011|6017,Music|Education,0,0,4.84828,1628,19.99,£19.99,Technimo LLC,2026-06-16
+309735670,gb,2026-06-30,Business,6000|6002,Business|Utilities,0,0,4.69498,367026,0.0,Free,Indeed Inc.,2026-06-29
+319284643,gb,2026-06-30,Sports,6004|6016,Sports|Entertainment,0,0,4.78179,99182,0.0,Free,Wimbledon,2026-06-27
+323229106,gb,2026-06-30,Navigation,6010|6003,Navigation|Travel,0,0,4.78153,160667,0.0,Free,waze,2026-06-24
+324684580,gb,2026-06-30,Music,6011|6016,Music|Entertainment,0,0,4.7488,6732075,0.0,Free,Spotify,2026-06-26
+333903271,gb,2026-06-30,News,6009|6005,News|Social Networking,0,0,4.56489,1435563,0.0,Free,TWITTER INTERNATIONAL UNLIMITED COMPANY,2026-06-24
+334235181,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.91847,362783,0.0,Free,thetrainline,2026-06-28
+335187483,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.80149,1087347,0.0,Free,Amazon Europe Core SARL,2026-06-10
+335709058,gb,2026-06-30,Lifestyle,6012|6007,Lifestyle|Productivity,0,0,4.75035,1426,4.99,£4.99,"left brain / right brain, LLC",2025-06-15
+342898717,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.76809,649417,0.0,Free,RingGo Ltd,2026-04-20
+357421934,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.77438,1405,4.99,£4.99,PeakFinder GmbH,2026-06-23
+363360636,gb,2026-06-30,Navigation,6010|6003,Navigation|Travel,0,0,4.47984,6571,4.99,£4.99,pinkfroot limited,2018-11-13
+363590051,gb,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.72965,809272,0.0,Free,"Netflix, Inc.",2026-06-29
+367003839,gb,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.83936,1191551,0.0,Free,Booking.com B.V.,2026-06-29
+368677368,gb,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.86789,1797787,0.0,Free,"Uber Technologies, Inc.",2026-06-29
+373493387,gb,2026-06-30,Education,6017|6007,Education|Productivity,0,0,4.21064,470,24.99,£24.99,Anki Software LLC,2025-09-08
+384830320,gb,2026-06-30,Social Networking,6005|6012,Social Networking|Lifestyle,0,0,4.79971,195664,0.0,Free,Life360,2026-06-23
+385266473,gb,2026-06-30,Shopping,6024|6023,Shopping|Food & Drink,0,0,4.46239,61885,0.0,Free,Nectar 360 Ltd,2026-06-18
+388497605,gb,2026-06-30,Utilities,6002,Utilities,0,0,4.82254,161541,0.0,Free,Google LLC,2026-06-25
+389581236,gb,2026-06-30,Shopping,6024|6023,Shopping|Food & Drink,0,0,4.81062,1352393,0.0,Free,Tesco Plc,2026-06-29
+389801252,gb,2026-06-30,Photo & Video,6008|6005,Photo & Video|Social Networking,0,0,4.70106,4174195,0.0,Free,"Instagram, Inc.",2026-06-29
+401626263,gb,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.74378,123854,0.0,Free,"Airbnb, Inc.",2026-06-24
+403684733,gb,2026-06-30,Social Networking,6005|6012,Social Networking|Lifestyle,0,0,4.22747,466,2.99,£2.99,Badoo Software Ltd,2026-06-23
+404990064,gb,2026-06-30,Education,6017|6016,Education|Entertainment,0,0,4.47567,740,2.99,£2.99,Terminal Eleven LLC,2025-05-02
+405075943,gb,2026-06-30,Health & Fitness,6013|6003,Health & Fitness|Travel,0,0,4.84652,63947,0.0,Free,"AllTrails, Inc.",2026-06-25
+405835358,gb,2026-06-30,Navigation,6010|6002,Navigation|Utilities,0,0,4.83125,320,12.99,£12.99,Cascode Labs Pty Ltd,2026-06-20
+415458524,gb,2026-06-30,Travel,6003,Travel,0,0,4.7503,464362,0.0,Free,Skyscanner Limited,2026-06-23
+416580485,gb,2026-06-30,Entertainment,6016,Entertainment,0,0,4.60166,222728,0.0,Free,BBC Media Applications Technologies Limited,2026-06-29
+422689480,gb,2026-06-30,Productivity,6007|6005,Productivity|Social Networking,0,0,4.66219,219088,0.0,Free,Google LLC,2026-06-22
+426826309,gb,2026-06-30,Health & Fitness,6013|6004,Health & Fitness|Sports,0,0,4.75006,127773,0.0,Free,Strava Inc.,2026-06-26
+429047995,gb,2026-06-30,Lifestyle,6012|6008,Lifestyle|Photo & Video,0,0,4.72778,605784,0.0,Free,"Pinterest, Inc.",2026-06-24
+430234732,gb,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.79868,21627,12.9,£12.90,Veam Studios Ltd,2026-06-17
+432850619,gb,2026-06-30,Music,6011,Music,0,0,3.53333,45,14.99,£14.99,image-line,2026-06-16
+435871950,gb,2026-06-30,Travel,6003|6023,Travel|Food & Drink,0,0,4.8409,7423,4.99,£4.99,"HappyCow, Inc",2026-02-18
+436672029,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.69744,148486,0.0,Free,Alibaba.com Singapore E-Commerce Private Limited,2026-06-30
+446079916,gb,2026-06-30,Entertainment,6016|6008,Entertainment|Photo & Video,0,0,4.61025,826098,0.0,Free,ITV PLC,2026-06-16
+448474183,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.69939,621342,0.0,Free,PayByPhone Technologies Inc.,2026-06-17
+459313476,gb,2026-06-30,Music,6011|6017,Music|Education,0,0,4.6909,55,4.99,£4.99,"musictheory.net, LLC",2026-04-28
+463295925,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.50873,14656,5.49,£5.49,The Stationery Office Limited,2026-04-23
+470531169,gb,2026-06-30,Education,6017|6001,Education|Weather,0,0,2.96262,107,5.99,£5.99,Philip Hunter,2026-05-31
+483568103,gb,2026-06-30,Travel,6003|6002,Travel|Utilities,0,0,4.79662,874687,0.0,Free,easyJet Airline Company Limited,2026-06-29
+490077681,gb,2026-06-30,Lifestyle,6012|6013,Lifestyle|Health & Fitness,0,0,4.75715,1223,6.99,£6.99,TappyTaps s.r.o.,2026-06-16
+491907493,gb,2026-06-30,Education,6017|6011,Education|Music,0,0,3.17483,143,7.99,£7.99,The Associated Board of the Royal Schools of Music (Publishing) Limited,2024-05-30
+497716362,gb,2026-06-30,Music,6011|6017,Music|Education,0,0,4.82723,1447,5.99,£5.99,"TonalEnergy, Inc",2026-03-27
+498732510,gb,2026-06-30,Navigation,6010|6003,Navigation|Travel,0,0,3.71429,21,0.49,£0.49,Eifrig Media,2026-02-04
+500003565,gb,2026-06-30,Entertainment,6016|6011,Entertainment|Music,0,0,4.72295,71318,0.0,Free,Ticketmaster L.L.C,2026-05-19
+504270602,gb,2026-06-30,Travel,6003,Travel,0,0,4.51203,784189,0.0,Free,Ryanair Ltd.,2026-06-29
+505365608,gb,2026-06-30,Travel,6003|6006,Travel|Reference,0,0,4.23148,108,6.99,£6.99,WikiCamps pty ltd,2026-06-29
+514561561,gb,2026-06-30,Finance,6015,Finance,0,0,4.78125,241037,0.0,Free,HMRC,2026-06-22
+519684662,gb,2026-06-30,Sports,6004|6014|7006,Sports|Games|Casino,1,0,4.73965,432497,0.0,Free,Hillside Technology Limited,2026-06-22
+522687241,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.3201,378,3.99,£3.99,The Stationery Office Limited,2026-06-18
+535886823,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.64431,399340,0.0,Free,Google LLC,2026-06-24
+545519333,gb,2026-06-30,Entertainment,6016|6012,Entertainment|Lifestyle,0,0,4.72215,437880,0.0,Free,AMZN Mobile LLC,2026-06-26
+566325832,gb,2026-06-30,Finance,6015,Finance,0,0,4.6893,378141,0.0,Free,Avus Capital LLC,2026-06-25
+566347057,gb,2026-06-30,Food & Drink,6023|6012,Food & Drink|Lifestyle,0,0,4.75746,2482949,0.0,Free,Just-Eat Holdings Limited,2026-06-25
+570060128,gb,2026-06-30,Education,6017|6005,Education|Social Networking,0,0,4.69857,948788,0.0,Free,"Duolingo, Inc",2026-06-29
+578665578,gb,2026-06-30,Social Networking,6005|6002,Social Networking|Utilities,0,0,4.03922,153,6.99,£6.99,Threema GmbH,2026-06-22
+582584117,gb,2026-06-30,Navigation,6010|6008,Navigation|Photo & Video,0,0,3.81081,37,0.99,£0.99,Civi Corp Pty Ltd,2026-04-04
+583922375,gb,2026-06-30,Photo & Video,6008|6002,Photo & Video|Utilities,0,0,4.78261,207,3.99,£3.99,David Quiles,2026-06-02
+585027354,gb,2026-06-30,Navigation,6010|6023,Navigation|Food & Drink,0,0,4.66317,963068,0.0,Free,Google LLC,2026-06-29
+586149216,gb,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.12308,455,7.99,£7.99,Monash University,2026-03-12
+586447913,gb,2026-06-30,Productivity,6007,Productivity,0,0,4.64435,757612,0.0,Free,Microsoft Corporation,2026-06-29
+588860938,gb,2026-06-30,Health & Fitness,6013|6004,Health & Fitness|Sports,0,0,4.74085,222487,0.0,Free,Pure Gym Limited,2026-05-27
+596026805,gb,2026-06-30,Photo & Video,6008|6017,Photo & Video|Education,0,0,4.80726,358,10.99,£10.99,PhotoPills S.L.,2026-04-16
+632064380,gb,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.90383,3473830,0.0,Free,Vinted Limited,2026-06-29
+632064672,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,3.32157,1275,5.99,£5.99,The Stationery Office Limited,2026-05-27
+6443923265,gb,2026-06-30,Entertainment,6016|6008,Entertainment|Photo & Video,0,0,4.0,263,2.99,£2.99,GSE TECHNOLOGY LTD,2022-11-14
+6444266283,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.09524,21,6.99,£6.99,Nebular LTD,2026-02-12
+6445905219,gb,2026-06-30,Entertainment,6016,Entertainment,0,0,4.71,50073,0.0,Free,STORYMATRIX PTE. LTD,2026-06-27
+6445915563,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.57277,852,7.29,£7.29,CITB-ConstructionSkills,2026-06-01
+6446901002,gb,2026-06-30,Social Networking,6005|6016,Social Networking|Entertainment,0,0,4.54384,132371,0.0,Free,"Instagram, Inc.",2026-06-22
+6447582581,gb,2026-06-30,Entertainment,6016|6014,Entertainment|Games,1,0,4.365,2000,0.0,Free,"Netflix, Inc.",2026-06-24
+6448311069,gb,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.81287,1011612,0.0,Free,"OpenAI OpCo, LLC",2026-06-23
+6449003064,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.81989,372,2.99,£2.99,Skyhook,2023-06-23
+6451431247,gb,2026-06-30,Productivity,6007,Productivity,0,0,4.28481,9789,0.0,Free,SPRING SG PTE. LTD.,2026-06-29
+6466648716,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.81818,33,2.99,£2.99,The Stationery Office Limited,2025-09-07
+6473753684,gb,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.64131,20511,0.0,Free,Anthropic PBC,2026-06-29
+6476561442,gb,2026-06-30,Sports,6004|6016,Sports|Entertainment,0,0,0.0,0,0.0,Free,Federation Internationale de Football Association,2026-06-29
+6477489729,gb,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.67329,188117,0.0,Free,Google LLC,2026-06-24
+6480082872,gb,2026-06-30,Productivity,6007,Productivity,0,0,3.27907,43,4.99,£4.99,AB Apps Inc.,2024-06-02
+6503046688,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.79244,53,14.99,£14.99,Prometric Inc.,2026-01-15
+650684932,gb,2026-06-30,Travel,6003|6002,Travel|Utilities,0,0,4.64931,864,9.99,£9.99,OCTECH LLC,2026-05-30
+6670324846,gb,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.83764,123740,0.0,Free,TWITTER INTERNATIONAL UNLIMITED COMPANY,2026-06-30
+6670430706,gb,2026-06-30,Entertainment,6016,Entertainment,0,0,4.83556,9955,0.0,Free,SKYWORK AI PTE LTD,2026-06-28
+6737119425,gb,2026-06-30,Utilities,6002,Utilities,0,0,4.19562,146541,0.0,Free,Government Digital Service,2026-06-25
+6743965348,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.68966,58,0.99,£0.99,Kim Walker,2026-01-05
+6745230519,gb,2026-06-30,Productivity,6007|6001,Productivity|Weather,0,0,4.66667,24,0.99,£0.99,Gonzalo Eguiraun,2026-06-12
+6748837351,gb,2026-06-30,Photo & Video,6008,Photo & Video,0,0,4.0339,59,5.99,£5.99,Moment Inc.,2026-06-30
+675033630,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.71006,169126,0.0,Free,BOLT TECHNOLOGY OU,2026-06-29
+6761538521,gb,2026-06-30,Entertainment,6016,Entertainment,0,0,4.59265,653,0.0,Free,Equinox Enterprises Technology Limited,2026-06-16
+6762607526,gb,2026-06-30,Graphics & Design,6027|6010,Graphics & Design|Navigation,0,0,0.0,0,1.99,£1.99,Wild in Art Limited,2026-06-22
+6763737180,gb,2026-06-30,Photo & Video,6008,Photo & Video,0,0,0.0,0,1.99,£1.99,Seungyun Kim,2026-06-26
+6777748394,gb,2026-06-30,Sports,6004,Sports,0,0,5.0,7,0.99,£0.99,Jasper Sion,2026-06-16
+6778099993,gb,2026-06-30,Travel,6003|6002,Travel|Utilities,0,0,4.63636,11,0.99,£0.99,Radoslaw Marciniak,2026-06-18
+679454835,gb,2026-06-30,Photo & Video,6008|6005,Photo & Video|Social Networking,0,0,4.53042,526,5.99,£5.99,Rarevision LLC,2025-11-07
+679805463,gb,2026-06-30,Entertainment,6016|6011,Entertainment|Music,0,0,4.58592,56921,0.0,Free,"AXS Digital, LLC",2026-06-29
+681752345,gb,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.59246,23942,0.0,Free,Trip.com Travel Singapore Pte. Ltd.,2026-06-26
+686449807,gb,2026-06-30,Social Networking,6005|6007,Social Networking|Productivity,0,0,3.65745,16091,0.0,Free,Telegram FZ-LLC,2026-06-22
+692081019,gb,2026-06-30,Travel,6003|6010,Travel|Navigation,0,0,4.85714,133,2.99,£2.99,Yorkshire Dales National Park Authority,2024-08-14
+694647259,gb,2026-06-30,Photo & Video,6008|6003,Photo & Video|Travel,0,0,4.66633,1969,19.99,£19.99,Cocologics GmbH,2026-04-24
+700740791,gb,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.8476,9357,3.99,£3.99,Living With Ltd,2026-06-25
+705079381,gb,2026-06-30,Travel,6003|6012,Travel|Lifestyle,0,0,4.89013,223394,0.0,Free,GetYourGuide AG,2026-06-29
+773457673,gb,2026-06-30,Reference,6006|6012,Reference|Lifestyle,0,0,4.81954,9565,0.0,Free,Cornell University,2026-05-23
+784548884,gb,2026-06-30,Travel,6003,Travel,0,0,4.8324,702016,0.0,Free,Jet2.com Limited,2026-06-25
+828392046,gb,2026-06-30,Education,6017|7002|6014|7009,Education|Adventure|Games|Family,1,0,4.50888,14294,8.99,£8.99,Teach Your Monster Ltd.,2025-09-03
+829581836,gb,2026-06-30,Education,6017|6006,Education|Reference,0,0,4.82088,369876,5.99,£5.99,Driving Test Success Limited,2026-06-29
+835599320,gb,2026-06-30,Entertainment,6016|6008,Entertainment|Photo & Video,0,0,4.72383,2261207,0.0,Free,TIKTOK PTE. LTD.,2026-06-29
+835976083,gb,2026-06-30,Education,6017,Education,0,0,1.76667,30,2.99,£2.99,Shoreditch Media Limited,2017-07-04
+868827305,gb,2026-06-30,Reference,6006|6018,Reference|Books,0,0,3.72441,127,14.99,£14.99,NatureGuides Ltd.,2026-03-05
+878577184,gb,2026-06-30,Shopping,6024,Shopping,0,0,4.69424,423241,0.0,Free,ROADGET BUSINESS PTE. LTD.,2026-06-24
+892347083,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,2.86111,36,6.99,£6.99,Aleksei Savin,2026-05-09
+897446215,gb,2026-06-30,Photo & Video,6008|6007,Photo & Video|Productivity,0,0,4.84272,363819,0.0,Free,Canva Pty Ltd,2026-06-25
+904237743,gb,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.74959,4257,9.99,£9.99,Cultured Code GmbH & Co. KG,2026-03-25
+905953485,gb,2026-06-30,Utilities,6002|6007,Utilities|Productivity,0,0,4.6092,178500,0.0,Free,Nordvpn S.A.,2026-06-15
+916366645,gb,2026-06-30,Graphics & Design,6027|6007,Graphics & Design|Productivity,0,0,3.67826,2185,5.99,£5.99,Savage Interactive Pty Ltd,2026-03-29
+926252661,gb,2026-06-30,Lifestyle,6012,Lifestyle,0,0,4.61027,205190,0.0,Free,"Bot Home Automation, INC",2026-06-26
+929618748,gb,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.76985,1121,3.99,£3.99,Living With Ltd,2026-06-25
+932493382,gb,2026-06-30,Finance,6015|6003,Finance|Travel,0,0,4.86233,1035697,0.0,Free,Revolut Ltd,2026-06-26
+932747118,gb,2026-06-30,Utilities,6002,Utilities,0,0,4.28667,300,2.99,£2.99,Shadow Launch Technology Limited,2026-06-10
+936694037,gb,2026-06-30,Business,6000|6007,Business|Productivity,0,0,4.66667,8859,5.99,£5.99,LiveBird Technologies Private Limited,2026-04-24
+951937596,gb,2026-06-30,Productivity,6007|6000,Productivity|Business,0,0,4.73294,1906718,0.0,Free,Microsoft Corporation,2026-06-29
+963034692,gb,2026-06-30,Health & Fitness,6013|6002,Health & Fitness|Utilities,0,0,4.75089,4235,5.99,£5.99,Crunchy Bagel Pty Ltd,2026-06-02
+983156458,gb,2026-06-30,Productivity,6007|6002,Productivity|Utilities,0,0,4.61435,158134,0.0,Free,Microsoft Corporation,2026-06-11
+1006939067,de,2026-06-30,Music,6011|6016,Musik|Unterhaltung,0,0,3.73684,19,9.99,"9,99 €",KORG INC.,2022-07-25
+1016445476,de,2026-06-30,Photo & Video,6008|6001,Foto und Video|Wetter,0,0,3.92,50,1.99,"1,99 €",Florian Stiassny,2021-08-27
+1020581825,de,2026-06-30,Weather,6001|6009,Wetter|Nachrichten,0,0,4.5083,613815,0.0,Gratis,wetter.com GmbH,2026-06-23
+1034309353,de,2026-06-30,Lifestyle,6012,Lifestyle,0,0,4.73693,999437,0.0,Gratis,Dirk Rossmann GmbH,2026-05-11
+1051329602,de,2026-06-30,Sports,6004|6016,Sport|Unterhaltung,0,0,4.72462,414258,0.0,Gratis,Tipico B2B Ltd,2026-06-15
+1052863684,de,2026-06-30,Utilities,6002|6011,Dienst­programme|Musik,0,0,3.92724,1127,2.99,"2,99 €",Christian Harms,2026-06-17
+1058959277,de,2026-06-30,Food & Drink,6023|6012,Essen und Trinken|Lifestyle,0,0,4.60874,153870,0.0,Gratis,"Uber Technologies, Inc.",2026-06-29
+1059749112,de,2026-06-30,Education,6017|6014,Bildung|Spiele,1,0,3.57895,38,3.49,"3,49 €",Westermann Digital GmbH,2021-09-01
+1060683933,de,2026-06-30,Food & Drink,6023|6012,Essen und Trinken|Lifestyle,0,0,4.89306,458232,0.0,Gratis,Too Good To Go ApS,2026-06-25
+1062022008,de,2026-06-30,Photo & Video,6008|6011,Foto und Video|Musik,0,0,4.72891,5452,29.99,"29,99 €",Luma Touch LLC,2026-03-30
+1062745479,de,2026-06-30,Health & Fitness,6013|6020,Gesundheit und Fitness|Medizin,0,0,4.61957,6440,8.99,"8,99 €",TANTSISSA HOLDINGS PTY LTD,2025-10-21
+1064216828,de,2026-06-30,News,6009|6005,Nachrichten|Soziale Netze,0,0,4.57114,126426,0.0,Gratis,"REDDIT, INC.",2026-06-24
+1085978097,de,2026-06-30,Productivity,6007|6017,Produktivität|Bildung,0,0,4.60674,356,9.99,"9,99 €",Ole Zorn,2023-04-27
+1087780386,de,2026-06-30,Shopping,6024|6023,Shopping|Essen und Trinken,0,0,4.61625,258755,0.0,Gratis,Schwarz Digits IT KG,2026-06-22
+1096204041,de,2026-06-30,Lifestyle,6012|6024,Lifestyle|Shopping,0,0,4.5785,254720,0.0,Gratis,Penny-Markt Gesellschaft mit beschraenkter Haftung,2026-06-02
+1113153706,de,2026-06-30,Business,6000|6007,Wirtschaft|Produktivität,0,0,4.65602,546694,0.0,Gratis,Microsoft Corporation,2026-06-29
+1115022026,de,2026-06-30,Lifestyle,6012|6015,Lifestyle|Finanzen,0,0,4.82829,1060,5.99,"5,99 €",Creste LLC,2026-03-02
+1115120118,de,2026-06-30,Finance,6015|6024,Finanzen|Shopping,0,0,4.78153,602312,0.0,Gratis,Klarna Bank AB,2026-06-29
+1117998129,de,2026-06-30,Medical,6020|6017,Medizin|Bildung,0,0,4.80328,14035,22.99,"22,99 €",Visible Body Apps LLC,2025-11-02
+1140451547,de,2026-06-30,Sports,6004|6008,Sport|Foto und Video,0,0,0.0,0,6.99,"6,99 €",Visual Vertigo Software Technologies GmbH,2026-06-25
+1164801111,de,2026-06-30,Health & Fitness,6013|6020,Gesundheit und Fitness|Medizin,0,0,4.57254,17487,8.99,"8,99 €",TANTSISSA HOLDINGS PTY LTD,2025-11-29
+1175031995,de,2026-06-30,Weather,6001|6003,Wetter|Reisen,0,0,4.74019,535,5.99,"5,99 €",JRustonApps B.V.,2026-06-25
+1186271926,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.82024,593465,0.0,Gratis,dm-drogerie markt GmbH + Co. KG,2026-06-29
+1199780189,de,2026-06-30,Travel,6003|6012,Reisen|Lifestyle,0,0,4.86537,267782,0.0,Gratis,Neutron Holdings. Inc.,2026-06-29
+1202650514,de,2026-06-30,Health & Fitness,6013,Gesundheit und Fitness,0,0,4.68605,774,7.99,"7,99 €",Stephane Lizeray,2026-06-16
+1223471316,de,2026-06-30,Shopping,6024|6002,Shopping|Dienst­programme,0,0,4.53272,17174,0.0,Gratis,Shopify Inc.,2026-06-23
+1238611143,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.66108,1333808,0.0,Gratis,Lidl Digital International GmbH & Co. KG,2026-06-28
+1241909999,de,2026-06-30,Health & Fitness,6013|6010,Gesundheit und Fitness|Navigation,0,0,4.76936,1162,9.99,"9,99 €",Ian Muriss,2026-06-26
+1257681297,de,2026-06-30,Lifestyle,6012|6010,Lifestyle|Navigation,0,0,3.9389,2717,0.0,Gratis,ooono AS,2026-06-18
+1265752599,de,2026-06-30,Education,6017,Bildung,0,0,4.22271,458,5.49,"5,49 €",Frank Brueggemann,2024-09-23
+1272688648,de,2026-06-30,Food & Drink,6023|6024,Essen und Trinken|Shopping,0,0,4.17325,49698,0.0,Gratis,EDEKA ZENTRALE Stiftung & Co. KG,2026-06-09
+1303222868,de,2026-06-30,Food & Drink,6023,Essen und Trinken,0,0,4.75786,2127,5.99,"5,99 €",Hindsight Labs LLC,2025-12-18
+1316073818,de,2026-06-30,Education,6017|6000,Bildung|Wirtschaft,0,0,4.32057,705,4.99,"4,99 €",DIHK Bildungs GmbH,2025-11-20
+1331065474,de,2026-06-30,Productivity,6007|6015,Produktivität|Finanzen,0,0,4.81688,64969,0.0,Gratis,Nect GmbH,2026-06-22
+1333174950,de,2026-06-30,Finance,6015|6007,Finanzen|Produktivität,0,0,4.73406,2666,4.99,"4,99 €",Tennstedt Software GmbH,2026-06-22
+1374554550,de,2026-06-30,Reference,6006|6010,Nachschlagewerke|Navigation,0,0,4.66929,1273,2.99,"2,99 €",Florian Chrometz,2023-10-18
+1395921017,de,2026-06-30,Travel,6003,Reisen,0,0,4.81365,121504,0.0,Gratis,VOI Technology AB,2026-06-30
+1406830270,de,2026-06-30,Health & Fitness,6013,Gesundheit und Fitness,0,0,4.54067,91132,0.0,Gratis,AOK Bundesverband,2026-06-15
+1410703839,de,2026-06-30,Finance,6015|6009,Finanzen|Nachrichten,0,0,4.5807,440335,0.0,Gratis,Trade Republic Bank GmbH,2026-06-22
+1423115391,de,2026-06-30,Education,6017|6002,Bildung|Dienst­programme,0,0,4.78371,3634,9.99,"9,99 €",theorie24 GmbH,2026-03-25
+1440301673,de,2026-06-30,Travel,6003,Reisen,0,0,4.73883,45357,0.0,Gratis,emTransit B.V,2026-06-24
+1444681822,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.14173,127,3.99,"3,99 €",Tamas Szabo,2026-06-25
+1449893235,de,2026-06-30,Weather,6001|6002,Wetter|Dienst­programme,0,0,4.40909,66,1.99,"1,99 €",Futura Innovation SRL,2026-04-03
+1458368189,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.38384,693,11.99,"11,99 €",ABUS Security Center GmbH & Co. KG,2025-11-10
+1462875428,de,2026-06-30,Lifestyle,6012,Lifestyle,0,0,4.72103,84764,0.0,Gratis,"Beijing Rockrobo Technology Co., Ltd.",2026-06-15
+1470048869,de,2026-06-30,Sports,6004|6017,Sport|Bildung,0,0,4.77738,831,7.99,"7,99 €",Kollen Druck- und Verlagsgesellschaft mit beschrankter Haftung,2025-09-11
+1496402756,de,2026-06-30,Food & Drink,6023|6018,Essen und Trinken|Bücher,0,0,4.49702,6370,4.99,"4,99 €",Manuela Herzfeld und Joelle Herzfeld,2025-12-03
+1500855883,de,2026-06-30,Photo & Video,6008,Foto und Video,0,0,4.5671,91265,0.0,Gratis,BYTEDANCE PTE. LTD.,2026-06-30
+1505636751,de,2026-06-30,Social Networking,6005,Soziale Netze,0,0,3.78648,281,2.99,"2,99 €",Swisscows AG,2026-04-17
+1521640103,de,2026-06-30,Medical,6020|6012,Medizin|Lifestyle,0,0,4.85154,2526,0.0,Gratis,Kamedi GmbH,2025-07-22
+1531860284,de,2026-06-30,Shopping,6024,Shopping,0,0,3.70202,594,0.0,Gratis,Action Service & Distributie BV.,2026-06-23
+1558240027,de,2026-06-30,Productivity,6007|6008,Produktivität|Foto und Video,0,0,4.43333,4980,0.0,Gratis,"Meta Platforms, Inc.",2026-06-28
+1579060331,de,2026-06-30,Finance,6015,Finanzen,0,0,4.61706,32741,0.0,Gratis,Bayerisches Landesamt fuer Steuern,2026-04-15
+1579524063,de,2026-06-30,Navigation,6010|6003,Navigation|Reisen,0,0,4.4717,106,2.99,"2,99 €",Toni Dominik Hoffmann,2026-03-29
+1591303229,de,2026-06-30,Utilities,6002|6008,Dienst­programme|Foto und Video,0,0,4.36681,458,1.99,"1,99 €",And a Dinosaur,2026-06-17
+1605488891,de,2026-06-30,Utilities,6002|6026,Dienst­programme|Entwickler-Tools,0,0,4.71429,7,3.99,"3,99 €",Jeffrey Friesen,2026-05-22
+1625657880,de,2026-06-30,Entertainment,6016|6008,Unterhaltung|Foto und Video,0,0,4.49972,56273,0.0,Gratis,Telekom Deutschland GmbH,2026-04-21
+1632634023,de,2026-06-30,Education,6017|6000,Bildung|Wirtschaft,0,0,4.0,7,1.99,"1,99 €",Druck und Verlag Ernst Voegel GmbH,2022-11-15
+1633243177,de,2026-06-30,Music,6011,Musik,0,0,4.43344,323,7.99,"7,99 €",Ableton AG,2026-05-05
+1641486558,de,2026-06-30,Shopping,6024,Shopping,0,0,4.66209,202584,0.0,Gratis,Whaleco Inc.,2026-06-28
+1662217862,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.77937,349,5.99,"5,99 €",Kaylee Calderolla,2026-06-28
+1672085276,de,2026-06-30,Productivity,6007|6000,Produktivität|Wirtschaft,0,0,4.82075,212,29.0,"29,00 €",Sindre Sorhus,2026-06-27
+282614216,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.70064,1090776,0.0,Gratis,eBay Inc.,2026-06-29
+283646709,de,2026-06-30,Finance,6015|6002,Finanzen|Dienst­programme,0,0,4.81545,1810078,0.0,Gratis,"PayPal, Inc.",2026-06-11
+284815942,de,2026-06-30,Utilities,6002|6006,Dienst­programme|Nachschlagewerke,0,0,4.4985,417331,0.0,Gratis,Google LLC,2026-06-26
+284882215,de,2026-06-30,Social Networking,6005,Soziale Netze,0,0,4.37807,1345727,0.0,Gratis,"Meta Platforms, Inc.",2026-06-25
+286070473,de,2026-06-30,Business,6000|6015,Wirtschaft|Finanzen,0,0,4.52805,7878,8.99,"8,99 €",Stefan Meyer,2026-06-16
+294631159,de,2026-06-30,Weather,6001|6003,Wetter|Reisen,0,0,4.47985,184823,0.99,"0,99 €",DTN Germany GmbH.,2026-02-23
+298206806,de,2026-06-30,Music,6011|6017,Musik|Bildung,0,0,4.82388,1976,24.99,"24,99 €",Technimo LLC,2026-06-16
+309010388,de,2026-06-30,Utilities,6002|6003,Dienst­programme|Reisen,0,0,4.6029,1992,5.99,"5,99 €",Ralf Andrae,2024-06-06
+309735670,de,2026-06-30,Business,6000|6002,Wirtschaft|Dienst­programme,0,0,4.69454,51460,0.0,Gratis,Indeed Inc.,2026-06-29
+320599923,de,2026-06-30,Finance,6015|6000,Finanzen|Wirtschaft,0,0,4.61193,2543051,0.0,Gratis,Star Finanz GmbH,2026-06-24
+324684580,de,2026-06-30,Music,6011|6016,Musik|Unterhaltung,0,0,4.71037,5546142,0.0,Gratis,Spotify,2026-06-26
+327754661,de,2026-06-30,Weather,6001|6002,Wetter|Dienst­programme,0,0,4.78538,424,6.99,"6,99 €",Christian Huebner,2022-01-04
+329315203,de,2026-06-30,Productivity,6007,Produktivität,0,0,4.65693,724562,0.0,Gratis,Deutsche Post AG,2026-06-18
+333903271,de,2026-06-30,News,6009|6005,Nachrichten|Soziale Netze,0,0,4.42307,370532,0.0,Gratis,TWITTER INTERNATIONAL UNLIMITED COMPANY,2026-06-24
+343555245,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.34962,460844,0.0,Gratis,DB Fernverkehr AG,2026-06-23
+344176018,de,2026-06-30,Navigation,6010|6012,Navigation|Lifestyle,0,0,4.59009,455874,0.0,Gratis,ImmobilienScout GmbH,2026-06-24
+348712880,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.70444,679868,0.0,Gratis,Amazon Europe Core SARL,2026-06-17
+357421934,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.74232,14006,5.99,"5,99 €",PeakFinder GmbH,2026-06-23
+367003839,de,2026-06-30,Travel,6003|6012,Reisen|Lifestyle,0,0,4.77515,921715,0.0,Gratis,Booking.com B.V.,2026-06-29
+368677368,de,2026-06-30,Travel,6003|6012,Reisen|Lifestyle,0,0,4.85538,709073,0.0,Gratis,"Uber Technologies, Inc.",2026-06-29
+373493387,de,2026-06-30,Education,6017|6007,Bildung|Produktivität,0,0,3.96771,1146,29.99,"29,99 €",Anki Software LLC,2025-09-08
+378503081,de,2026-06-30,Productivity,6007,Produktivität,0,0,4.17526,97,9.99,"9,99 €",Acrobits,2026-06-26
+379404334,de,2026-06-30,Lifestyle,6012|6024,Lifestyle|Shopping,0,0,4.54519,196073,0.0,Gratis,Netto Marken-Discount Stiftung & Co. KG,2026-06-20
+382596778,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.74342,3890610,0.0,Gratis,Marktplaats BV,2026-06-29
+385255956,de,2026-06-30,Education,6017|6014|7018|7013,Bildung|Spiele|Quiz- und Denkspiele|Rennsport,1,0,4.65751,692,4.99,"4,99 €",Autotheorie24 e.k.,2026-06-29
+386304604,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.74841,187018,0.0,Gratis,MMS E-Commerce GmbH,2026-06-22
+388497605,de,2026-06-30,Utilities,6002,Dienst­programme,0,0,4.80065,151351,0.0,Gratis,Google LLC,2026-06-25
+389801252,de,2026-06-30,Photo & Video,6008|6005,Foto und Video|Soziale Netze,0,0,4.59058,2460994,0.0,Gratis,"Instagram, Inc.",2026-06-29
+401626263,de,2026-06-30,Travel,6003|6012,Reisen|Lifestyle,0,0,4.65399,65498,0.0,Gratis,"Airbnb, Inc.",2026-06-24
+403684733,de,2026-06-30,Social Networking,6005|6012,Soziale Netze|Lifestyle,0,0,4.4562,822,2.99,"2,99 €",Badoo Software Ltd,2026-06-23
+404844644,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.79452,1105915,0.0,Gratis,Otto GmbH & Co. KGaA,2026-06-23
+404990064,de,2026-06-30,Education,6017|6016,Bildung|Unterhaltung,0,0,4.56705,425,2.99,"2,99 €",Terminal Eleven LLC,2025-05-02
+407932476,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.28193,523599,0.0,Gratis,Telekom Deutschland GmbH,2026-06-09
+413246093,de,2026-06-30,Education,6017,Bildung,0,0,4.66523,3017,12.99,"12,99 €",Fahrschule.de Internetdienste GmbH,2026-06-12
+419724490,de,2026-06-30,Food & Drink,6023|6012,Essen und Trinken|Lifestyle,0,0,4.70023,1605281,0.0,Gratis,Takeaway.com Central Core B.V.,2026-06-25
+422689480,de,2026-06-30,Productivity,6007|6005,Produktivität|Soziale Netze,0,0,4.60306,103886,0.0,Gratis,Google LLC,2026-06-22
+426826309,de,2026-06-30,Health & Fitness,6013|6004,Gesundheit und Fitness|Sport,0,0,4.53182,26898,0.0,Gratis,Strava Inc.,2026-06-26
+429047995,de,2026-06-30,Lifestyle,6012|6008,Lifestyle|Foto und Video,0,0,4.65876,489146,0.0,Gratis,"Pinterest, Inc.",2026-06-24
+432791399,de,2026-06-30,Lifestyle,6012|6003,Lifestyle|Reisen,0,0,4.61184,523,7.99,"7,99 €",VIGI Limited,2026-06-29
+432850619,de,2026-06-30,Music,6011,Musik,0,0,3.44444,27,17.99,"17,99 €",image-line,2026-06-16
+435871950,de,2026-06-30,Travel,6003|6023,Reisen|Essen und Trinken,0,0,4.84002,4513,5.99,"5,99 €","HappyCow, Inc",2026-02-18
+437025413,de,2026-06-30,Entertainment,6016|6004,Unterhaltung|Sport,0,0,4.52485,495567,0.0,Gratis,ZDFonline,2026-06-15
+439839893,de,2026-06-30,Weather,6001|6003,Wetter|Reisen,0,0,4.58053,609711,0.0,Gratis,WetterOnline -  Meteorologische Dienstleistungen GmbH,2026-06-24
+449594317,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.83587,250241,0.0,Gratis,Easy Park AS,2026-06-15
+477094081,de,2026-06-30,Navigation,6010|6003,Navigation|Reisen,0,0,4.84407,776,5.99,"5,99 €",Valnova GmbH,2025-05-27
+490077681,de,2026-06-30,Lifestyle,6012|6013,Lifestyle|Gesundheit und Fitness,0,0,4.71655,11755,7.99,"7,99 €",TappyTaps s.r.o.,2026-06-16
+497716362,de,2026-06-30,Music,6011|6017,Musik|Bildung,0,0,4.81329,1114,6.99,"6,99 €","TonalEnergy, Inc",2026-03-27
+498732510,de,2026-06-30,Navigation,6010|6003,Navigation|Reisen,0,0,3.89967,22137,0.49,"0,49 €",Eifrig Media,2026-02-04
+499470113,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.69066,6753,5.99,"5,99 €","Skyjos Co., Ltd.",2026-06-25
+500003565,de,2026-06-30,Entertainment,6016|6011,Unterhaltung|Musik,0,0,4.64164,6008,0.0,Gratis,Ticketmaster L.L.C,2026-05-19
+504270602,de,2026-06-30,Travel,6003,Reisen,0,0,4.40692,240669,0.0,Gratis,Ryanair Ltd.,2026-06-29
+505365608,de,2026-06-30,Travel,6003|6006,Reisen|Nachschlagewerke,0,0,4.10526,152,6.99,"6,99 €",WikiCamps pty ltd,2026-06-29
+524943492,de,2026-06-30,Food & Drink,6023|6012,Essen und Trinken|Lifestyle,0,0,4.67634,837106,0.0,Gratis,McDonald's Deutschland LLC,2026-05-06
+531809006,de,2026-06-30,Education,6017|6014|7009,Bildung|Spiele|Familie,1,0,4.52813,5188,0.99,"0,99 €",Frank Guchelaar,2026-01-09
+535886823,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.58261,230770,0.0,Gratis,Google LLC,2026-06-24
+545519333,de,2026-06-30,Entertainment,6016|6012,Unterhaltung|Lifestyle,0,0,4.57168,390722,0.0,Gratis,AMZN Mobile LLC,2026-06-26
+545993260,de,2026-06-30,Weather,6001|6003,Wetter|Reisen,0,0,4.52826,957396,0.0,Gratis,WetterOnline -  Meteorologische Dienstleistungen GmbH,2026-06-22
+563488727,de,2026-06-30,Finance,6015|6007,Finanzen|Produktivität,0,0,4.41293,75317,0.0,Gratis,Star Finanz GmbH,2026-06-23
+564730202,de,2026-06-30,Finance,6015|6012,Finanzen|Lifestyle,0,0,4.71232,1745,6.99,"6,99 €",Realbyte Inc.,2026-05-31
+570060128,de,2026-06-30,Education,6017|6005,Bildung|Soziale Netze,0,0,4.59447,806852,0.0,Gratis,"Duolingo, Inc",2026-06-29
+577628510,de,2026-06-30,Social Networking,6005|6000,Soziale Netze|Wirtschaft,0,0,2.68238,403,0.99,"0,99 €",TeamSpeak Systems Inc,2025-11-25
+578665578,de,2026-06-30,Social Networking,6005|6002,Soziale Netze|Dienst­programme,0,0,4.23093,7985,7.99,"7,99 €",Threema GmbH,2026-06-22
+585027354,de,2026-06-30,Navigation,6010|6023,Navigation|Essen und Trinken,0,0,4.61137,917093,0.0,Gratis,Google LLC,2026-06-29
+585629514,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.78899,1159802,0.0,Gratis,Zalando SE,2026-06-29
+586149216,de,2026-06-30,Medical,6020|6013,Medizin|Gesundheit und Fitness,0,0,3.51402,107,8.99,"8,99 €",Monash University,2026-03-12
+595287172,de,2026-06-30,Lifestyle,6012|6005,Lifestyle|Soziale Netze,0,0,4.21687,31070,0.0,Gratis,"Hinge, Inc.",2026-06-29
+596026805,de,2026-06-30,Photo & Video,6008|6017,Foto und Video|Bildung,0,0,4.6551,461,12.99,"12,99 €",PhotoPills S.L.,2026-04-16
+632064380,de,2026-06-30,Shopping,6024|6012,Shopping|Lifestyle,0,0,4.80954,1198416,0.0,Gratis,Vinted Limited,2026-06-29
+640564761,de,2026-06-30,Photo & Video,6008|6017,Foto und Video|Bildung,0,0,4.67204,1982,6.99,"6,99 €","CATEATER, LLC",2025-12-10
+6443709020,de,2026-06-30,Photo & Video,6008|6005,Foto und Video|Soziale Netze,0,0,4.65571,4171,0.0,Gratis,"Lone Palm Labs, Inc.",2026-06-26
+6443923265,de,2026-06-30,Entertainment,6016|6008,Unterhaltung|Foto und Video,0,0,4.06331,616,2.99,"2,99 €",GSE TECHNOLOGY LTD,2022-11-14
+6444912481,de,2026-06-30,Utilities,6002|6003,Dienst­programme|Reisen,0,0,3.45623,811,0.0,Gratis,Home Office,2026-05-28
+6445905219,de,2026-06-30,Entertainment,6016,Unterhaltung,0,0,4.63274,15545,0.0,Gratis,STORYMATRIX PTE. LTD,2026-06-27
+6446901002,de,2026-06-30,Social Networking,6005|6016,Soziale Netze|Unterhaltung,0,0,4.53179,86346,0.0,Gratis,"Instagram, Inc.",2026-06-22
+6447090616,de,2026-06-30,Productivity,6007|6002,Produktivität|Dienst­programme,0,0,4.23494,166,7.99,"7,99 €",SmashMelon LLC,2026-06-09
+6447582581,de,2026-06-30,Entertainment,6016|6014,Unterhaltung|Spiele,1,0,4.07129,519,0.0,Gratis,"Netflix, Inc.",2026-06-24
+6448311069,de,2026-06-30,Productivity,6007|6002,Produktivität|Dienst­programme,0,0,4.7458,1352977,0.0,Gratis,"OpenAI OpCo, LLC",2026-06-23
+6449003064,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.89872,158,2.99,"2,99 €",Skyhook,2023-06-23
+6463562198,de,2026-06-30,Entertainment,6016,Unterhaltung,0,0,4.92593,27,0.99,"0,99 €",Aron Martin Visser,2026-04-23
+6473753684,de,2026-06-30,Productivity,6007|6000,Produktivität|Wirtschaft,0,0,4.53887,17596,0.0,Gratis,Anthropic PBC,2026-06-29
+6477489729,de,2026-06-30,Productivity,6007|6002,Produktivität|Dienst­programme,0,0,4.63006,199615,0.0,Gratis,Google LLC,2026-06-24
+6480453138,de,2026-06-30,Education,6017|6004,Bildung|Sport,0,0,4.7037,27,14.99,"14,99 €",SEUME Publishing Services GmbH,2026-06-29
+6498866513,de,2026-06-30,Medical,6020|6006,Medizin|Nachschlagewerke,0,0,4.87582,153,9.99,"9,99 €",Bjoern Steiger Stiftung Dienstleistung GmbH,2026-05-25
+650684932,de,2026-06-30,Travel,6003|6002,Reisen|Dienst­programme,0,0,4.63063,222,9.99,"9,99 €",OCTECH LLC,2026-05-30
+650812005,de,2026-06-30,Education,6017|6006,Bildung|Nachschlagewerke,0,0,4.76216,1295,5.99,"5,99 €",Rico Gundermann,2025-08-27
+6670430706,de,2026-06-30,Entertainment,6016,Unterhaltung,0,0,4.79824,8510,0.0,Gratis,SKYWORK AI PTE LTD,2026-06-28
+6670756782,de,2026-06-30,Medical,6020,Medizin,0,0,5.0,5,2.99,"2,99 €",Andreas Filippi,2025-01-30
+6740224837,de,2026-06-30,Shopping,6024,Shopping,0,0,4.86053,10174,0.0,Gratis,JINGDONG RETAIL (UK) LIMITED,2026-06-19
+6742644783,de,2026-06-30,Navigation,6010|6002,Navigation|Dienst­programme,0,0,3.56311,103,3.99,"3,99 €",Moonshot Apps UG (haftungsbeschrankt),2026-04-22
+6744290388,de,2026-06-30,Entertainment,6016|6012,Unterhaltung|Lifestyle,0,0,4.75035,192561,0.0,Gratis,Cranberry Apps GmbH,2026-06-30
+6745230519,de,2026-06-30,Productivity,6007|6001,Produktivität|Wetter,0,0,4.44444,18,0.99,"0,99 €",Gonzalo Eguiraun,2026-06-12
+6746705608,de,2026-06-30,Medical,6020|6013,Medizin|Gesundheit und Fitness,0,0,4.15657,396,5.99,"5,99 €",TANTSISSA HOLDINGS PTY LTD,2026-02-16
+6748837351,de,2026-06-30,Photo & Video,6008,Foto und Video,0,0,4.16667,42,6.99,"6,99 €",Moment Inc.,2026-06-30
+6749824842,de,2026-06-30,Utilities,6002|6008,Dienst­programme|Foto und Video,0,0,4.2195,41,9.99,"9,99 €",Leitmotif GmbH,2026-06-26
+675033630,de,2026-06-30,Travel,6003|6010,Reisen|Navigation,0,0,4.72252,80239,0.0,Gratis,BOLT TECHNOLOGY OU,2026-06-29
+6755418922,de,2026-06-30,Productivity,6007|6026,Produktivität|Entwickler-Tools,0,0,5.0,7,4.99,"4,99 €",Heiko Schafer,2026-06-23
+6756059656,de,2026-06-30,Productivity,6007,Produktivität,0,0,4.73564,575,0.0,Gratis,Spill the Tea LLC,2026-06-29
+6756656688,de,2026-06-30,Travel,6003|6018,Reisen|Bücher,0,0,4.5793,1343,9.99,"9,99 €",PiNCAMP GmbH,2026-03-25
+6757758923,de,2026-06-30,Music,6011|6002,Musik|Dienst­programme,0,0,4.91934,186,7.99,"7,99 €",骞 张,2026-06-25
+6757768955,de,2026-06-30,Health & Fitness,6013|6023,Gesundheit und Fitness|Essen und Trinken,0,0,4.79412,238,6.99,"6,99 €",Tobias Bechtold,2026-06-28
+6759037657,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,2.6099,1010,0.0,Gratis,Bundesagentur fuer Arbeit,2026-06-08
+6759321221,de,2026-06-30,Travel,6003|6017,Reisen|Bildung,0,0,3.33333,9,2.99,"2,99 €",soundgarden audioguidance GmbH,2026-03-11
+6760473513,de,2026-06-30,Utilities,6002|6003,Dienst­programme|Reisen,0,0,4.88889,27,4.99,"4,99 €",Marco Pohl,2026-06-29
+6763737180,de,2026-06-30,Photo & Video,6008,Foto und Video,0,0,0.0,0,1.99,"1,99 €",Seungyun Kim,2026-06-26
+6764276890,de,2026-06-30,Utilities,6002,Dienst­programme,0,0,3.0625,16,0.0,Gratis,"Fuzhou Xuanlong Technology Co., Ltd.",2026-05-19
+6775065853,de,2026-06-30,Graphics & Design,6027|6008,Grafik und Design|Foto und Video,0,0,0.0,0,7.99,"7,99 €",David Allen,2026-06-27
+6778099993,de,2026-06-30,Travel,6003|6002,Reisen|Dienst­programme,0,0,4.31818,44,0.99,"0,99 €",Radoslaw Marciniak,2026-06-18
+679454835,de,2026-06-30,Photo & Video,6008|6005,Foto und Video|Soziale Netze,0,0,4.65041,246,6.99,"6,99 €",Rarevision LLC,2025-11-07
+686449807,de,2026-06-30,Social Networking,6005|6007,Soziale Netze|Produktivität,0,0,3.6662,25225,0.0,Gratis,Telegram FZ-LLC,2026-06-22
+694647259,de,2026-06-30,Photo & Video,6008|6003,Foto und Video|Reisen,0,0,4.66432,13951,21.99,"21,99 €",Cocologics GmbH,2026-04-24
+714121079,de,2026-06-30,Food & Drink,6023|6024,Essen und Trinken|Shopping,0,0,4.54927,964275,0.0,Gratis,REWE Markt GmbH,2026-06-23
+719610089,de,2026-06-30,Finance,6015|6003,Finanzen|Reisen,0,0,4.79372,767365,0.0,Gratis,CHECK24,2026-06-30
+835599320,de,2026-06-30,Entertainment,6016|6008,Unterhaltung|Foto und Video,0,0,4.64602,1150006,0.0,Gratis,TIKTOK PTE. LTD.,2026-06-29
+861844720,de,2026-06-30,Health & Fitness,6013|6012,Gesundheit und Fitness|Lifestyle,0,0,4.1129,62,9.99,"9,99 €",Indiworx OHG,2021-01-20
+874139669,de,2026-06-30,Social Networking,6005|6002,Soziale Netze|Dienst­programme,0,0,4.60996,400842,0.0,Gratis,"Signal Messenger, LLC",2026-06-24
+892347083,de,2026-06-30,Utilities,6002|6007,Dienst­programme|Produktivität,0,0,4.15151,33,7.99,"7,99 €",Aleksei Savin,2026-05-09
+897446215,de,2026-06-30,Photo & Video,6008|6007,Foto und Video|Produktivität,0,0,4.80245,229593,0.0,Gratis,Canva Pty Ltd,2026-06-25
+904237743,de,2026-06-30,Productivity,6007|6000,Produktivität|Wirtschaft,0,0,4.7055,5932,9.99,"9,99 €",Cultured Code GmbH & Co. KG,2026-03-25
+916366645,de,2026-06-30,Graphics & Design,6027|6007,Grafik und Design|Produktivität,0,0,3.87615,654,6.99,"6,99 €",Savage Interactive Pty Ltd,2026-03-29
+920788519,de,2026-06-30,Education,6017|6002,Bildung|Dienst­programme,0,0,4.74937,2378,6.99,"6,99 €",theorie24 GmbH,2026-03-31
+922443794,de,2026-06-30,Navigation,6010|6003,Navigation|Reisen,0,0,3.30137,73,5.99,"5,99 €",CNG Services GmbH,2025-04-05
+925339063,de,2026-06-30,Medical,6020|6013,Medizin|Gesundheit und Fitness,0,0,4.79932,142215,0.0,Gratis,Doctolib,2026-06-23
+932493382,de,2026-06-30,Finance,6015|6003,Finanzen|Reisen,0,0,4.86456,214732,0.0,Gratis,Revolut Ltd,2026-06-26
+932747118,de,2026-06-30,Utilities,6002,Dienst­programme,0,0,4.61628,86,2.99,"2,99 €",Shadow Launch Technology Limited,2026-06-10
+936694037,de,2026-06-30,Business,6000|6007,Wirtschaft|Produktivität,0,0,4.55079,2589,6.99,"6,99 €",LiveBird Technologies Private Limited,2026-04-24
+943905271,de,2026-06-30,Food & Drink,6023|6024,Essen und Trinken|Shopping,0,0,4.58195,27909,0.0,Gratis,Wolt Oy,2026-06-29
+946099227,de,2026-06-30,Health & Fitness,6013,Gesundheit und Fitness,0,0,4.62355,426814,0.0,Gratis,YAZIO GmbH,2026-06-26
+948660805,de,2026-06-30,Utilities,6002,Dienst­programme,0,0,4.1887,206820,0.0,Gratis,Governikus GmbH & Co. KG,2026-06-19
+949490225,de,2026-06-30,Photo & Video,6008|6027,Foto und Video|Grafik und Design,0,0,4.84471,1069,2.99,"2,99 €",Clafou Ltd,2026-03-13
+963034692,de,2026-06-30,Health & Fitness,6013|6002,Gesundheit und Fitness|Dienst­programme,0,0,4.68745,3609,6.99,"6,99 €",Crunchy Bagel Pty Ltd,2026-06-02
+981496660,de,2026-06-30,Entertainment,6016|6009,Unterhaltung|Nachrichten,0,0,4.59711,124926,0.0,Gratis,"Sudwestrundfunk, Anstalt des offentlichen Rechts",2026-05-26
+983156458,de,2026-06-30,Productivity,6007|6002,Produktivität|Dienst­programme,0,0,4.66101,90150,0.0,Gratis,Microsoft Corporation,2026-06-11
+983740897,de,2026-06-30,Reference,6006|6002,Nachschlagewerke|Dienst­programme,0,0,4.67373,4665,7.99,"7,99 €",Spiny Software Ltd,2026-05-11
+986420993,de,2026-06-30,Weather,6001|6009,Wetter|Nachrichten,0,0,4.58863,33921,0.0,Gratis,Deutscher Wetterdienst,2026-03-31
+999277937,de,2026-06-30,Education,6017|6006,Bildung|Nachschlagewerke,0,0,3.34884,43,5.99,"5,99 €",DB Regio AG,2025-10-08
+999762739,de,2026-06-30,Business,6000|6015,Wirtschaft|Finanzen,0,0,4.7927,482357,0.0,Gratis,Deutsche Post AG,2026-06-01

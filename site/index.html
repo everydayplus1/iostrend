@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iOS 海外榜单热度雷达</title>
+<script src="data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+  :root{ /* 亮色（默认）—— 高对比，便于白天阅读数据 */
+    --bg:#f4f3fb; --panel:#ffffff; --panel2:#edeaf8; --line:#d8d3ec;
+    --text:#1b1930; --muted:#534e6e; --accent:#5b3bef;
+    --up:#0a8f52; --down:#d22a54; --new:#9a6300; --game:#0a6cae; --puzzle:#7d33c8;
+    --rowhover:#f3f1fc; --glow:#c9bdff33; --activeText:#ffffff;
+    --noteBg:#f1eefb; --tagGameBg:#e7f2fb; --tagPuzzleBg:#f3e9fc;
+  }
+  body.dark{ /* 暗色（霓虹，呼应 arrowdoodle）—— 同样调到高对比 */
+    --bg:#0f1020; --panel:#1b1d34; --panel2:#262943; --line:#3c4063;
+    --text:#f5f4ff; --muted:#c5c0e4; --accent:#b3a5ff;
+    --up:#4ee39a; --down:#ff7d99; --new:#ffd45e; --game:#6fd8ff; --puzzle:#d6a0ff;
+    --rowhover:#262a47; --glow:#241a4d66; --activeText:#0f1020;
+    --noteBg:#1a1535; --tagGameBg:#0f2533; --tagPuzzleBg:#221033;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:radial-gradient(1200px 600px at 70% -10%,var(--glow),transparent),var(--bg);
+       color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  header{padding:18px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  header h1{font-size:18px;margin:0;letter-spacing:.5px}
+  .badge{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:3px 11px;font-size:12px;color:var(--muted)}
+  #themeBtn{cursor:pointer;color:var(--text)}
+  .wrap{max-width:1180px;margin:0 auto;padding:18px 22px}
+  .note{background:var(--noteBg);border:1px solid var(--line);border-left:3px solid var(--accent);
+        border-radius:10px;padding:11px 14px;color:var(--muted);font-size:12.5px;margin-bottom:18px}
+  .note b{color:var(--text)}
+  .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+  select,.btn{background:var(--panel2);color:var(--text);border:1px solid var(--line);
+              border-radius:9px;padding:7px 12px;font-size:13px;cursor:pointer}
+  .btn.active{background:var(--accent);border-color:var(--accent);color:var(--activeText);font-weight:600}
+  .stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 18px;min-width:110px}
+  .stat .n{font-size:24px;font-weight:700}
+  .stat .l{font-size:12px;color:var(--muted)}
+  .grid{display:grid;grid-template-columns:1.45fr 1fr;gap:18px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:980px){.grid,.grid2{grid-template-columns:1fr}}
+  .ico{width:28px;height:28px;border-radius:6px;display:block;background:var(--panel2)}
+  td.ico-td{width:40px;padding-right:2px}
+  .card h2 .cnt{font-weight:400;color:var(--muted);font-size:12px;margin-left:6px}
+  .droptitle{padding:8px 14px;color:var(--muted);font-size:12px;font-weight:700;border-bottom:1px solid var(--line)}
+  .droptitle:not(:first-child){border-top:1px solid var(--line)}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .card h2{font-size:14px;margin:0;padding:13px 16px;border-bottom:1px solid var(--line);
+           color:var(--text);font-weight:600;letter-spacing:.3px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:5px 11px;text-align:left;border-bottom:1px solid var(--line)}
+  th{color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
+  tr:hover td{background:var(--rowhover)}
+  .rank{color:var(--muted);font-variant-numeric:tabular-nums;width:34px}
+  td.spark{width:80px;text-align:center}
+  .delta{font-variant-numeric:tabular-nums;font-weight:700;white-space:nowrap}
+  .up{color:var(--up)} .down{color:var(--down)} .new{color:var(--new)} .same{color:var(--muted)}
+  .tag{display:inline-block;border-radius:6px;padding:1px 7px;font-size:11px;border:1px solid var(--line);font-weight:600}
+  .tag.game{color:var(--game);background:var(--tagGameBg)}
+  .tag.puzzle{color:var(--puzzle);background:var(--tagPuzzleBg)}
+  .tag.muted{color:var(--muted);font-weight:400}
+  .app{font-weight:600}
+  td.app{max-width:230px}
+  td.app .nm{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600;color:var(--accent)}
+  td.app .nm:not(a){color:var(--text)}
+  .sub{color:var(--muted);font-size:11.5px}
+  td.app .sub{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  td.sub{color:var(--text)}
+  .scroll{max-height:1360px;overflow:auto}
+  .age-new{color:var(--up);font-weight:600}
+  .focus-empty{padding:18px;color:var(--muted);font-size:12.5px}
+  canvas{padding:12px}
+  .foot{color:var(--muted);font-size:11.5px;margin-top:22px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎯 iOS 海外榜单热度雷达</h1>
+  <span class="badge" id="dateBadge">—</span>
+  <span class="badge" id="genBadge">—</span>
+  <span style="flex:1"></span>
+  <button class="badge" id="themeBtn" title="切换亮/暗主题">🌙 暗色</button>
+</header>
+
+<div class="wrap">
+  <div class="note">
+    <b>诚实边界</b>：数据=Apple 官方 Marketing Tools 总榜（每日更新），仅 top-free/top-paid；
+    免费官方源无畅销榜、无细分品类深榜。「游戏/解谜」由 iTunes Lookup 品类筛出，小众品类在总榜中常很少出现。
+    评分/价格按各市场本地化；趋势需多日累积。
+  </div>
+
+  <!-- 解谜专题置顶：直接服务 arrowdoodle -->
+  <div class="card" style="margin-bottom:18px">
+    <h2 id="focusTitle">🧩 解谜游戏专题（服务自家 app）</h2>
+    <div id="focusBox"></div>
+  </div>
+
+  <div class="controls">
+    <select id="market"></select>
+    <select id="ageFilter" title="按上线时间筛选，聚焦新机会">
+      <option value="0">上线时间：不限</option>
+      <option value="6">只看近 6 个月上线</option>
+      <option value="12">只看近 1 年上线</option>
+      <option value="24">只看近 2 年上线</option>
+      <option value="36">只看近 3 年上线</option>
+    </select>
+    <span style="flex:1"></span>
+    <button class="btn active" data-filter="all">全部</button>
+    <button class="btn" data-filter="new">🆕 新进</button>
+    <button class="btn" data-filter="up">🚀 上升</button>
+    <button class="btn" data-filter="game">🎮 游戏</button>
+    <button class="btn" data-filter="puzzle">🧩 解谜</button>
+  </div>
+
+  <!-- 免费榜 / 付费榜 并排 -->
+  <div class="grid2">
+    <div class="card">
+      <h2 id="freeTitle">🆓 免费榜</h2>
+      <div class="scroll"><table id="freeTable"></table></div>
+    </div>
+    <div class="card">
+      <h2 id="paidTitle">💰 付费榜</h2>
+      <div class="scroll"><table id="paidTable"></table></div>
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:18px">
+    <div class="card">
+      <h2>📈 品类数量趋势（游戏 / 解谜 · 免费实线 / 付费虚线）</h2>
+      <canvas id="trend" height="200"></canvas>
+      <div id="trendNote" class="focus-empty" style="display:none"></div>
+    </div>
+    <div class="card">
+      <h2>📉 掉出榜</h2>
+      <div id="dropBox" class="scroll" style="max-height:300px"></div>
+    </div>
+  </div>
+
+  <div class="foot">iostrend · 数据源 © Apple Inc.（Marketing Tools RSS）· 仅供自家产品研究参考</div>
+</div>
+
+<script>
+const D = window.IOSTREND_DATA;
+let curFilter = "all", chart = null;
+
+// 转义外部数据（app 名/开发者等来自 Apple，可能含 & < > " '），防渲染错乱与 XSS
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,
+  c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+
+function fmtDelta(r){
+  if(r.status==="new") return '<span class="delta new">🆕</span>';
+  if(r.delta===null||r.delta===undefined) return '<span class="delta same">—</span>';
+  if(r.delta>0) return '<span class="delta up">▲'+r.delta+'</span>';
+  if(r.delta<0) return '<span class="delta down">▼'+Math.abs(r.delta)+'</span>';
+  return '<span class="delta same">—</span>';
+}
+function genreTag(r){
+  if(r.is_puzzle) return '<span class="tag puzzle">🧩 解谜</span>';
+  if(r.is_game) return '<span class="tag game">🎮 游戏</span>';
+  return '<span class="tag muted">'+esc(r.primary_genre_cn||r.primary_genre||'—')+'</span>';
+}
+function rating(r){ return (typeof r.rating==="number") ? r.rating.toFixed(2) : '—'; }
+function ckey(feed){ return market.value+"|"+feed; }
+function iconImg(r){
+  return r.icon
+    ? `<img class="ico" src="${encodeURI(r.icon)}" loading="lazy" alt="" onerror="this.style.visibility='hidden'">`
+    : '<span class="ico"></span>';
+}
+// 以榜单日期为基准回推 months 个月，得到截止日（用于「只看近N个月上线」）
+function ageCutoff(months){
+  const d = new Date((D.latest_date||"")+"T00:00:00");
+  if(isNaN(d)) return null;
+  d.setMonth(d.getMonth()-months);
+  return d.toISOString().slice(0,10);
+}
+// 上线日期展示（YYYY-MM），≤1 年的新 app 标绿
+function relText(r){
+  const rd = r.release_date;
+  if(!rd || rd.length<7) return "";
+  const cut1 = ageCutoff(12);
+  const cls = (cut1 && rd.slice(0,10)>=cut1) ? "age-new" : "sub";
+  return `<span class="${cls}" title="上线日期 ${esc(rd)}">📅${esc(rd.slice(0,7))}</span>`;
+}
+
+// 最近趋势 sparkline：名次序列（缺席天为 null）→ 内联 SVG 迷你折线
+// 名次小=靠上=好；末点优于首点→绿(上升)，劣于→红(下降)，持平→灰
+function sparkline(spark){
+  const n = (spark && spark.length) || 0;
+  const pts = [];
+  for(let i=0;i<n;i++){ if(spark[i]!=null) pts.push({i, r:spark[i]}); }
+  if(pts.length<=1) return '<span class="sub" title="趋势需≥2天数据">—</span>';
+  const W=70, H=20, pad=3;
+  const ranks = pts.map(p=>p.r);
+  const mn=Math.min(...ranks), mx=Math.max(...ranks), range=(mx-mn)||1;
+  const X=i=> n>1 ? pad + i*(W-2*pad)/(n-1) : W/2;
+  const Y=r=> pad + ((r-mn)/range)*(H-2*pad);   // 名次小(好)→y小(靠上)
+  const poly = pts.map(p=>`${X(p.i).toFixed(1)},${Y(p.r).toFixed(1)}`).join(' ');
+  const first=pts[0].r, last=pts[pts.length-1].r;
+  const col = last<first ? 'var(--up)' : (last>first ? 'var(--down)' : 'var(--muted)');
+  const lx=X(pts[pts.length-1].i).toFixed(1), ly=Y(last).toFixed(1);
+  return `<svg width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" style="vertical-align:middle" `
+    + `aria-label="近${n}天名次趋势"><polyline points="${poly}" fill="none" stroke="${col}" `
+    + `stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>`
+    + `<circle cx="${lx}" cy="${ly}" r="1.9" fill="${col}"/></svg>`;
+}
+
+function fillSelect(el, items, val, label){
+  el.innerHTML = items.map(i=>`<option value="${val(i)}">${label(i)}</option>`).join("");
+}
+
+function renderFocus(){
+  document.getElementById("focusTitle").textContent = "🧩 "+D.focus_label+"专题（服务自家 app）";
+  const box = document.getElementById("focusBox");
+  if(!D.focus || !D.focus.length){
+    box.innerHTML = '<div class="focus-empty">本期各总榜 Top 100 中未发现'+D.focus_label+
+      '。这是免费官方源的固有局限——细分品类深榜需后续接入分品类数据源。</div>';
+    return;
+  }
+  const rows = D.focus.map(a=>{
+    const spots = a.appearances.map(s=>`${s.country.toUpperCase()}/${D.feed_names[s.feed]||s.feed}#${s.rank}`).join("、");
+    return `<tr><td class="app">${esc(a.name)}<div class="sub">${esc(a.artist||"")}</div></td>
+      <td>${(typeof a.rating==="number")?a.rating.toFixed(2):"—"}</td>
+      <td>${esc(a.price||"—")}</td><td class="sub">${esc(spots)}</td></tr>`;
+  }).join("");
+  box.innerHTML = `<table><tr><th>App</th><th>评分</th><th>价格</th><th>上榜市场</th></tr>${rows}</table>`;
+}
+
+function filterRows(rows){
+  let r = rows;
+  if(curFilter==="new") r=r.filter(x=>x.status==="new");
+  else if(curFilter==="up") r=r.filter(x=>x.delta>0);
+  else if(curFilter==="game") r=r.filter(x=>x.is_game);
+  else if(curFilter==="puzzle") r=r.filter(x=>x.is_puzzle);
+  const ageEl = document.getElementById("ageFilter");
+  const m = ageEl ? parseInt(ageEl.value||"0",10) : 0;
+  if(m>0){ const cut=ageCutoff(m); if(cut) r=r.filter(x=>x.release_date && x.release_date.slice(0,10)>=cut); }
+  return r;
+}
+
+function renderFeedTable(feed, tableId, titleId){
+  const ch = D.charts[ckey(feed)];
+  const all = ch ? ch.rows : [];
+  const rows = filterRows(all.slice());
+  const games = all.filter(r=>r.is_game).length, puz = all.filter(r=>r.is_puzzle).length;
+  const isPaid = feed==="top-paid";
+  document.getElementById(titleId).innerHTML =
+    `${isPaid?'💰 付费榜':'🆓 免费榜'} <span class="cnt">${all.length} 条 · 🎮${games} 🧩${puz}</span>`;
+  const sw = D.spark_window||7;
+  const body = rows.map(r=>`<tr>
+    <td class="ico-td">${iconImg(r)}</td>
+    <td class="rank">${r.rank}</td>
+    <td class="app">${r.url
+        ?`<a class="nm" href="${encodeURI(r.url)}" target="_blank" title="${esc(r.name)}">${esc(r.name)}</a>`
+        :`<span class="nm" title="${esc(r.name)}">${esc(r.name)}</span>`}
+        <div class="sub">${r.release_date?(relText(r)+' · '):''}${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
+    <td class="delta">${fmtDelta(r)}</td>
+    <td class="spark">${sparkline(r.spark)}</td>
+    <td>${genreTag(r)}</td>
+    <td class="sub">${rating(r)}</td>
+  </tr>`).join("");
+  document.getElementById(tableId).innerHTML =
+    `<tr><th></th><th>#</th><th>App</th><th>变化</th><th>近${sw}天</th><th>品类</th><th>评分</th></tr>`
+    + (body||'<tr><td colspan=7 class="focus-empty">无匹配</td></tr>');
+}
+
+function renderTables(){
+  renderFeedTable("top-free","freeTable","freeTitle");
+  renderFeedTable("top-paid","paidTable","paidTitle");
+}
+
+function dropSection(feed){
+  const ch = D.charts[ckey(feed)]; const d = ch?ch.droppers:[];
+  const rows = (d||[]).map(x=>`<tr><td class="rank">${x.prev_rank}</td><td class="app">${esc(x.name)}</td></tr>`).join("");
+  return `<div class="droptitle">${feed==="top-paid"?"💰 付费榜":"🆓 免费榜"}</div>`
+    + `<table>${rows||'<tr><td colspan=2 class="focus-empty" style="padding:8px 14px">无（需≥2天对比）</td></tr>'}</table>`;
+}
+function renderDroppers(){
+  document.getElementById("dropBox").innerHTML = ["top-free","top-paid"].map(dropSection).join("");
+}
+
+function renderTrend(){
+  const note = document.getElementById("trendNote");
+  const cv = document.getElementById("trend");
+  const dates = D.dates||[];
+  const free = D.history[ckey("top-free")]||[];
+  const paid = D.history[ckey("top-paid")]||[];
+  if(dates.length<2 || typeof Chart==="undefined"){
+    cv.style.display="none"; note.style.display="block";
+    note.textContent = dates.length<2 ? "需连续 ≥2 天数据才出趋势线。" : "趋势图组件未加载（需联网）。";
+    if(chart){chart.destroy();chart=null;}
+    return;
+  }
+  cv.style.display="block"; note.style.display="none";
+  const cs=getComputedStyle(document.body);
+  const muted=cs.getPropertyValue('--muted').trim();
+  const line=cs.getPropertyValue('--line').trim();
+  const cGame=cs.getPropertyValue('--game').trim();
+  const cPuz=cs.getPropertyValue('--puzzle').trim();
+  const idx=a=>{const o={};a.forEach(x=>o[x.date]=x);return o;};
+  const mf=idx(free), mp=idx(paid);
+  const series=(m,k)=>dates.map(d=>m[d]?m[d][k]:null);
+  if(chart) chart.destroy();
+  chart = new Chart(cv, {type:"line",
+    data:{labels:dates,datasets:[
+      {label:"免费榜游戏",data:series(mf,"games"),borderColor:cGame,backgroundColor:"transparent",tension:.3,spanGaps:true},
+      {label:"付费榜游戏",data:series(mp,"games"),borderColor:cGame,borderDash:[5,4],backgroundColor:"transparent",tension:.3,spanGaps:true},
+      {label:"免费榜解谜",data:series(mf,"puzzle"),borderColor:cPuz,backgroundColor:"transparent",tension:.3,spanGaps:true},
+      {label:"付费榜解谜",data:series(mp,"puzzle"),borderColor:cPuz,borderDash:[5,4],backgroundColor:"transparent",tension:.3,spanGaps:true}
+    ]},
+    options:{plugins:{legend:{labels:{color:muted,boxWidth:14}}},
+      scales:{x:{ticks:{color:muted},grid:{color:line}},
+              y:{ticks:{color:muted},grid:{color:line},beginAtZero:true}}}
+  });
+}
+
+function applyTheme(t){
+  document.body.classList.toggle("dark", t==="dark");
+  const btn=document.getElementById("themeBtn");
+  if(btn) btn.textContent = t==="dark" ? "☀️ 亮色" : "🌙 暗色";
+}
+function toggleTheme(){
+  const next = document.body.classList.contains("dark") ? "light" : "dark";
+  try{ localStorage.setItem("iostrend-theme", next); }catch(e){}
+  applyTheme(next);
+  if(D) renderTrend();   // 重绘趋势图以套用新主题色
+}
+
+function renderAll(){ renderTables(); renderDroppers(); renderTrend(); }
+
+function init(){
+  if(!D){document.body.innerHTML="<p style='padding:30px'>未找到数据，请先运行 build_site.py 生成 data.js</p>";return;}
+  document.getElementById("dateBadge").textContent = "榜单日期 "+(D.latest_date||"—");
+  document.getElementById("genBadge").textContent = "生成 "+(D.generated||"—");
+  fillSelect(market, D.markets, m=>m.cc, m=>m.name+" "+m.cc.toUpperCase());
+  renderFocus(); renderAll();
+  market.onchange = renderAll;
+  document.getElementById("ageFilter").onchange = renderTables;
+  document.querySelectorAll(".btn[data-filter]").forEach(b=>b.onclick=()=>{
+    document.querySelectorAll(".btn[data-filter]").forEach(x=>x.classList.remove("active"));
+    b.classList.add("active"); curFilter=b.dataset.filter; renderTables();
+  });
+}
+const market=document.getElementById("market");
+// 主题：读取保存偏好（默认亮色），绑定切换按钮
+(function(){
+  let t="light";
+  try{ t=localStorage.getItem("iostrend-theme")||"light"; }catch(e){}
+  applyTheme(t);
+  const b=document.getElementById("themeBtn"); if(b) b.onclick=toggleTheme;
+})();
+init();
+</script>
+</body>
+</html>

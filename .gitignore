@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 看板趋势图（产物，可重生成）
+reports/*.png
+
+# 系统
+.DS_Store
+
+# 注意：data/*.csv 与 reports/*.md 保留进版本库 —— 它们是累积的历史，
+# CI 每日提交回仓库，趋势才有意义。site/data.js 由 CI 重生成并部署。
