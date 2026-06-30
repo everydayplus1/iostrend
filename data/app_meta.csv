@@ -411,7 +411,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 6746705608,us,2026-06-30,Medical,6020|6013,Medical|Health & Fitness,0,0,4.25771,1102,4.99,$4.99,TANTSISSA HOLDINGS PTY LTD,2026-02-16,2025-11-02
 6746919411,us,2026-06-30,Games,6014|7017|7012,Games|Strategy|Puzzle,1,1,4.75694,288,4.99,$4.99,MogDogBlog Productions LLC,2026-04-29,2026-04-14
 6746944662,us,2026-06-30,Games,6014|7002|7003,Games|Adventure|Casual,1,0,5.0,3,1.99,$1.99,Jasper Levin,2026-06-25,2026-06-25
-6747492600,us,2026-06-30,Games,6014|6016|7004|7012,Games|Entertainment|Board|Puzzle,1,1,4.86746,402134,0.0,Free,HURELAX PTE. LTD.,2026-06-30,2025-06-24
+6747492600,us,2026-06-30,Games,6014|6016|7012|7004,Games|Entertainment|Puzzle|Board,1,1,4.86746,402134,0.0,Free,HURELAX PTE. LTD.,2026-06-30,2025-06-24
 6747642423,us,2026-06-30,Games,6014|7017|7019,Games|Strategy|Word,1,0,4.5,6,1.99,$1.99,Jessie Contour,2025-07-17,2025-07-17
 6747752407,us,2026-06-30,Games,6014|7017|7004,Games|Strategy|Board,1,0,4.88732,2414,5.99,$5.99,Stray Fawn GmbH,2026-06-12,2026-05-01
 6747810901,us,2026-06-30,Games,6014|7012|6016|7019,Games|Puzzle|Entertainment|Word,1,1,4.92217,25916,0.0,Free,PlaySimple Games Pte Ltd,2026-06-09,2025-07-29
@@ -2067,7 +2067,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 6746919411,gb,2026-06-30,Games,6014|7017|7012,Games|Strategy|Puzzle,1,1,4.92307,26,4.99,£4.99,MogDogBlog Productions LLC,2026-04-29,2026-04-14
 6746944662,gb,2026-06-30,Games,6014|7002|7003,Games|Adventure|Casual,1,0,5.0,2,1.99,£1.99,Jasper Levin,2026-06-25,2026-06-25
 6747028173,gb,2026-06-30,Games,6014|7012|7003,Games|Puzzle|Casual,1,1,4.80165,2062,0.0,Free,Moon Active LTD,2026-06-21,2025-09-14
-6747492600,gb,2026-06-30,Games,6014|6016|7004|7012,Games|Entertainment|Board|Puzzle,1,1,4.83676,38600,0.0,Free,HURELAX PTE. LTD.,2026-06-30,2025-06-24
+6747492600,gb,2026-06-30,Games,6014|6016|7012|7004,Games|Entertainment|Puzzle|Board,1,1,4.83676,38600,0.0,Free,HURELAX PTE. LTD.,2026-06-30,2025-06-24
 6747752407,gb,2026-06-30,Games,6014|7017|7004,Games|Strategy|Board,1,0,4.84877,205,5.99,£5.99,Stray Fawn GmbH,2026-06-12,2026-05-01
 6747814605,gb,2026-06-30,Games,6014|7003|7012,Games|Casual|Puzzle,1,1,4.05714,35,8.99,£8.99,Poti Poti Studio SL,2026-01-23,2025-08-07
 6748056918,gb,2026-06-30,Games,6014|7015,Games|Simulation,1,0,3.1875,48,6.99,£6.99,GIANTS Software GmbH,2026-06-12,2026-05-19
@@ -2597,7 +2597,7 @@ app_id,country,date,primary_genre,genre_ids,genres,is_game,is_puzzle,avg_rating,
 6745761596,de,2026-06-30,Games,6014|7003|7004,Spiele|Gelegenheits­spiele|Brettspiele,1,0,4.83809,4237,0.0,Gratis,Moon Active LTD,2026-06-28,2026-03-12
 6746328263,de,2026-06-30,Games,6014|7001|7017,Spiele|Action|Strategie,1,0,4.50176,5088,0.0,Gratis,Voodoo,2026-06-23,2025-05-26
 6746705608,de,2026-06-30,Medical,6020|6013,Medizin|Gesundheit und Fitness,0,0,4.15657,396,5.99,"5,99 €",TANTSISSA HOLDINGS PTY LTD,2026-02-16,2025-11-02
-6747492600,de,2026-06-30,Games,6014|6016|7004|7012,Spiele|Unterhaltung|Brettspiele|Puzzle,1,1,4.72476,18856,0.0,Gratis,HURELAX PTE. LTD.,2026-06-30,2025-06-24
+6747492600,de,2026-06-30,Games,6014|6016|7012|7004,Spiele|Unterhaltung|Puzzle|Brettspiele,1,1,4.72476,18856,0.0,Gratis,HURELAX PTE. LTD.,2026-06-30,2025-06-24
 6747752407,de,2026-06-30,Games,6014|7017|7004,Spiele|Strategie|Brettspiele,1,0,4.88102,664,6.99,"6,99 €",Stray Fawn GmbH,2026-06-12,2026-05-01
 6747814605,de,2026-06-30,Games,6014|7003|7012,Spiele|Gelegenheits­spiele|Puzzle,1,1,4.2,15,9.99,"9,99 €",Poti Poti Studio SL,2026-01-23,2025-08-07
 6748056918,de,2026-06-30,Games,6014|7015,Spiele|Simulation,1,0,3.44318,88,7.99,"7,99 €",GIANTS Software GmbH,2026-06-12,2026-05-19
