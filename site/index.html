@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>iOS 海外榜单热度雷达</title>
 <script src="data.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
 <style>
   :root{ /* 亮色（默认）—— 高对比，便于白天阅读数据 */
     --bg:#f4f3fb; --panel:#ffffff; --panel2:#edeaf8; --line:#d8d3ec;
@@ -155,16 +154,9 @@
     <div class="scroll" style="max-height:800px"><table id="catTable"></table></div>
   </div>
 
-  <div class="grid" style="margin-top:18px">
-    <div class="card">
-      <h2>📈 品类数量趋势（游戏 / 解谜 · 免费实线 / 付费虚线）</h2>
-      <canvas id="trend" height="200"></canvas>
-      <div id="trendNote" class="focus-empty" style="display:none"></div>
-    </div>
-    <div class="card">
-      <h2>📉 掉出榜</h2>
-      <div id="dropBox" class="scroll" style="max-height:300px"></div>
-    </div>
+  <div class="card" style="margin-top:18px">
+    <h2>📉 掉出榜</h2>
+    <div id="dropBox" class="scroll" style="max-height:340px"></div>
   </div>
 
   <div class="foot">iostrend · 数据源 © Apple Inc.（Marketing Tools RSS）· 仅供自家产品研究参考</div>
@@ -172,7 +164,7 @@
 
 <script>
 const D = window.IOSTREND_DATA;
-let curFilter = "all", chart = null;
+let curFilter = "all";
 let catGenre = "", catFeed = "topfree";   // 分品类深榜：当前品类 genreId / 榜单类型
 
 // 转义外部数据（app 名/开发者等来自 Apple，可能含 & < > " '），防渲染错乱与 XSS
@@ -415,41 +407,6 @@ function renderDroppers(){
   document.getElementById("dropBox").innerHTML = ["top-free","top-paid"].map(dropSection).join("");
 }
 
-function renderTrend(){
-  const note = document.getElementById("trendNote");
-  const cv = document.getElementById("trend");
-  const dates = D.dates||[];
-  const free = D.history[ckey("top-free")]||[];
-  const paid = D.history[ckey("top-paid")]||[];
-  if(dates.length<2 || typeof Chart==="undefined"){
-    cv.style.display="none"; note.style.display="block";
-    note.textContent = dates.length<2 ? "需连续 ≥2 天数据才出趋势线。" : "趋势图组件未加载（需联网）。";
-    if(chart){chart.destroy();chart=null;}
-    return;
-  }
-  cv.style.display="block"; note.style.display="none";
-  const cs=getComputedStyle(document.body);
-  const muted=cs.getPropertyValue('--muted').trim();
-  const line=cs.getPropertyValue('--line').trim();
-  const cGame=cs.getPropertyValue('--game').trim();
-  const cPuz=cs.getPropertyValue('--puzzle').trim();
-  const idx=a=>{const o={};a.forEach(x=>o[x.date]=x);return o;};
-  const mf=idx(free), mp=idx(paid);
-  const series=(m,k)=>dates.map(d=>m[d]?m[d][k]:null);
-  if(chart) chart.destroy();
-  chart = new Chart(cv, {type:"line",
-    data:{labels:dates,datasets:[
-      {label:"免费榜游戏",data:series(mf,"games"),borderColor:cGame,backgroundColor:"transparent",tension:.3,spanGaps:true},
-      {label:"付费榜游戏",data:series(mp,"games"),borderColor:cGame,borderDash:[5,4],backgroundColor:"transparent",tension:.3,spanGaps:true},
-      {label:"免费榜解谜",data:series(mf,"puzzle"),borderColor:cPuz,backgroundColor:"transparent",tension:.3,spanGaps:true},
-      {label:"付费榜解谜",data:series(mp,"puzzle"),borderColor:cPuz,borderDash:[5,4],backgroundColor:"transparent",tension:.3,spanGaps:true}
-    ]},
-    options:{plugins:{legend:{labels:{color:muted,boxWidth:14}}},
-      scales:{x:{ticks:{color:muted},grid:{color:line}},
-              y:{ticks:{color:muted},grid:{color:line},beginAtZero:true}}}
-  });
-}
-
 function applyTheme(t){
   document.body.classList.toggle("dark", t==="dark");
   const btn=document.getElementById("themeBtn");
@@ -459,10 +416,9 @@ function toggleTheme(){
   const next = document.body.classList.contains("dark") ? "light" : "dark";
   try{ localStorage.setItem("iostrend-theme", next); }catch(e){}
   applyTheme(next);
-  if(D) renderTrend();   // 重绘趋势图以套用新主题色
 }
 
-function renderAll(){ renderCatTable(); renderTables(); renderDroppers(); renderTrend(); }
+function renderAll(){ renderCatTable(); renderTables(); renderDroppers(); }
 
 function init(){
   if(!D){document.body.innerHTML="<p style='padding:30px'>未找到数据，请先运行 build_site.py 生成 data.js</p>";return;}
