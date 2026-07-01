@@ -40,3 +40,16 @@ category_charts:
     游戏: "6014"
     文字: "7019"
   focus: "解谜"       # 看板默认展示的分品类
+
+# === M3 竞品/自家雷达 ===
+# 关注列表：跨所有市场×所有榜单(总榜+分品类)聚合追踪。
+# 每项：字符串=名称包含匹配(大小写不敏感)；纯数字=app_id 精确匹配。
+watchlist:
+  enabled: true
+  apps:
+    - "Arrows"        # Arrows – Puzzle Escape（同类：曲线箭头逃脱）
+    - "Block Blast"
+    - "Meowdoku"
+    - "Royal Match"   # 解谜畅销榜常青
+    - "Candy Crush"
+    # arrowdoodle 上线后：加 "Arrowdoodle" 或其 app_id

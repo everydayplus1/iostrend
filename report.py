@@ -147,6 +147,28 @@ def build_md(data: dict) -> str:
                  for r in ch["rows"][:8]]))
     L.append("")
 
+    # ---- M3 竞品雷达（关注列表）----
+    wl = data.get("watchlist", [])
+    CATFEED = {"topfree": "免费榜", "toppaid": "付费榜", "topgrossing": "畅销榜"}
+    GMAP = {g["gid"]: g["name"] for g in data.get("cat_genres", [])}
+    L.append("## 🎯 竞品雷达（关注列表）")
+
+    def _ap_label(ap):
+        mkt = _cc(ap["country"])
+        if ap["kind"] == "overall":
+            return f"{mkt} {FEED_CN.get(ap['feed'], ap['feed'])}"
+        return f"{mkt} {GMAP.get(ap['gid'], ap['gid'])}·{CATFEED.get(ap['feed'], ap['feed'])}"
+
+    if not wl:
+        L.append("\n_关注列表当前均未上榜（或未配置）。_")
+    else:
+        for a in wl:
+            L.append(f"\n**{a['name']}** · 最佳 #{a['best_rank']} · {a['n']} 处上榜 · "
+                     f"⭐{_rating(a['rating'])} · 已上线 {_age(a['release_date'], base)}")
+            L.append("　" + "、".join(f"{_ap_label(ap)}#{ap['rank']}"
+                                     for ap in a["appearances"][:10]))
+    L.append("")
+
     # ---- 游戏品类总览 ----
     L.append("## 🎮 游戏品类分布（各总榜中游戏数量）")
     hist = data["history"]

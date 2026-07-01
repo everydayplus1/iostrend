@@ -232,6 +232,73 @@ def focus_spotlight(changes_by_key: dict, focus_attr: str = "is_puzzle") -> list
     return result
 
 
+def build_watchlist(entries: list, changes_by_key: dict, category: dict):
+    """关注列表：跨所有市场×榜单(总榜+分品类)聚合每个被关注 app 的上榜情况。
+
+    entries 每项：纯数字=app_id 精确匹配；否则=名称包含匹配(大小写不敏感)。
+    返回 (命中的 app 列表[按最佳名次], 未上榜的关注词列表)。
+    """
+    matchers = []
+    for e in entries:
+        s = str(e).strip()
+        if s.isdigit():
+            matchers.append(("id", s))
+        elif s:
+            matchers.append(("name", s.lower()))
+
+    def hit(r):
+        for k, v in matchers:
+            if k == "id" and str(r["app_id"]) == v:
+                return True
+            if k == "name" and v in str(r.get("name", "")).lower():
+                return True
+        return False
+
+    apps: dict[str, dict] = {}
+
+    def add(r, country, kind, feed, gid=None):
+        a = apps.setdefault(str(r["app_id"]), {
+            "app_id": str(r["app_id"]), "name": r["name"], "artist": r["artist"],
+            "icon": r.get("icon", ""), "rating": r.get("rating"), "price": r.get("price"),
+            "release_date": r.get("release_date", ""),
+            "primary_genre_cn": r.get("primary_genre_cn"),
+            "is_game": r.get("is_game", 0), "is_puzzle": r.get("is_puzzle", 0),
+            "appearances": [],
+        })
+        a["appearances"].append({
+            "country": country, "kind": kind, "feed": feed, "gid": gid,
+            "rank": r["rank"], "delta": r["delta"], "status": r["status"],
+            "spark": r.get("spark", []),
+        })
+
+    for key, ch in changes_by_key.items():
+        country, feed = key.split("|")
+        for r in ch["rows"]:
+            if hit(r):
+                add(r, country, "overall", feed)
+    for key, ch in category.items():
+        country, feed, gid = key.split("|")
+        for r in ch["rows"]:
+            if hit(r):
+                add(r, country, "cat", feed, gid)
+
+    res = list(apps.values())
+    for a in res:
+        a["appearances"].sort(key=lambda x: x["rank"])
+        a["best_rank"] = a["appearances"][0]["rank"] if a["appearances"] else 9999
+        a["n"] = len(a["appearances"])
+    res.sort(key=lambda a: a["best_rank"])
+
+    misses = []
+    for e in entries:
+        s = str(e).strip().lower()
+        if not s:
+            continue
+        if not any(s == a["app_id"] or s in a["name"].lower() for a in res):
+            misses.append(str(e))
+    return res, misses
+
+
 def build_all() -> dict:
     """一站式产出所有分析结果。"""
     cfg = load_config()
@@ -242,7 +309,8 @@ def build_all() -> dict:
         return {"config": cfg, "dates": [], "latest_date": None, "has_trend": False,
                 "changes": {}, "history": {}, "focus": [],
                 "focus_label": cfg.get("focus_label", "解谜游戏"),
-                "category": {}, "cat_genres": [], "cat_feeds": [], "cat_focus": ""}
+                "category": {}, "cat_genres": [], "cat_feeds": [], "cat_focus": "",
+                "watchlist": [], "watchlist_misses": []}
 
     changes_by_key: dict[str, dict] = {}
     for country in cfg["markets"]:
@@ -263,6 +331,13 @@ def build_all() -> dict:
                         category[f"{country}|{feed}|{gid}"] = category_chart(
                             cat_merged, country, feed, str(gid))
 
+    # M3 竞品/自家雷达（关注列表）
+    wl_cfg = cfg.get("watchlist", {})
+    watchlist, wl_misses = ([], [])
+    if wl_cfg.get("enabled"):
+        watchlist, wl_misses = build_watchlist(wl_cfg.get("apps", []),
+                                               changes_by_key, category)
+
     return {
         "config": cfg,
         "dates": dates,
@@ -276,4 +351,6 @@ def build_all() -> dict:
         "cat_genres": [{"name": n, "gid": str(g)} for n, g in cat_genres.items()],
         "cat_feeds": cat_feeds,
         "cat_focus": cc.get("focus", ""),
+        "watchlist": watchlist,
+        "watchlist_misses": wl_misses,
     }

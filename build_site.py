@@ -60,6 +60,9 @@ def build_payload() -> dict:
         "cat_feeds": data.get("cat_feeds", []),
         "cat_feed_names": CAT_FEED_CN,
         "cat_focus": data.get("cat_focus", ""),
+        # M3 雷达
+        "watchlist": data.get("watchlist", []),
+        "watchlist_misses": data.get("watchlist_misses", []),
     }
 
 
