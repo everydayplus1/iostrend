@@ -53,6 +53,9 @@
   .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
   .card h2{font-size:14px;margin:0;padding:13px 16px;border-bottom:1px solid var(--line);
            color:var(--text);font-weight:600;letter-spacing:.3px}
+  .card h2.cardhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .age-sel{background:var(--panel2);color:var(--text);border:1px solid var(--line);
+           border-radius:8px;padding:3px 8px;font-size:12px;cursor:pointer;font-weight:400}
   table{width:100%;border-collapse:collapse;font-size:13px}
   th,td{padding:5px 11px;text-align:left;border-bottom:1px solid var(--line)}
   th{color:var(--muted);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
@@ -98,13 +101,6 @@
 
   <div class="controls">
     <select id="market"></select>
-    <select id="ageFilter" title="按上线时间筛选，聚焦新机会">
-      <option value="0">上线时间：不限</option>
-      <option value="6">只看近 6 个月上线</option>
-      <option value="12">只看近 1 年上线</option>
-      <option value="24">只看近 2 年上线</option>
-      <option value="36">只看近 3 年上线</option>
-    </select>
     <span style="flex:1"></span>
     <button class="btn active" data-filter="all">全部</button>
     <button class="btn" data-filter="new">🆕 新进</button>
@@ -113,26 +109,30 @@
     <button class="btn" data-filter="puzzle">🧩 解谜</button>
   </div>
 
-  <!-- M2 分品类深榜：细分品类(解谜/游戏/文字) × 免费/付费/畅销 -->
-  <div class="card" style="margin-bottom:18px">
-    <h2>🧩 分品类深榜 <span class="cnt">细分品类 + 畅销榜（旧版 genre RSS）· 找新机会看这里</span></h2>
+  <!-- 总榜：免费 / 付费 并排（各自独立时间筛选）-->
+  <div class="grid2">
+    <div class="card">
+      <h2 class="cardhead"><span>🆓 免费榜</span><span class="cnt" id="freeCnt"></span>
+        <span style="flex:1"></span><select id="freeAge" class="age-sel"></select></h2>
+      <div class="scroll"><table id="freeTable"></table></div>
+    </div>
+    <div class="card">
+      <h2 class="cardhead"><span>💰 付费榜</span><span class="cnt" id="paidCnt"></span>
+        <span style="flex:1"></span><select id="paidAge" class="age-sel"></select></h2>
+      <div class="scroll"><table id="paidTable"></table></div>
+    </div>
+  </div>
+
+  <!-- 分品类深榜（旧版 genre RSS：解谜/游戏/文字 × 免费/付费/畅销），放总榜下方 -->
+  <div class="card" style="margin-top:18px">
+    <h2 class="cardhead"><span>🧩 分品类深榜</span>
+      <span class="cnt">细分品类 + 畅销榜 · 找新机会看这里</span>
+      <span style="flex:1"></span><select id="catAge" class="age-sel"></select></h2>
     <div class="controls" style="padding:12px 16px 0;margin:0;gap:14px">
       <span id="catGenreTabs"></span>
       <span id="catFeedTabs"></span>
     </div>
     <div class="scroll" style="max-height:800px"><table id="catTable"></table></div>
-  </div>
-
-  <!-- 免费榜 / 付费榜 并排（总榜）-->
-  <div class="grid2">
-    <div class="card">
-      <h2 id="freeTitle">🆓 免费榜</h2>
-      <div class="scroll"><table id="freeTable"></table></div>
-    </div>
-    <div class="card">
-      <h2 id="paidTitle">💰 付费榜</h2>
-      <div class="scroll"><table id="paidTable"></table></div>
-    </div>
   </div>
 
   <div class="grid" style="margin-top:18px">
@@ -244,26 +244,32 @@ function renderFocus(){
   box.innerHTML = `<table><tr><th>App</th><th>评分</th><th>价格</th><th>上榜市场</th></tr>${rows}</table>`;
 }
 
-function filterRows(rows){
+// 时间筛选选项（每个榜单一个独立下拉）
+const AGE_OPTIONS = [["0","上线：不限"],["6","近6个月"],["12","近1年"],["24","近2年"],["36","近3年"]];
+function fillAgeSelect(el, def){
+  if(!el) return;
+  el.innerHTML = AGE_OPTIONS.map(([v,l])=>`<option value="${v}"${v===def?' selected':''}>${l}</option>`).join("");
+}
+
+function filterRows(rows, ageMonths){
   let r = rows;
   if(curFilter==="new") r=r.filter(x=>x.status==="new");
   else if(curFilter==="up") r=r.filter(x=>x.delta>0);
   else if(curFilter==="game") r=r.filter(x=>x.is_game);
   else if(curFilter==="puzzle") r=r.filter(x=>x.is_puzzle);
-  const ageEl = document.getElementById("ageFilter");
-  const m = ageEl ? parseInt(ageEl.value||"0",10) : 0;
+  const m = parseInt(ageMonths||0,10);
   if(m>0){ const cut=ageCutoff(m); if(cut) r=r.filter(x=>x.release_date && x.release_date.slice(0,10)>=cut); }
   return r;
 }
 
-function renderFeedTable(feed, tableId, titleId){
+function renderFeedTable(feed, tableId, cntId, ageSelId){
   const ch = D.charts[ckey(feed)];
   const all = ch ? ch.rows : [];
-  const rows = filterRows(all.slice());
+  const ageEl = document.getElementById(ageSelId);
+  const rows = filterRows(all.slice(), ageEl?ageEl.value:0);
   const games = all.filter(r=>r.is_game).length, puz = all.filter(r=>r.is_puzzle).length;
   const isPaid = feed==="top-paid";
-  document.getElementById(titleId).innerHTML =
-    `${isPaid?'💰 付费榜':'🆓 免费榜'} <span class="cnt">${all.length} 条 · 🎮${games} 🧩${puz}</span>`;
+  document.getElementById(cntId).textContent = `${all.length} 条 · 🎮${games} 🧩${puz}`;
   const sw = D.spark_window||7;
   const body = rows.map(r=>`<tr>
     <td class="ico-td">${iconImg(r)}</td>
@@ -284,8 +290,8 @@ function renderFeedTable(feed, tableId, titleId){
 }
 
 function renderTables(){
-  renderFeedTable("top-free","freeTable","freeTitle");
-  renderFeedTable("top-paid","paidTable","paidTitle");
+  renderFeedTable("top-free","freeTable","freeCnt","freeAge");
+  renderFeedTable("top-paid","paidTable","paidCnt","paidAge");
 }
 
 // ---- M2 分品类深榜 ----
@@ -302,7 +308,8 @@ function renderCatTabs(){
 function renderCatTable(){
   const ch = (D.category||{})[market.value+"|"+catFeed+"|"+catGenre];
   const all = ch ? ch.rows : [];
-  const rows = filterRows(all.slice());
+  const ageEl = document.getElementById("catAge");
+  const rows = filterRows(all.slice(), ageEl?ageEl.value:0);
   const isPaid = catFeed!=="topfree";
   const sw = D.spark_window||7;
   const body = rows.map(r=>`<tr>
@@ -386,7 +393,13 @@ function init(){
   document.getElementById("dateBadge").textContent = "榜单日期 "+(D.latest_date||"—");
   document.getElementById("genBadge").textContent = "生成 "+(D.generated||"—");
   fillSelect(market, D.markets, m=>m.cc, m=>m.name+" "+m.cc.toUpperCase());
-  document.getElementById("ageFilter").value = "12";  // 默认只看近1年上线（聚焦新机会）
+  // 每个榜单独立的时间筛选，均默认「近1年」（聚焦新机会）
+  fillAgeSelect(document.getElementById("freeAge"), "12");
+  fillAgeSelect(document.getElementById("paidAge"), "12");
+  fillAgeSelect(document.getElementById("catAge"), "12");
+  document.getElementById("freeAge").onchange = ()=>renderFeedTable("top-free","freeTable","freeCnt","freeAge");
+  document.getElementById("paidAge").onchange = ()=>renderFeedTable("top-paid","paidTable","paidCnt","paidAge");
+  document.getElementById("catAge").onchange = renderCatTable;
   // 分品类默认：聚焦品类(解谜) + 第一个榜单类型(免费)
   catFeed = (D.cat_feeds&&D.cat_feeds[0]) || "topfree";
   const fg = (D.cat_genres||[]).find(g=>g.name===D.cat_focus);
@@ -394,7 +407,6 @@ function init(){
   renderCatTabs();
   renderAll();
   market.onchange = renderAll;
-  document.getElementById("ageFilter").onchange = ()=>{ renderTables(); renderCatTable(); };
   document.querySelectorAll(".btn[data-filter]").forEach(b=>b.onclick=()=>{
     document.querySelectorAll(".btn[data-filter]").forEach(x=>x.classList.remove("active"));
     b.classList.add("active"); curFilter=b.dataset.filter; renderTables(); renderCatTable();
