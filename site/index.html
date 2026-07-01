@@ -75,6 +75,7 @@
   td.app .nm:not(a){color:var(--text)}
   .sub{color:var(--muted);font-size:11.5px}
   td.app .sub{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sub .desc{color:var(--text);opacity:.85}
   td.sub{color:var(--text)}
   .scroll{max-height:1360px;overflow:auto}
   .age-new{color:var(--up);font-weight:600}
@@ -201,6 +202,16 @@ function ageText(r){
   return `<span class="${cls}" title="上线于 ${esc(rd.slice(0,10))}">${txt}</span>`;
 }
 
+// ≤10字短描述：取 app 名分隔符(冒号/破折号/竖线)后的副标题，无则用中文品类兜底
+function shortDesc(r){
+  const parts = String(r.name||"").split(/[:：\-–—|｜]/);
+  let sub = parts.length>1 ? parts.slice(1).join(" ").replace(/\s+/g," ").trim() : "";
+  if(sub) return sub.length>18 ? sub.slice(0,18).trim()+"…" : sub;
+  if(r.is_puzzle) return "解谜";
+  if(r.is_game) return "游戏";
+  return (r.primary_genre_cn && r.primary_genre_cn!=="—") ? r.primary_genre_cn : "";
+}
+
 // 最近趋势 sparkline：名次序列（缺席天为 null）→ 内联 SVG 迷你折线
 // 名次小=靠上=好；末点优于首点→绿(上升)，劣于→红(下降)，持平→灰
 function sparkline(spark){
@@ -271,19 +282,21 @@ function renderFeedTable(feed, tableId, cntId, ageSelId){
   const isPaid = feed==="top-paid";
   document.getElementById(cntId).textContent = `${all.length} 条 · 🎮${games} 🧩${puz}`;
   const sw = D.spark_window||7;
-  const body = rows.map(r=>`<tr>
+  const body = rows.map(r=>{
+    const sd = shortDesc(r);
+    return `<tr>
     <td class="ico-td">${iconImg(r)}</td>
     <td class="rank">${r.rank}</td>
     <td class="app">${r.url
         ?`<a class="nm" href="${encodeURI(r.url)}" target="_blank" title="${esc(r.name)}">${esc(r.name)}</a>`
         :`<span class="nm" title="${esc(r.name)}">${esc(r.name)}</span>`}
-        <div class="sub">${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
+        <div class="sub">${sd?`<span class="desc">${esc(sd)}</span> · `:''}${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
     <td class="age">${ageText(r)}</td>
     <td class="delta">${fmtDelta(r)}</td>
     <td class="spark">${sparkline(r.spark)}</td>
     <td>${genreTag(r)}</td>
     <td class="sub">${rating(r)}</td>
-  </tr>`).join("");
+  </tr>`;}).join("");
   document.getElementById(tableId).innerHTML =
     `<tr><th></th><th>#</th><th>App</th><th>已上线</th><th>变化</th><th>近${sw}天</th><th>品类</th><th>评分</th></tr>`
     + (body||'<tr><td colspan=8 class="focus-empty">无匹配</td></tr>');
@@ -312,18 +325,20 @@ function renderCatTable(){
   const rows = filterRows(all.slice(), ageEl?ageEl.value:0);
   const isPaid = catFeed!=="topfree";
   const sw = D.spark_window||7;
-  const body = rows.map(r=>`<tr>
+  const body = rows.map(r=>{
+    const sd = shortDesc(r);
+    return `<tr>
     <td class="ico-td">${iconImg(r)}</td>
     <td class="rank">${r.rank}</td>
     <td class="app">${r.url
         ?`<a class="nm" href="${encodeURI(r.url)}" target="_blank" title="${esc(r.name)}">${esc(r.name)}</a>`
         :`<span class="nm" title="${esc(r.name)}">${esc(r.name)}</span>`}
-        <div class="sub">${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
+        <div class="sub">${sd?`<span class="desc">${esc(sd)}</span> · `:''}${esc(r.artist||"")}${(isPaid&&r.price)?(' · '+esc(r.price)):''}</div></td>
     <td class="age">${ageText(r)}</td>
     <td class="delta">${fmtDelta(r)}</td>
     <td class="spark">${sparkline(r.spark)}</td>
     <td class="sub">${rating(r)}</td>
-  </tr>`).join("");
+  </tr>`;}).join("");
   document.getElementById("catTable").innerHTML =
     `<tr><th></th><th>#</th><th>App</th><th>已上线</th><th>变化</th><th>近${sw}天</th><th>评分</th></tr>`
     + (body||`<tr><td colspan=7 class="focus-empty">${ch?'无匹配（试试清掉过滤）':'该组合暂无数据'}</td></tr>`);
