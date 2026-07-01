@@ -111,7 +111,7 @@
   </div>
 
   <!-- M3 竞品/自家雷达：跨所有市场×榜单聚合关注列表 -->
-  <div class="card" style="margin-bottom:18px">
+  <div class="card" id="radarCard" style="margin-bottom:18px">
     <h2 class="cardhead"><span>🎯 竞品雷达（关注列表）</span>
       <span class="cnt" id="radarCnt"></span>
       <span style="flex:1"></span>
@@ -379,6 +379,9 @@ function deltaBadge(ap){
 function renderRadar(){
   const box=document.getElementById("radarBox"); if(!box) return;
   const wl=D.watchlist||[], misses=D.watchlist_misses||[];
+  const card=document.getElementById("radarCard");
+  if(!wl.length && !misses.length){ if(card) card.style.display="none"; return; }  // 关闭时整块隐藏
+  if(card) card.style.display="";
   document.getElementById("radarCnt").textContent = wl.length+" 个在榜";
   if(!wl.length){
     box.innerHTML='<div class="focus-empty">关注列表当前均未上榜'

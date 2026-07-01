@@ -45,7 +45,7 @@ category_charts:
 # 关注列表：跨所有市场×所有榜单(总榜+分品类)聚合追踪。
 # 每项：字符串=名称包含匹配(大小写不敏感)；纯数字=app_id 精确匹配。
 watchlist:
-  enabled: true
+  enabled: false     # 竞品雷达暂时关闭（作用不大）；改回 true 即恢复
   apps:
     - "Arrows"        # Arrows – Puzzle Escape（同类：曲线箭头逃脱）
     - "Block Blast"
