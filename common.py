@@ -25,9 +25,10 @@ REPORTS_DIR = ROOT / "reports"
 CONFIG_DIR = ROOT / "config"
 SITE_DIR = ROOT / "site"
 
-RANK_CSV = DATA_DIR / "apple_rank.csv"          # 总榜快照（每日累积）
-META_CSV = DATA_DIR / "app_meta.csv"            # app 元数据（品类/评分/价格/上线日）
-CATEGORY_CSV = DATA_DIR / "category_rank.csv"   # M2 分品类深榜快照（每日累积）
+# 数据集目录：每个目录下按月分片 <YYYY-MM>.csv（见 upsert_csv）
+RANK_DIR = DATA_DIR / "apple_rank"          # 总榜快照（每日累积）
+META_DIR = DATA_DIR / "app_meta"            # app 元数据（品类/评分/价格/上线日）
+CATEGORY_DIR = DATA_DIR / "category_rank"   # M2 分品类深榜快照（每日累积）
 
 # ---------------------------------------------------------------- 品类常量
 GAMES_GENRE_ID = "6014"
@@ -121,23 +122,42 @@ def load_config() -> dict:
         return yaml.safe_load(f)
 
 
-# ---------------------------------------------------------------- CSV 幂等
-def upsert_csv(path: Path, rows: list[dict], key_cols: list[str]) -> int:
-    """幂等追加：同 key 用新行覆盖旧行，保留其余历史。返回写入后总行数。"""
+# ---------------------------------------------------------------- CSV 幂等（按月分片）
+# 单个 CSV 每日累积会超过 GitHub 100MB 单文件上限（2026-09 category_rank.csv 即因此 push 失败），
+# 故每个数据集是一个目录，按 date 列的年月分片为 <YYYY-MM>.csv。key 均含 date，分片间不会重复。
+def upsert_csv(dataset_dir: Path, rows: list[dict], key_cols: list[str]) -> int:
+    """幂等追加：同 key 用新行覆盖旧行，保留其余历史。返回本次涉及分片写入后的行数。"""
     new_df = pd.DataFrame(rows)
     if new_df.empty:
         return 0
     for k in key_cols:
         new_df[k] = new_df[k].astype(str)
-    if path.exists():
-        old = pd.read_csv(path, dtype={k: str for k in key_cols})
-        combined = pd.concat([old, new_df], ignore_index=True)
-        combined = combined.drop_duplicates(subset=key_cols, keep="last")
-    else:
-        combined = new_df
-    path.parent.mkdir(parents=True, exist_ok=True)
-    combined.to_csv(path, index=False)
-    return len(combined)
+    dataset_dir.mkdir(parents=True, exist_ok=True)
+    total = 0
+    for month, part in new_df.groupby(new_df["date"].str[:7], sort=True):
+        path = dataset_dir / f"{month}.csv"
+        if path.exists():
+            old = pd.read_csv(path, dtype={k: str for k in key_cols})
+            combined = pd.concat([old, part], ignore_index=True)
+            combined = combined.drop_duplicates(subset=key_cols, keep="last")
+        else:
+            combined = part
+        combined.to_csv(path, index=False)
+        total += len(combined)
+    return total
+
+
+def read_dataset(dataset_dir: Path, **read_kw) -> pd.DataFrame:
+    """读取数据集所有月分片并拼接；无分片时返回空表（调用方自行补列名）。"""
+    frames = []
+    for path in sorted(dataset_dir.glob("*.csv")):
+        try:
+            frames.append(pd.read_csv(path, **read_kw))
+        except pd.errors.EmptyDataError:
+            continue
+    if not frames:
+        return pd.DataFrame()
+    return pd.concat(frames, ignore_index=True)
 
 
 def chunks(seq: list, n: int):

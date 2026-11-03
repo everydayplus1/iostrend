@@ -32,7 +32,7 @@ pip install -r requirements.txt   # requests / PyYAML / pandas / matplotlib
 ## 用法
 
 ```bash
-python3 collect.py      # 采集榜单+富化 → data/apple_rank.csv, data/app_meta.csv（幂等累积）
+python3 collect.py      # 采集榜单+富化 → data/apple_rank/, data/app_meta/ 按月分片（幂等累积）
 python3 report.py       # 生成 reports/YYYY-MM-DD.md（+ 趋势 PNG，需≥2天）
 python3 build_site.py   # 生成 site/data.js（看板数据）
 ```
@@ -85,7 +85,7 @@ iostrend/
 ├── sources/
 │   ├── apple_rss.py    Apple Marketing Tools RSS v2 采集
 │   └── itunes_lookup.py iTunes Lookup 富化
-├── data/*.csv          累积历史（进版本库）
+├── data/<数据集>/<YYYY-MM>.csv  累积历史，按月分片防超 100MB（进版本库）
 ├── reports/*.md        每日报告（进版本库）
 └── site/index.html     交互看板（渲染层只画不算）
 ```

@@ -40,19 +40,29 @@ jobs:
         run: |
           git config user.name  "iostrend-bot"
           git config user.email "actions@github.com"
+          # GitHub 单文件上限 100MB：分片逼近 90MB 时提前报警
+          big=$(find data -name '*.csv' -size +90M)
+          if [ -n "$big" ]; then
+            echo "::warning::以下数据分片超过 90MB，需进一步拆分：$big"
+          fi
           git add data/ reports/ site/data.js site/data.json
           if git diff --staged --quiet; then
             echo "无变更，跳过提交"
           else
             git commit -m "data: $(date -u +%F) 榜单采集"
-            # 并发/排队运行可能落后远端，push 失败则 rebase 后重试
+            # 并发/排队运行可能落后远端，push 失败则 rebase 后重试；
+            # 三次都失败必须让任务失败，否则数据静默丢失（2026-09 超 100MB 时即如此）
+            pushed=false
             for i in 1 2 3; do
-              git push && break || {
-                echo "push 被拒，rebase 后重试 ($i/3)"
-                git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
-                sleep 5
-              }
+              if git push; then pushed=true; break; fi
+              echo "push 被拒，rebase 后重试 ($i/3)"
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+              sleep 5
             done
+            if [ "$pushed" != true ]; then
+              echo "::error::push 连续 3 次失败，累积数据未能写回仓库"
+              exit 1
+            fi
           fi
 
       - name: 上传 Pages 产物（看板）

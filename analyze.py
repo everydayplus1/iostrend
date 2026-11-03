@@ -1,6 +1,6 @@
 """趋势分析层。
 
-把 apple_rank.csv（榜单时间序列）与 app_meta.csv（品类/评分/价格）合并，
+把 apple_rank（榜单时间序列）与 app_meta（品类/评分/价格）两个数据集合并，
 产出结构化结果，供 report.py 与 build_site.py 共用（只算一次，渲染层只画不算）。
 
 核心维度：
@@ -15,7 +15,7 @@ import math
 
 import pandas as pd
 
-from common import CATEGORY_CSV, META_CSV, RANK_CSV, genre_cn, load_config
+from common import CATEGORY_DIR, META_DIR, RANK_DIR, genre_cn, load_config, read_dataset
 
 SPARK_WINDOW = 7  # 「最近趋势」回看天数
 
@@ -33,14 +33,12 @@ _CAT_COLS = ["date", "country", "feed", "genre_id", "genre_name", "rank",
 _META_MERGE_EXCLUDE = {"release_date"}
 
 
-def _read_csv_safe(path, cols):
-    """读 CSV；文件不存在或为空时返回带列名的空表（防首次运行/富化全失败时崩溃）。"""
-    if not path.exists():
+def _read_csv_safe(dataset_dir, cols):
+    """读数据集全部月分片；无分片或全空时返回带列名的空表（防首次运行/富化全失败时崩溃）。"""
+    df = read_dataset(dataset_dir, dtype={"app_id": str})
+    if df.empty:
         return pd.DataFrame(columns=cols)
-    try:
-        return pd.read_csv(path, dtype={"app_id": str})
-    except pd.errors.EmptyDataError:
-        return pd.DataFrame(columns=cols)
+    return df
 
 
 def _clean(v):
@@ -54,7 +52,7 @@ def _clean(v):
 
 def _load_meta_latest():
     """每个 (app_id,country) 的最新元数据；缺失/空时返回带列名空表。"""
-    meta = _read_csv_safe(META_CSV, _META_COLS)
+    meta = _read_csv_safe(META_DIR, _META_COLS)
     if meta.empty:
         return pd.DataFrame(columns=_META_COLS)
     return (meta.sort_values("date")
@@ -66,7 +64,7 @@ def load_merged():
 
     对缺失/空 CSV 与缺失 meta 容错（不崩溃），让上层 build_all 优雅短路。
     """
-    rank = _read_csv_safe(RANK_CSV, _RANK_COLS)
+    rank = _read_csv_safe(RANK_DIR, _RANK_COLS)
     if rank.empty:
         return rank, rank.copy()
 
@@ -168,7 +166,7 @@ def chart_changes(merged, country: str, feed: str) -> dict:
 
 def load_category_merged():
     """分品类深榜 join 最新元数据（评分/上线日/品类）。空时返回带列名空表。"""
-    cat = _read_csv_safe(CATEGORY_CSV, _CAT_COLS)
+    cat = _read_csv_safe(CATEGORY_DIR, _CAT_COLS)
     if cat.empty:
         return cat
     cat["genre_id"] = cat["genre_id"].astype(str)
